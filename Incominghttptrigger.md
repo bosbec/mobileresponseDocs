@@ -17,3 +17,6 @@ If you need to register a token head over to [https://admin.mobileresponse.io/#/
 **NOTES**
 
 - **Sets a HTTP-resource in WorkflowContext**
+
+
+[Data operations](Dataoperations.md) 
