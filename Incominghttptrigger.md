@@ -11,7 +11,7 @@ If the criteria matches the incoming request, then this trigger will put the inf
 
 - Configure the method as one of the currently supported HTTP-methods: POST, GET or * to trigger on either one of them.
 - Make sure you have a **Token** registered and use it to allow requests to in.mobileresponse.io/[YOUR-TOKEN-HERE]   
-If you need to register a token head over to [https://admin.mobileresponse.io/#/rest-api](https://admin.mobileresponse.io/#/rest-api "Api-tokens")
+If you need to register a token head over to [https://admin.mobileresponse.io/#/rest-api](https://admin.mobileresponse.io/#/rest-api "Api-tokens") TEST: <a href="https://admin.mobileresponse.io/#/rest-api">Testlänk</a>
 - Configure the name of the HTTP-resource in the **IncomingResourceName**
 
 **NOTES**
