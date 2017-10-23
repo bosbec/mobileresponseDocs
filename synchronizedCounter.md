@@ -1,4 +1,4 @@
-# Unique sender route #
+# Synchronized counter #
 
 *This job is a counter, and the synchronized-part of the name indicates that it will synchronize the counting even if there are many workflows that simultaneously want to increase the counter.*
 
