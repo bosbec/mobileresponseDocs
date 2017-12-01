@@ -24,5 +24,6 @@ Each incident has one of the below status properties;
 * Closed, Handed over
 **Priority**
 Each incident is assigned a priority which ranges in severity from Lowest (1) to Highest (5).
+
 **Tasklist**
 When creating a tasklist the user enter altnernatives, reminder and which group the tasklist is sent to. The reminder send a message to the group in a given interval and reminds them to answer the checklist in the application.
