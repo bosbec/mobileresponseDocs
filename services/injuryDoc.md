@@ -16,7 +16,8 @@ A predefined process to facilitate action during an injury event.
   * Appoint a moderator
     * Task a person with following up the injury incident ticket through a form.
     * You can select to use a reminder for this when using admin, by entering an interval in minutes. Both management and the appointed moderator will get a reminder. When using app-in, a reminder is automatically activated and set to 60 minutes.
-  * Update incident (= send a message to a group, and set/update status and priority)
+  * Update incident
+    * Send a message to a group, and set/update status and priority. It is currently the *only* way to change status and priority for this incident type, as it is not set initially, or by the appointed moderator.
   * Start group chat
   * Close group chat
   * Close incident
