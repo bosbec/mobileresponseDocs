@@ -27,6 +27,8 @@ A predefined process to facilitate action during an injury event.
 
 * In order to perform any of the steps for this incident type, you generally need to be represented by a unit in the "Injury incident management" group.
 * The only exception to this is "Start incident", which is allowed for everyone in "Injury incident management", "Injury incident moderators" and "Injury incident others", since everyone in the organization should be able to initialize an incident.
+* Connection to a unit is currently done through phone number, so units need to have that set on them.
+* When using the service step icons here in admin, the default behaviour is that the phone number of the logged in administrator is used for identification. You can override this by entering another phone number manually when performing a service step.
 
 **Statuses**
 
