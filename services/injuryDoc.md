@@ -19,7 +19,7 @@ A predefined process to facilitate action during an injury event.
 
 **Start**
 
-* The process can be started through this user interface.
+* The process can be started through this user interface, or by messaging in to a predefined app user.
 
 **Statuses**
 
@@ -28,10 +28,8 @@ Each incident has one of the below status properties;
   * Identified
   * Monitoring
   * Resolved
-  * Closed, Handed over
+  * Handed over
 
 **Priority**
 
-Each incident is assigned a priority which ranges in severity from Lowest (1) to Highest (5).
-
-When creating a **tasklist** the user enter alternatives, reminder and which group the tasklist is sent to. The reminder send a message to the group in a given interval and reminds them to answer the tasklist in the application.
+Each incident is assigned a priority (through "Update") which ranges in severity from Lowest (1) to Highest (5).
