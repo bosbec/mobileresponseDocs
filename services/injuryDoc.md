@@ -9,7 +9,8 @@ A predefined process to facilitate action during an injury event.
 * There are several steps that can be performed in this incident service:
   * Start incident
     * Start a new injury incident ticket by answering some start questions.
-  * Request check-in (= call to a meeting, in most cases)
+  * Request check-in
+    * Used for calling to a meeting, in most cases. Enter a message text. Select a receiver group. Select a reminder interval if you want to utilize a reminder. All recievers get a form where they can choose to opt-in or out, as well as comment.
   * Appoint a moderator (= a person tasked with folloing up the injury incident ticket through a form. Ticket alias is set in this form)
   * Update incident (= send a message to a group, and set/update status and priority)
   * Start group chat
