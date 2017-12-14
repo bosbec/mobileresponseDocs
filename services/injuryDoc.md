@@ -6,6 +6,7 @@ A predefined process to facilitate action during an injury event.
 
 **Overview**
 
+* Incidents can be either "Open" or "Closed". The two different states are shown separately on the left side of this view.
 * There are several steps that can be performed in this incident service:
   * Start incident
     * Start a new injury incident ticket by answering some start questions.
@@ -34,7 +35,6 @@ A predefined process to facilitate action during an injury event.
     * Only available for closed tickets.
     * Can also be performed through app-in, by sending "report [ticket number]" to the predefined base app user.
     * Sends the report back to the requester by mail (so e-mail address needs to be set on the unit, for this). The requester will also get an app-message saying that the report has been delivered.
-* Incidents can be either "Open" or "Closed". The two different states are shown separately on the left side of this view.
 
 **About access**
 
