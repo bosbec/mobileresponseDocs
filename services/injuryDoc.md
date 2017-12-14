@@ -8,6 +8,7 @@ A predefined process to facilitate action during an injury event.
 
 * There are several steps that can be performed in this incident service:
   * Start incident
+    * Start a new injury incident ticket by answering some start questions.
   * Request check-in (= call to a meeting, in most cases)
   * Appoint a moderator (= a person tasked with folloing up the injury incident ticket through a form. Ticket alias is set in this form)
   * Update incident (= send a message to a group, and set/update status and priority)
