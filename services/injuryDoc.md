@@ -10,8 +10,12 @@ A predefined process to facilitate action during an injury event.
   * Start incident
     * Start a new injury incident ticket by answering some start questions.
   * Request check-in
-    * Used for calling to a meeting, in most cases. Enter a message text. Select a receiver group. Select a reminder interval if you want to utilize a reminder. All recievers get a form where they can choose to opt-in or out, as well as comment.
-  * Appoint a moderator (= a person tasked with folloing up the injury incident ticket through a form. Ticket alias is set in this form)
+    * Used for calling to a meeting, in most cases. Enter a message text. Select a receiver group. All recievers get a form where they can choose to opt-in or out, as well as leave a comment.
+    * You can select to use a reminder for this when using admin, by entering an interval in minutes. The reminder will go to all those who have not yet answered the check-in form.
+    * Currently not available to start via app-in.
+  * Appoint a moderator
+    * Task a person with following up the injury incident ticket through a form.
+    * You can select to use a reminder for this when using admin, by entering an interval in minutes. Both management and the appointed moderator will get a reminder. When using app-in, a reminder is automatically activated and set to 60 minutes.
   * Update incident (= send a message to a group, and set/update status and priority)
   * Start group chat
   * Close group chat
