@@ -20,8 +20,7 @@ A predefined process to facilitate action during an injury event.
 
 **Start**
 
-* The process can be started through this user interface.
-* Alternatively, it can be started by messaging "injury" to a predefined app user, which will send a form back to you with the start questions.
+* The process can be started through this user interface, or by messaging "injury" to a predefined app user, which will then send you back a form with the start questions.
 
 **Access**
 
