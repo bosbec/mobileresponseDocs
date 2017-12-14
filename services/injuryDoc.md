@@ -11,9 +11,9 @@ A predefined process to facilitate action during an injury event.
   * Start incident
     * Start a new injury incident ticket by answering some start questions.
     * Can also be initialized through app-in, by sending "injury" to the predefined base app user, which will give you back a form with the start questions.
-    * Submitting the form will start a new incident ticket, and will notify management (who are then expected to appoint a moderator to follow up the incident). This notification contains the answers on the start form.
+    * Submitting the form will start a new incident ticket, and will notify management, who are then expected to appoint a moderator to follow up the incident. This notification contains the answers on the start form.
     * You - the requester - will also get a confirmation message back, to let you know that the ticket was successfully started.
-    * You can select to use a reminder for this when using admin, by entering an interval in minutes. It will go to management, if a moderator has yet to be appointed. When using app-in, a reminder is automatically activated and set to 20 minutes.
+    * You can select to use a reminder for this when using admin, by entering an interval in minutes. It will go to management, as long as a moderator has yet to be appointed. When using app-in, a reminder is automatically activated and set to 20 minutes.
   * Request check-in
     * Used for calling to a meeting, in most cases. Enter a message text. Select a receiver group. All recievers get a form where they can choose to opt-in or out, as well as leave a comment.
     * Currently not available to initialize via app-in.
@@ -22,7 +22,7 @@ A predefined process to facilitate action during an injury event.
   * Appoint a moderator
     * Task a moderator with following up the injury incident ticket. The moderator gets a message with information and a follow-up-form.
     * Can also be initialized through app-in, by sending "appoint [ticket number]" to the predefined base app user, which will give you back a form.
-    * You can select to use a reminder for this when using admin, by entering an interval in minutes. Both management and the appointed moderator will get a reminder as long as the follow up form is not completed. When using app-in, a reminder is automatically activated and set to 60 minutes.
+    * You can select to use a reminder for this when using admin, by entering an interval in minutes. Both management and the appointed moderator will get a reminder as long as the follow-up-form is not completed. When using app-in, a reminder is automatically activated and set to 60 minutes.
     * It is not possible to *change* an appointed moderator. If you try, a notification about this will be sent to management.
     * When the moderator has submitted answers for all the questions in the follow-up-form, management gets a message about it, so that they can check it and close the ticket.
   * Update incident
