@@ -23,6 +23,11 @@ A predefined process to facilitate action during an injury event.
 * The process can be started through this user interface.
 * Alternatively, it can be started by messaging "injury" to a predefined app user, which will send a form back to you with the start questions.
 
+**Access**
+
+* In order to perform any of the steps for this incident type, you generally need to be represented by a unit in the "Injury incident management" group.
+* The only exception to this is "Start incident", which is allowed for everyone in "Injury incident management", "Injury incident moderators" and "Injury incident others", since everyone in the organization should be able to initialize an incident.
+
 **Statuses**
 
 Each incident has one of the below status properties;
