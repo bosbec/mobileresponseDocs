@@ -18,10 +18,9 @@ A predefined process to facilitate action during an injury event.
     * You can only perform *one* check-in per ticket, currently. Any additional attempts will be intercepted.
   * Appoint a moderator
     * Task a person with following up the injury incident ticket through a form.
-    * Can also be initialized through app-in, by sending "appoint [ticket number]" to the predefined base app user, which will give you back
+    * Can also be initialized through app-in, by sending "appoint [ticket number]" to the predefined base app user, which will give you back a form.
     * You can select to use a reminder for this when using admin, by entering an interval in minutes. Both management and the appointed moderator will get a reminder. When using app-in, a reminder is automatically activated and set to 60 minutes.
     * It is not possible to *change* an appointed moderator. If you try, a notification about this will be sent to management.
-a form.
   * Update incident
     * Send a message to a group, and set/update status and priority. It is currently the *only* way to change status and priority for this incident type, as it is not set initially, or by the appointed moderator.
     * Can also be initialized through app-in, by sending "update [ticket number]" to the predefined base app user, which will give you back a form.
@@ -35,7 +34,6 @@ a form.
     * Only available for closed tickets.
     * Can also be performed through app-in, by sending "report [ticket number]" to the predefined base app user.
     * Sends the report back to the requester by mail (so e-mail address needs to be set on the unit, for this). The requester will also get an app-message saying that the report has been delivered.
-* A log of all updates will be kept and can later be exported.
 * Incidents can be either "Open" or "Closed". The two different states are shown separately on the left side of this view.
 
 **About access**
