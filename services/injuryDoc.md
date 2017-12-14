@@ -6,20 +6,23 @@ A predefined process to facilitate action during an injury event.
 
 **Overview**
 
-* On initialization, the user adds a alias, status, priority, group and a message. 
-* The information is sent to the group in Bosbec application. 
-* As this incident is unspecified there are several optional steps.
+* On initialization, the user adds a , group and a message. 
+* The information is sent to the injury incident management group.
+* There are several optional steps that can be performed:
+  * Request check-in (= call to a meeting, in most cases)
+  * Appoint a moderator (= a person tasked with folloing up the injury incident ticket through a form. Ticket alias is set in this form)
+  * Update incident (= send a message to a group, and set/update status and priority)
   * Start group chat
-  * Create tasklist
   * Close group chat
-  * Update incident
-* In every step the user has the ability to send information to a selected group.
-* A log of all incoming updates will be kept and can later be exported.
+  * Close incident
+  * Order report
+* A log of all updates will be kept and can later be exported.
 * Incidents can be either "Open" or "Closed". The two different states are shown separately on the left side of this view.
 
 **Start**
 
-* The process can be started through this user interface, or by messaging in to a predefined app user.
+* The process can be started through this user interface.
+* Alternatively, it can be started by messaging "injury" to a predefined app user, which will send a form back to you with the start questions.
 
 **Statuses**
 
