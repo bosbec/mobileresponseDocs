@@ -28,7 +28,7 @@ A predefined process to facilitate action during an injury event.
   * Update incident
     * Send a message to a group, and set/update status and priority. It is currently the *only* way to change status and priority for this incident type, as it is not set initially, or by the appointed moderator.
     * Can also be initialized through app-in, by sending "update [ticket number]" to the predefined base app user, which will give you back a form.
-    * When using admin for this, you can freely select a group that will recieve the update. When using app-in, management will get the message.
+    * When using admin for this, you can freely select one or more group(s) that will recieve the update. You can also skip sending to any groups, if you only want to update status and/or priority, or leave a comment in the report. When using app-in, management will get the message.
   * Start group chat
   * Close group chat
   * Close incident
