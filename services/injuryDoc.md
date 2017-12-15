@@ -30,7 +30,11 @@ A predefined process to facilitate action during an injury event.
     * Can also be initialized through app-in, by sending "update [ticket number]" to the predefined base app user, which will give you back a form.
     * When using admin for this, you can freely select one or more group(s) that will recieve the update. You can also skip sending to any groups, if you only want to update status and/or priority, or leave a comment in the report. When using app-in, management will get the message.
   * Start group chat
+    * Select a group to start a group chat for. A new app user will be created for each ticket + group, so that the group chat is handled in a separate, named conversation in the app. All participants will get an message that the chat has been opened.
+    * Currently not available to perform via app-in.
   * Close group chat
+    * Select an open chat to close. A message will go out to all participants that the chat has been closed. If anyone tries to send further messages there, they will again get a message that says the chat is closed.
+    * Currently not available to perform via app-in.
   * Close incident
     * Close the incident ticket. Management and the appointed moderator will get notified about this through a message. The message to management also contains a form you can use to add comments to the report post-closing.
     * Can also be performed through app-in, by sending "close [ticket number]" to the predefined base app user.
