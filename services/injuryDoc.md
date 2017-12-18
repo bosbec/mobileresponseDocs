@@ -15,7 +15,7 @@ A predefined process to facilitate action during an injury event.
 	* Can also be initialized through app-in, by sending "injury" to the predefined base app user, which will give you back a form with the start questions.
 	* Submitting the form will start a new incident ticket, and will notify management, who are then expected to appoint a moderator to follow up the incident. This notification contains the answers on the start form.
 	* You - the requester - will also get a confirmation message back, to let you know that the ticket was successfully started.
-	* You can select to use a reminder for this when using admin, by entering an interval in minutes. It will go to management, as long as a moderator has yet to be appointed. When using app-in, a reminder is automatically activated and set to 20 minutes.
+	* You can select to use a reminder for this when using admin, by entering an interval in minutes. It will go to management, as long as a moderator has yet to be appointed. When using app-in, a reminder is automatically activated and set to 20 minutes. 
 * Request check-in 
 	* Used for calling to a meeting, in most cases. Enter a message text. Select a receiver group. All recievers get a form where they can choose to opt-in or out, as well as leave a comment.
 	* Currently not available to initialize via app-in.
