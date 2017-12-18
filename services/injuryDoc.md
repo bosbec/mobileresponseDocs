@@ -37,6 +37,8 @@ Update incident
 
 Start group chat
 * Select a group to start a group chat for. A new app user will be created for each ticket + group, so that the group chat is handled in a separate, named conversation in the app. All participants will get an message that the chat has been opened.
+* You can't start several separate chats with the same group, for the same ticket. It will be intercepted.
+* You *can* close a chat for a group, and later re-open it, if you want.
 * Currently not available to perform via app-in.
 
 Close group chat
