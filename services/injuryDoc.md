@@ -10,7 +10,7 @@ A predefined process to facilitate action during an injury event.
 
 **Components**
 
-Start incident
+Report ticket
 * Start a new injury incident ticket by answering some start questions.
 * Can also be initialized through app-in, by sending "injury" to the predefined base app user, which will give you back a form with the start questions.
 * Submitting the form will start a new incident ticket, and will notify management, who are then expected to appoint a moderator to follow up the incident. This notification contains the answers from the start form.
