@@ -12,7 +12,6 @@
 
 
 Welcome to the administrative interface for your Bosbec-account.
-
 From here you are able to manage your groups, execute workflows, overview statistics and much, much more.
 
 
