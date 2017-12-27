@@ -1,6 +1,7 @@
-<center><img src="http://bosbec.io/res/bosbec_navbar_logo_svg.svg" width="300px"/>
+<img src="http://bosbec.io/res/bosbec_navbar_logo_svg.svg" style="width:300px;"/>
 
-#### As powerful and complex as it is simple and intuitive.</center>
+##### <center>As powerful and complex as it is simple and intuitive.</center>
+
 
 
 Welcome to the administrative interface for your Bosbec-account.
