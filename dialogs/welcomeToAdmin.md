@@ -1,4 +1,4 @@
-<img src="http://bosbec.io/res/bosbec_navbar_logo_svg.svg" style='width:300px;' width='300px'/>
+<div style='text-align:center; width:100%;' width='100%'><img src="http://bosbec.io/res/bosbec_navbar_logo_svg.svg" style='width:300px;' width='300px'/></div>
 
 ##### <center>As powerful and complex as it is simple and intuitive.</center>
 
