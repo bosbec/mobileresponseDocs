@@ -1,6 +1,6 @@
-## Thank you for choosing Bosbec
+![](http://bosbec.io/res/bosbec_navbar_logo_svg.svg)
 
-###### As powerful and complex as it is simple and intuitive.
+##### As powerful and complex as it is simple and intuitive.
 
 
 
