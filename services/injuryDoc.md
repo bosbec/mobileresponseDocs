@@ -11,9 +11,9 @@ A predefined process to facilitate action during an injury event.
 **Components**
 
 Report ticket
-* Start a new injury incident ticket by answering some start questions.
-* Can also be initialized through app-in, by sending "injury" to the predefined base app user, which will give you back a form with the start questions.
-* Submitting the form will start a new incident ticket, and will notify management, who are then expected to appoint a moderator to follow up the incident. This notification contains the answers from the start form.
+* Initialize an injury incident by answering some start questions. Note that starting an injury ticket through the icon here in admin is non-standard, and is mostly available for testing purposes.
+* The expected way to initialize an injury incident is through app-in, by sending "injury" to the predefined base app user, which will give you back a form with the start questions.
+* Submitting the form will start a new incident ticket and will notify management, who are then expected to appoint a moderator to follow up the incident. This notification contains the answers from the start form.
 * You - the requester - will also get a confirmation message back, to let you know that the ticket was successfully started.
 * You can select to use a reminder for this when using admin, by entering an interval in minutes. It will go to management, as long as a moderator has yet to be appointed. When using app-in, a reminder is automatically activated and set to 20 minutes. 
 
