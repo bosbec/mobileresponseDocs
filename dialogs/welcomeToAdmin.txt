@@ -1,0 +1,3 @@
+https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/dialogs/welcomeToAdmin.md
+https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/dialogs/welcomeToAdminServices.md
+https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/dialogs/welcomeToAdminBilling.md
