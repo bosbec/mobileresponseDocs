@@ -2,6 +2,11 @@
     <p>
   <img src="http://bosbec.io/res/bosbec_navbar_logo_svg.svg" style="width: 180px;" width="300px">
 </p>
-        <div>img here</div>
+    <div style="width:  100%;">
+        <div style="
+    float: left;
+    width:  30%;
+">img here</div>
         <div>text here</div>
+    </div>
 </div>
