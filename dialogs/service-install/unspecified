@@ -59,7 +59,7 @@
     padding-left: 20px;
 }
 
-text-component p{
+text-component p:first-child{
     margin-bottom: 0px;
 }
 
