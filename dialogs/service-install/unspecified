@@ -59,7 +59,7 @@
     padding-left: 20px;
 }
 
-markdown-to-html{
+text-component p{
     margin-bottom: 0px;
 }
 
