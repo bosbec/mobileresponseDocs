@@ -1,7 +1,7 @@
 <div>
     <p>
   <img class="service-logo" src="http://bosbec.io/res/bosbec_navbar_logo_svg.svg">
-  <a class="service-float-right" href="" ng-click="vm.close()">
+  <a class="service-float-right" href="" ng-click="stw.close()">
       <i class="zmdi zmdi-close"></i>
   </a>
 </p>
