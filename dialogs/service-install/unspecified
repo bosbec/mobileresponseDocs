@@ -2,7 +2,7 @@
     <p>
   <img src="http://bosbec.io/res/bosbec_navbar_logo_svg.svg" style="width: 150px;">
 </p>
-<div style="width:  100%;">
+<div class="service-width">
         <div style="float: left; width:  30%;">
         <img style="max-height:100%; max-width:100%;" src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/152079/4103610/o7rzJxK3UHNhPnZ/placeholder%20installer.png"></div>
 <div style="
@@ -29,3 +29,11 @@
       </div>
 </div>
 </div>
+
+<style>
+.service-width {
+    width: 100%;
+}
+
+
+</style>
