@@ -1,9 +1,6 @@
 <div>
     <p>
   <img class="service-logo" src="http://bosbec.io/res/bosbec_navbar_logo_svg.svg">
-  //<a class="service-float-right" ng-click="stw.close()">
-    //  <i class="zmdi zmdi-close"></i>
- // </a>
 </p>
 <div class="service-width-100">
         <div class="service-image-container">
