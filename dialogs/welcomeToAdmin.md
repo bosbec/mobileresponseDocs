@@ -3,7 +3,7 @@
 </p>
 
 
-### <center>As powerful and complex as it is simple and intuitive.</center>
+### <center>Welcome to the administrative interface for your Bosbec-account</center>
 
 
 
@@ -11,12 +11,8 @@
 
 
 
-Welcome to the administrative interface for your Bosbec-account.
-From here you are able to manage your groups, execute workflows, overview statistics and much, much more.
+Since this is your first visit we just wanted to show you a few things. Please follow the next few steps to see key areas of the interface and what you need to do to get started.
 
-
-
-Welcome to experience the power of Bosbec.
 
 
 
