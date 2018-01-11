@@ -11,7 +11,7 @@
 
 
 
-Since this is your first visit we just wanted to show you a few things. Please follow the next few steps to see key areas of the interface and what you need to do to get started.
+Since this is your first visit we just wanted to show you a few things. The next steps will highlight key areas of the interface and what you need to do to get started.
 
 
 
