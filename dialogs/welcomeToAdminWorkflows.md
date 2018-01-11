@@ -15,4 +15,4 @@ Resources can be used by the jobs if you for example want to send a message to a
 
 The workflows are built using the workflow builder which is a webbased GUI that can be found in the workflows section.
 
-More information about workflows can be found here: <a href="http://help.bosbec.io">help.bosbec.io</a>
+More information about workflows can be found here: <a href="http://help.bosbec.io" target="_blank">help.bosbec.io</a>
