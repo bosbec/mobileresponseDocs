@@ -11,7 +11,7 @@
 
 
 
-Since this is your first visit we just wanted to show you a few things. The next steps will highlight key areas of the interface and what you need to do to get started.
+Since this is your first visit we just wanted to show you a few things. The next steps will highlight some key concepts in the platform and show important parts of the interface.
 
 
 
