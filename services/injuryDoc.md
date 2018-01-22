@@ -19,29 +19,29 @@ Report ticket
 * The expected way to initialize an injury incident is through app-in, by sending "injury" to the predefined base app user, which will give you back a form with the start questions.
 * Submitting the form will start a new incident ticket and will notify management, who are then expected to appoint a moderator to follow up the incident. This notification contains the answers from the start form.
 * You - the requester - will also get a confirmation message back, to let you know that the ticket was successfully started.
-* You can select to use a reminder for this when using admin, by entering an interval in minutes. It will go to management, as long as a moderator has yet to be appointed. When using app-in, a reminder is automatically activated and set to 20 minutes. 
+* You can select to use a reminder for this when using admin, by entering an interval in minutes. It will be sent to management, if a moderator has yet to be appointed. When using app-in, a reminder is automatically activated and set to 20 minutes. 
 
 Request check-in
 * Used for calling to a meeting, in most cases. Enter a message text. Select a receiver group. All recievers get a form where they can choose to opt-in or out, as well as leave a comment.
 * Currently not available to initialize via app-in.
-* You can select to use a reminder for this when using admin, by entering an interval in minutes. The reminder will go to all those who have not yet answered the check-in form.
+* You can select to use a reminder for this when using admin, by entering an interval in minutes. The reminder will be sent to all those who have received, but not yet answered the check-in form.
 * You can only perform *one* check-in per ticket, currently. Any additional attempts will be intercepted.
 
 Appoint a moderator
 * Task a moderator with following up the injury incident ticket. The moderator gets a message with information and a follow-up-form.
-* Can also be initialized through app-in, by sending "appoint [ticket number]" to the predefined base app user, which will give you back a form.
-* You can select to use a reminder for this when using admin, by entering an interval in minutes. Both management and the appointed moderator will get a reminder as long as the follow-up-form is not completed. When using app-in, a reminder is automatically activated and set to 60 minutes.
+* Can also be initialized through app-in, by replying "appoint" in the ticket conversation, which will give you back a form.
+* You can select to use a reminder for this when using admin, by entering an interval in minutes. Both management and the appointed moderator will get a reminders while the follow-up-form is incomplete. When using app-in, a reminder is automatically activated and set to 60 minutes.
 * It is not possible to *change* an appointed moderator. If you try, a notification about this will be sent to management.
 * When the moderator has submitted answers for all the questions in the follow-up-form, management gets a message about it, so that they can check it and close the ticket.
 
 Update incident
 * Send a message to a group, and set/update status and priority. It is currently the *only* way to change status and priority for this incident type, as it is not set initially, or by the appointed moderator.
-* Can also be initialized through app-in, by sending "update [ticket number]" to the predefined base app user, which will give you back a form.
-* When using admin for this, you can freely select one or more group(s) that will recieve the update. You can also skip sending to any groups, if you only want to update status and/or priority, or leave a comment in the report. When using app-in, management will get the message.
+* Can also be initialized through app-in, by replying "update" in the ticket conversation, which will give you back a form.
+* When using admin for this, you can freely select one or more group(s) that will recieve the update. You can also skip sending to any groups, if you only want to update status and/or priority or leave a comment in the report. When using app-in, management will get the message.
 
 Start group chat
-* Select a group to start a group chat for. A new app user will be created for each ticket + group, so that the group chat is handled in a separate, named conversation in the app. All participants will get an message that the chat has been opened.
-* You can't start several separate chats with the same group, for the same ticket. It will be intercepted.
+* Select a group for which to start a group chat, and enter a start message for it, that will be sent to everyone. A new app user will be created for each ticket + group, so that the group chat is handled in a separate, named conversation in the app. All participants will get an message that the chat has been opened.
+* You can't start several separate chats with the same group, for the same ticket.
 * Currently not available to perform via app-in.
 
 Close group chat
@@ -51,11 +51,11 @@ Close group chat
 
 Close incident
 * Close the incident ticket. Management and the appointed moderator will get notified about this through a message. The message to management also contains a form you can use to add comments to the report post-closing.
-* Can also be performed through app-in, by sending "close [ticket number]" to the predefined base app user.
+* Can also be performed through app-in, by replying "close" in the ticket conversation.
 
 Order report
 * Only available for closed tickets.
-* Can also be performed through app-in, by sending "report [ticket number]" to the predefined base app user.
+* Can also be performed through app-in, by replying "report" in the ticket conversation.
 * Sends the report back to the requester by mail (so e-mail address needs to be set on the unit, for this). The requester will also get an app-message saying that the report has been delivered.
 
 **About access**
