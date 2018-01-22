@@ -10,6 +10,9 @@ A predefined process to facilitate action during an injury event.
 
 **Components**
 
+Send instructions
+* Use this to send instructions (to one group or several) about how to report a ticket via the app. The instruction message will be sent from the predefined base app user, thereby granting all recipients the correct conversation to message in to.
+
 Report ticket
 * Initialize an injury incident by answering some start questions. Note that starting an injury ticket through the icon here in admin is non-standard, and is mostly available for testing purposes.
 * The expected way to initialize an injury incident is through app-in, by sending "injury" to the predefined base app user, which will give you back a form with the start questions.
