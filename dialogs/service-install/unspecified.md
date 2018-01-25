@@ -11,19 +11,20 @@
     <div class="service-cost">€99/month</div>
     </div>
     <div>
-    An incident can come from anywhere. A system failure, a business application going down or a security breach.
+    An incident can come from anywhere; a system failure, a business application going down, or a security breach.
 
-The key success factor is to have a rapid communication process. Quickly, identify the problem and find a solution in order for operations to return to normal.
+The key success factor is to have a rapid communication process, quickly identifying the problem, and finding a solution in order for operations to return to normal.
 
 These are the key features included in the Bosbec Incident Service:
-* Incident group summon
-* Relevant communication
-* Status Update
-* Verification of received information
-* Reminders
-* Chat groups
-* Dynamic forms/checklists
-* Documentation / reports per incident
+
+- Incident group summon
+- Relevant communication
+- Status Update
+- Verification of received information
+- Reminders
+- Chat groups
+- Dynamic forms/checklists
+- Documentation / reports per incident
       </div>
 </div>
 </div>
