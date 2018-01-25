@@ -11,9 +11,7 @@
     <div class="service-cost">€99/month</div>
     </div>
     <div>
-    <p>An incident can come from anywhere; a system failure, a business application going down, or a security breach.</p>
-
-<p>The key success factor is to have a rapid communication process, quickly identifying the problem, and finding a solution in order for operations to return to normal.</p>
+    <p>An incident can come from anywhere; a system failure, a business application going down, or a security breach. The key success factor is to have a rapid communication process, quickly identifying the problem, and finding a solution in order for operations to return to normal.</p>
 
 <p>These are the key features included in the Bosbec Incident Service:</p>
 
