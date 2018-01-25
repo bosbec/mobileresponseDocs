@@ -13,18 +13,20 @@
     <div>
     <p>An incident can come from anywhere; a system failure, a business application going down, or a security breach.</p>
 
-The key success factor is to have a rapid communication process, quickly identifying the problem, and finding a solution in order for operations to return to normal.
+<p>The key success factor is to have a rapid communication process, quickly identifying the problem, and finding a solution in order for operations to return to normal.</p>
 
-These are the key features included in the Bosbec Incident Service:
+<p>These are the key features included in the Bosbec Incident Service:</p>
 
-- Incident group summon
-- Relevant communication
-- Status Update
-- Verification of received information
-- Reminders
-- Chat groups
-- Dynamic forms/checklists
-- Documentation/reports per incident
+<ul>
+<li>Incident group summon</li>
+<li>Relevant communication</li>
+<li>Status Update</li>
+<li>Verification of received information</li>
+<li>Reminders</li>
+<li>Chat groups</li>
+<li>Dynamic forms/checklists</li>
+<li>Documentation/reports per incident</li>
+    </ul>
       </div>
 </div>
 </div>
