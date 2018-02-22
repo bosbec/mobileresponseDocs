@@ -21,9 +21,13 @@ Order report
 * Only available for closed tickets.
 * Compiles a report for the selected ticket and sends that to everyone in management by mail (so e-mail addresses needs to be set on the units there).
 
+**About roles**
+
+There are three roles in this setup: Management, moderators and others.
+
 **About access**
 
-* In order to perform any of the steps for this incident type, you generally need to be represented by a unit in the "Checkin incident management" group.
+* In order to perform any of the steps for this incident type, the requester needs to be represented by a unit in the management group.
 * Connection to a unit is currently done through phone number, so units need to have that set.
-* When using the service steps here in admin, the default behaviour is that the phone number of the logged in administrator is used for identification. You can override this by entering another phone number manually when performing a service step. But it needs to be the phone number of a unit that is allowed to perform the service step.
-* When using app-in, you need to have registered the phone number for the app user (and have a unit with that phone number in one of the allowed groups).
+* When using the service in admin, the requester is automatically set to the logged in administrator, so make sure that there is a unit in the management group that has the same phone number as the administrator.
+
