@@ -2,7 +2,7 @@ Incident Service
 ============
 ## Checkin Incident ##
 
-A predefined process to facilitate action during an event that requires check-in where people are split up into groups, each with a responsible "moderator".
+A predefined process to facilitate action during an event which requires check-in from a range of people in the organization.
 
 **Overview**
 
@@ -10,23 +10,16 @@ A predefined process to facilitate action during an event that requires check-in
 
 **Components**
 
-Report ticket
-* Initialize an injury incident by answering some start questions. Note that starting an injury ticket through the icon here in admin is non-standard, and is mostly available for testing purposes.
-* The expected way to initialize an injury incident is through app-in, by sending "injury" to the predefined base app user, which will give you back a form with the start questions.
-* Submitting the form will start a new incident ticket and will notify management, who are then expected to appoint a moderator to follow up the incident. This notification contains the answers from the start form.
-* You - the requester - will also get a confirmation message back, to let you know that the ticket was successfully started.
-* You can select to use a reminder for this when using admin, by entering an interval in minutes. It will be sent to management, if a moderator has yet to be appointed. When using app-in, a reminder is automatically activated and set to 20 minutes. 
-
 Request check-in
-* Select receiving moderators (which also selects their groups). Write the message that will be sent to each moderator, and then the message that will be sent to each individual in their groups.
-* When run, this action initializes a new incident ticket and sends a confirmation about this to everyone in management. Immediately after that, all moderators receive a message with the text you submitted plus a checkbox form listing all the people in their group.
+* Select receiving moderators (this also selects their groups). Write the message that will be sent to each moderator, and then write the message that will be sent to each individual in their groups.
+* When run, this action initializes a new incident ticket and sends a confirmation about this to everyone in management. Immediately after that, all moderators receive a message with the text you submitted plus a checkbox form listing all the people in their group. All the people in each moderators' group receives the sencond message you composed, plus a form with a simple check-in-form.
 
 Close incident
-* Close the incident ticket. Management will get notified about this through a message.
+* Close the incident ticket. Management will get notified about this through sms.
 
 Order report
 * Only available for closed tickets.
-* Compiles a report for the selected ticket and sends that to everyone in management, by mail (so e-mail address needs to be set on the unit, for this). The requester will also get an app-message saying that the report has been delivered.
+* Compiles a report for the selected ticket and sends that to everyone in management by mail (so e-mail addresses needs to be set on the units there).
 
 **About access**
 
