@@ -32,5 +32,5 @@ There are three roles in this setup: Management, moderators and others.
 **About access**
 
 * In order to perform any of the steps for this incident type, the requester needs to be represented by a unit in the management group.
-* Connection to a unit is currently done through phone number, so units need to have that set.
+* Connection to a unit is currently done through phone number, so units need to have that set. Also make sure that there aren't several units on the account with the same phone number, as this will cause issues (especially for the management units).
 * When using the service in admin - which is the only option for now - the requester is automatically set to the logged in administrator, so make sure that there is a unit in the management group that has the same phone number as the administrator. If not, no action will be allowed.
