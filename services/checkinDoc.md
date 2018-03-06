@@ -34,3 +34,7 @@ There are three roles in this setup: Management, moderators and others.
 * In order to perform any of the steps for this incident type, the requester needs to be represented by a unit in the management group.
 * Connection to a unit is currently done through phone number, so units need to have that set. Also make sure that there aren't several units on the account with the same phone number, as this will cause issues (especially for the management units).
 * When using the service in admin - which is the only option for now - the requester is automatically set to the logged in administrator, so make sure that there is a unit in the management group that has the same phone number as the administrator. If not, no action will be allowed.
+
+**Gotchas**
+
+* People that are expected to check in need both firstname and lastname set on their units. It is these that will be used as alternative texts in the moderator forms. Also: keep in mind that if two or more people in the same group share the exact same first- and lastname, there is no way for the moderator (or this service) to differentiate them.
