@@ -1,5 +1,3 @@
-## Write and send messages ##
-
 This service is used to write and send messages towards groups, specific group members, or individual recipients.
 
 **Instructions**
