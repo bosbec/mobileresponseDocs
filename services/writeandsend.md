@@ -9,3 +9,5 @@ This service is used to write and send messages towards groups, specific group m
 * Click on "Next Step".
 * An overview of the current message and the selected recipients is shown.
 * Click on "Run" to send the messages.
+
+Messages will be sent via the Bosbec app; if the recipient does not have an app user, the message will be sent via SMS.
