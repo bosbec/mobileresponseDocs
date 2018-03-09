@@ -1,3 +1,5 @@
+The Risk Assessment app conversation can be started by sending "App" to the previously used numbers.
+
 **Send RA Invite**
 
 This service is used when a user is having trouble starting the app conversation. A message is sent to the user in the app and the conversation is started.
