@@ -10,7 +10,7 @@ For each call to the rest api you must include your “api-token” and declare 
 
 You can find your api token, or create a new one, under Tools -> REST-api tokens in the top navigation menu.
 
-### Request Case 1
+##### Request Case 1
 
 Create code and send message to user
 
@@ -65,7 +65,7 @@ Create code and send message to user
 }
 ```
 
-### Request case 2
+##### Request case 2
 
 Create code, send message to user and include the generated code in response
 
