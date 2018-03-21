@@ -29,7 +29,7 @@ Create code and send message to user
 
 ```
 {
-"processId": "5506eeff-169a-406b-b4a5-87d7f49148df",
+"processId": "00000000-0000-0000-0000-000000000000",
 "created": "2017-05-05T06:59:53.3720470Z"
 }
 ```
@@ -60,7 +60,7 @@ Create code and send message to user
   "data": {
     "code-is-valid": "false"
   },
-  "processId": "ff5ba0a0-09c3-4ebb-99e5-64eca041096d",
+  "processId": "00000000-0000-0000-0000-000000000000",
   "executionTime": 585
 }
 ```
@@ -94,7 +94,7 @@ Create code, send message to user and include the generated code in response
   "data": {
     "current-code": "12345"
   },
-  "processId": "5c657f4a-1f7d-4c7f-8b91-f11d88d1b834",
+  "processId": "00000000-0000-0000-0000-000000000000",
   "executionTime": 880
 }
 ```
