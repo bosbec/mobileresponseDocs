@@ -1,7 +1,3 @@
-Incident Service
-============
-## Unspecified Incident ##
-
 A predefined process to facilitate action during an unspecified event.
 
 **Overview**
