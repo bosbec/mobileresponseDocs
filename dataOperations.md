@@ -19,6 +19,7 @@ What the different data-operations does:
     This example is from a demo where the input test1 and test2 were two texts in WFC resources and the result of the concat-operation was used as body in a HTML-email.  
     **With indata:** test1 = Workflow, test2 = Hello!  
 	**The result was:** “&lt;h2&gt;Workflow: Hello!&lt;/h2&gt;”
+	Should a specified key have no value, a default value (in this case "1") can be assigned by using the following format; {metadata.key:1}
 - Calculate data
 	- Works like the CalculateValueFromMetadata job does.
 - Extract value regex
