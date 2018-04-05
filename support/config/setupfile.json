@@ -1,0 +1,46 @@
+            {
+            "categories": [
+                        {
+                "name": "API",
+                "img": "/Content/background.jpg",
+                "value": "API"
+            },
+                        {
+                "name": "Billing",
+                "img": "/Content/background.jpg",
+                "value": "Billing"
+            },
+                        {
+                "name": "Delivery problems",
+                "img": "/Content/background.jpg",
+                "value": "DeliveryProblems"
+            },
+            {
+                "name": "Payment problems",
+                "img": "/Content/background.jpg",
+                "value": "PaymentProblems"
+            },
+            {
+                "name": "Sales",
+                "img": "/Content/background.jpg",
+                "value": "Sales"
+            }, 
+            {
+                "name": "Services",
+                "img": "/Content/background.jpg",
+                "value": "Services"
+            },
+            {
+                "name": "Web applications",
+                "img": "/Content/background.jpg",
+                "value": "WebApplications"
+            },
+            {
+            "name": "Other",
+            "img": "/Content/background.jpg",
+            "value": "Other"
+            }
+
+
+            ]
+            }
