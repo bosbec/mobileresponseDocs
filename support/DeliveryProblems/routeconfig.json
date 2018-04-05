@@ -1,9 +1,5 @@
 {
-"routeconfig":
-[
-{
-},
-{
-}
-]
+  "MessageNotReceived" : "https://github.com/bosbec/mobileresponseDocs/edit/master/support/DeliveryProblems/MessageNotReceived.md",
+  "FaultyMessage" : "https://github.com/bosbec/mobileresponseDocs/edit/master/support/DeliveryProblems/FaultyMessage.md",
+  "WrongSenderName" : "https://github.com/bosbec/mobileresponseDocs/edit/master/support/DeliveryProblems/WrongSenderName.md"
 }
