@@ -1,3 +1,6 @@
 {
- "DeliveryProblems" : "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/DeliveryProblems/routeconfig.md" 
+ "DeliveryProblems" :{
+    "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/DeliveryProblems/routeconfig.md",
+    "subcategories": "true"
+    }
 }
