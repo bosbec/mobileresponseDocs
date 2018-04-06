@@ -6,7 +6,6 @@
          b. You can check the delivery status of your message on the "Message History" page found in
             the top navigation menu.
 2. Are there any current issues reported on the status page?
-
         a. You can find the status page [here](https://www.google.com)
 3. To look for errors on the individual device, the following steps should be taked.
 
