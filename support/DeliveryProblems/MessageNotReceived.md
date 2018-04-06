@@ -1,4 +1,4 @@
-#### Troubleshooting
+#### Troubleshooting ###
 
 1. Did the message get sent?
 
@@ -17,11 +17,3 @@
 
 Still having trouble?
 Contact support
-
-
-1. Dog
-    1. German Shepherd
-    2. Belgian Shepherd
-2. Cat
-    1. Siberian
-    2. Siamese
