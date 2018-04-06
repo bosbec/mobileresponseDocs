@@ -11,8 +11,7 @@
 
         a. Reboot phone to refresh network signal
         b. Check if there are any phone applications / settings that are filtering SMS
-c. Clear phone inbox to ensure it is not full (for old phones with limited sms capacity)
-
+        c. Clear phone inbox to ensure it is not full (for old phones with limited sms capacity)
         d. Alternatively, you may swap the SIM to another phone to verify if delivery issue is phone related
 
 Still having trouble?
