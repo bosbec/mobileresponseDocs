@@ -1,8 +1,10 @@
 #### Troubleshooting
 
 1. Did the message get sent?
-    a.  Make sure the recipient number is correct.
-    b.  You can check the delivery status of your message on the "Message History" page found in the top navigation menu.
+
+         a. Make sure the recipient number is correct.
+         b. You can check the delivery status of your message on the "Message History"
+         page found in the top navigation menu.
 2. Are there any current issues reported on the status page?
 
         a. You can find the status page [here](https://www.google.com)
