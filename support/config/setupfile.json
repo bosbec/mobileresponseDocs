@@ -7,7 +7,7 @@
             },
                         {
                 "name": "Billing",
-                "img": "../res/job.png",
+                "img": "../res/jobs.png",
                 "value": "Billing"
             },
                         {
@@ -17,7 +17,7 @@
             }, 
             {
                 "name": "Web applications",
-                "img": "../res/job.png",
+                "img": "../res/jobs.png",
                 "value": "WebApplications"
             },
             {
