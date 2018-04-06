@@ -1,1 +1,15 @@
 
+{
+ "ChangeBillingDetails" :{
+    "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/Billing/ChangeBillingDetails.md",
+    "subcategories": "false"
+    },
+   "PaymentProblems" :{
+    "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/Billing/PaymentProblems.md",
+    "subcategories": "false"
+    },
+     "FaultyMessage" :{
+    "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/Billing/FaultyMessage.md",
+    "subcategories": "false"
+    }
+}
