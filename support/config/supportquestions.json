@@ -4,7 +4,13 @@
 			"title": "Message",
 			"placeholder": "The details you want to change.",
 			"type": "false",
-			"id": "message"
+			"id": "changebillingdetails"
+		}],
+		"PaymentProblems": [{
+			"title": "Message",
+			"placeholder": "Enter message here.",
+			"type": "false",
+			"id": "paymentproblems"
 		}],
 		"FaultyMessage": [{
 			"title": "Message",
@@ -44,55 +50,46 @@
 			"id": "errorMsg"
 		}
 	],
-	"WebApplications": [{
+	"WebApplications":{
+		"Other": [
+			{
 			"title": "Web application",
 			"placeholder": "The web application you are having issues with.",
 			"type": "true",
 			"id": "webApp"
-		},
-		{
-			"title": "Error message(if any)",
-			"placeholder": "Error message from the api.",
+			},
+			{
+				"title": "Error message(if any)",
+				"placeholder": "Error message from the api.",
+				"type": "false",
+				"id": "errorMsg"
+			},
+			{
+				"title": "What did you expect to happen",
+				"placeholder": "Describe what you expected to happen.",
+				"type": "false",
+				"id": "whatExpect"
+			},
+			{
+				"title": "What happened",
+				"placeholder": "Describe what happened.",
+				"type": "false",
+				"id": "whatHappened"
+			},
+			{
+				"title": "Details",
+				"placeholder": "Any additional details.",
+				"type": "false",
+				"id": "details"
+			}
+		],
+		"Services": [{
+			"title": "What kind of service do you require?",
+			"placeholder": "Enter message here.",
 			"type": "false",
-			"id": "errorMsg"
-		},
-		{
-			"title": "What did you expect to happen",
-			"placeholder": "Describe what you expected to happen.",
-			"type": "false",
-			"id": "whatExpect"
-		},
-		{
-			"title": "What happened",
-			"placeholder": "Describe what happened.",
-			"type": "false",
-			"id": "whatHappened"
-		},
-		{
-			"title": "Details",
-			"placeholder": "Any additional details.",
-			"type": "false",
-			"id": "details"
-		}
-	],
-	"Services": [{
-		"title": "What kind of service do you require?",
-		"placeholder": "Enter message here.",
-		"type": "false",
-		"id": "message"
-	}],
-	"PaymentProblems": [{
-		"title": "Message",
-		"placeholder": "Enter message here.",
-		"type": "false",
-		"id": "message"
-	}],
-	"Sales": [{
-		"title": "Message",
-		"placeholder": "Enter message here.",
-		"type": "false",
-		"id": "message"
-	}],
+			"id": "message"
+		}]
+   },
 	"Other": [{
 		"title": "Message",
 		"placeholder": "Enter message here.",
