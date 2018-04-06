@@ -1,4 +1,4 @@
-#### Troubleshooting
+#### Troubleshooting ###
 1. Did the message get sent?
 	a. Make sure the recipient number is correct.
 	b. You can check the delivery status of your message on the "Message History" page found in the top navigation menu.
