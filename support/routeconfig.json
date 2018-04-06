@@ -4,15 +4,15 @@
     "subcategories": "false"
     },
     "Billing" :{
-    "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/Billing/routeconfig.md",
+    "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/Billing/routeconfig.json",
     "subcategories": "true"
     },
     "DeliveryProblems" :{
-    "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/DeliveryProblems/routeconfig.md",
+    "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/DeliveryProblems/routeconfig.json",
     "subcategories": "true"
     },
    "WebApplications" :{
-    "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/WebApplications/routeconfig.md",
+    "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/WebApplications/routeconfig.json",
     "subcategories": "true"
     },
    "Other" :{
