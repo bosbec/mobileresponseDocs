@@ -1,23 +1,23 @@
 {
    "API" :{
     "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/Api/API.md",
-    "subcategories": "false"
+    "subcategories": false
     },
     "Billing" :{
     "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/Billing/routeconfig.json",
-    "subcategories": "true"
+    "subcategories": true
     },
     "DeliveryProblems" :{
     "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/DeliveryProblems/routeconfig.json",
-    "subcategories": "true"
+    "subcategories": true
     },
    "WebApplications" :{
     "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/WebApplications/routeconfig.json",
-    "subcategories": "true"
+    "subcategories": true
     },
    "Other" :{
     "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/Other/Other.md",
-    "subcategories": "false"
+    "subcategories": false
     }
  
  
