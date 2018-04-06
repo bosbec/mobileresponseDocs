@@ -1,1 +1,11 @@
 
+{
+ "Services" :{
+    "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/WebApplications/Services.md",
+    "subcategories": "false"
+    },
+     "Other" :{
+    "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/WebApplications/Other.md",
+    "subcategories": "false"
+    }
+}
