@@ -3,4 +3,8 @@
     "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/DeliveryProblems/routeconfig.md",
     "subcategories": "true"
     }
+  "API" :{
+    "link": "https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/support/DeliveryProblems/Api.md",
+    "subcategories": "true"
+    }
 }
