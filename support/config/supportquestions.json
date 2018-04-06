@@ -51,6 +51,37 @@
 		}
 	],
 	"WebApplications":{
+		
+		"Services": [{
+			"title": "The Service you are having issues with.",
+			"placeholder": "Enter message here.",
+			"type": "false",
+			"id": "message"
+			},
+			{
+				"title": "Error message(if any)",
+				"placeholder": "Error message.",
+				"type": "false",
+				"id": "errorMsg"
+			},
+			{
+				"title": "What did you expect to happen",
+				"placeholder": "Describe what you expected to happen.",
+				"type": "false",
+				"id": "whatExpect"
+			},
+			{
+				"title": "What happened",
+				"placeholder": "Describe what happened.",
+				"type": "false",
+				"id": "whatHappened"
+			},
+			{
+				"title": "Details",
+				"placeholder": "Any additional details.",
+				"type": "false",
+				"id": "details"
+			}],
 		"Other": [
 			{
 			"title": "Web application",
@@ -82,13 +113,8 @@
 				"type": "false",
 				"id": "details"
 			}
-		],
-		"Services": [{
-			"title": "What kind of service do you require?",
-			"placeholder": "Enter message here.",
-			"type": "false",
-			"id": "message"
-		}]
+		]
+
    },
 	"Other": [{
 		"title": "Message",
