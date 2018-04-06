@@ -2,27 +2,27 @@
             "categories": [
                         {
                 "name": "API",
-                "img": "..res/unit.png",
+                "img": "../res/unit.png",
                 "value": "API"
             },
                         {
                 "name": "Billing",
-                "img": ".res/job.png",
+                "img": "../res/job.png",
                 "value": "Billing"
             },
                         {
                 "name": "Delivery problems",
-                "img": "/.res/message.png",
+                "img": "../res/message.png",
                 "value": "DeliveryProblems"
             }, 
             {
                 "name": "Web applications",
-                "img": ".res/job.png",
+                "img": "../res/job.png",
                 "value": "WebApplications"
             },
             {
             "name": "Other",
-            "img": ".res/trigger.png",
+            "img": "../res/trigger.png",
             "value": "Other"
             }
 
