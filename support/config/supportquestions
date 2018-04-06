@@ -1,0 +1,296 @@
+{
+            value: 'Billing',
+            name: 'Billing',
+            subCategories: [
+                {
+                    value: 'ChangeBillingDetails',
+                    name: 'Change billing details',
+                    items: [
+                        {
+                            title: 'Message',
+                            placeholder: 'The details you want to change.',
+                            type: false,
+                            id: 'message'
+                        }]
+                },
+                {
+                    value: 'FaultyMessage',
+                    name: 'Faulty message',
+                    items: [
+                        {
+                            title: 'Message',
+                            placeholder: 'Describe what is wrong.',
+                            type: true,
+                            id: 'message'
+                        }]
+                }
+            ]
+        },
+        {
+            value: 'API',
+            name: 'API',
+            items: [
+                {
+                    title: 'Function',
+                    placeholder: 'The function used.',
+                    type: true,
+                    id: 'function'
+                },
+                {
+                    title: 'When',
+                    placeholder: 'When did you experience the problem. Try being as specific as possible.',
+                    type: true,
+                    id: 'when'
+                },
+                {
+                    title: 'What did you expect to happen',
+                    placeholder: 'Describe what you expected to happen.',
+                    type: false,
+                    id: 'whatExpect'
+                },
+                {
+                    title: 'What happened',
+                    placeholder: 'Describe what happened.',
+                    type: false,
+                    id: 'whatHappened'
+                },
+                {
+                    title: 'Error message(if any)',
+                    placeholder: 'Error message from the api.',
+                    type: false,
+                    id: 'errorMsg'
+                }
+            ]
+        },
+        {
+            value: 'WebApplications',
+            name: 'Web applications',
+            items: [
+                {
+                    title: 'Web application',
+                    placeholder: 'The web application you are having issues with.',
+                    type: true,
+                    id: 'webApp'
+                },
+                {
+                    title: 'Error message(if any)',
+                    placeholder: 'Error message from the api.',
+                    type: false,
+                    id: 'errorMsg'
+                },
+                {
+                    title: 'What did you expect to happen',
+                    placeholder: 'Describe what you expected to happen.',
+                    type: false,
+                    id: 'whatExpect'
+                },
+                {
+                    title: 'What happened',
+                    placeholder: 'Describe what happened.',
+                    type: false,
+                    id: 'whatHappened'
+                },
+                {
+                    title: 'Details',
+                    placeholder: 'Any additional details.',
+                    type: false,
+                    id: 'details'
+                }
+            ]
+        },
+        {
+            value: 'Services',
+            name: 'Service',
+            items: [
+                {
+                    title: 'What kind of service do you require?',
+                    placeholder: 'Enter message here.',
+                    type: false,
+                    id: 'message'
+                }
+            ]
+        },
+        {
+            value: 'PaymentProblems',
+            name: 'Payment problems',
+            items: [
+                {
+                    title: 'Message',
+                    placeholder: 'Enter message here.',
+                    type: false,
+                    id: 'message'
+                }
+            ]
+        },
+        {
+            value: 'Sales',
+            name: 'Sales',
+            items: [
+                {
+                    title: 'Message',
+                    placeholder: 'Enter message here.',
+                    type: false,
+                    id: 'message'
+                }
+            ]
+        },
+        {
+            value: 'Other',
+            name: 'Other',
+            items: [
+                {
+                    title: 'Message',
+                    placeholder: 'Enter message here.',
+                    type: false,
+                    id: 'message'
+                }
+            ]
+        },
+        {
+            value: 'DeliveryProblems',
+            name: 'Delivery problems',
+            subCategories: [
+                {
+                    value: 'MessageNotReceived',
+                    name: 'Message not received',
+                    items: [
+                        {
+                            title: 'When',
+                            placeholder: 'When did you experience the problem. Try being as specific as possible.',
+                            type: true,
+                            id: 'when'
+                        },
+                        {
+                            title: 'Country',
+                            placeholder: 'Country where the recipient is located.',
+                            type: true,
+                            id: 'country'
+                        }
+                        ,
+                        {
+                            title: 'Recipients',
+                            placeholder: 'Phone numbers or email addresses.',
+                            type: false,
+                            id: 'recipients'
+                        },
+                        {
+                            title: 'Recipients for testing',
+                            placeholder: 'Phone numbers or email addresses to whom we can send test messages. You need to be able to contact the recipients to get the test results back.',
+                            type: false,
+                            id: 'recipientstesting'
+                        },
+                        {
+                            title: 'Operator(if known)',
+                            placeholder: 'Operator of the recipients. if known!',
+                            type: true,
+                            id: 'operator'
+                        },
+                        {
+                            title: 'Message sent',
+                            placeholder: 'Sent message.',
+                            type: false,
+                            id: 'messagesent'
+                        },
+                        {
+                            title: 'Details',
+                            placeholder: 'Any additional details.',
+                            type: false,
+                            id: 'details'
+                        }]
+                },
+                {
+                    value: 'WrongSenderName',
+                    name: 'Wrong Sender name',
+                    items: [
+                        {
+                            title: 'When',
+                            placeholder: 'When did you experience the problem. Try being as specific as possible.',
+                            type: true,
+                            id: 'when'
+                        },
+                        {
+                            title: 'Recipients',
+                            placeholder: 'Phone numbers or email addresses.',
+                            type: false,
+                            id: 'recipients'
+                        },
+                        {
+                            title: 'Recipients for testing',
+                            placeholder: 'Phone numbers or email addresses to whom we can send test messages. You need to be able to contact the recipients to get the test results back.',
+                            type: false,
+                            id: 'recipientstesting'
+                        },
+                        {
+                            title: 'Operator(if known)',
+                            placeholder: 'Operator of the recipients. if known!',
+                            type: true,
+                            id: 'operator'
+                        },
+                        {
+                            title: 'Expected sender name',
+                            placeholder: 'The name chosen to be the sender.',
+                            type: true,
+                            id: 'expectedsendername'
+                        },
+                        {
+                            title: 'Received sender name',
+                            placeholder: 'The name the phone displays as sender.',
+                            type: true,
+                            id: 'receivedsendername'
+                        },
+                        {
+                            title: 'Details',
+                            placeholder: 'Any additional details.',
+                            type: false,
+                            id: 'details'
+                        }]
+                },
+                {
+                    value: 'FaultyMessage',
+                    name: 'Faulty message',
+                    items: [
+                        {
+                            title: 'When',
+                            placeholder: 'When did you experience the problem. Try being as specific as possible.',
+                            type: true,
+                            id: 'when'
+                        },
+                        {
+                            title: 'Recipients',
+                            placeholder: 'Phone numbers or email addresses.',
+                            type: false,
+                            id: 'recipients'
+                        },
+                        {
+                            title: 'Recipients for testing',
+                            placeholder: 'Phone numbers or email addresses to whom we can send test messages. You need to be able to contact the recipients to get the test results back.',
+                            type: false,
+                            id: 'recipientstesting'
+                        },
+                        {
+                            title: 'Operator(if known)',
+                            placeholder: 'Operator of the recipients. if known!',
+                            type: true,
+                            id: 'operator'
+                        },
+                        {
+                            title: 'Sent message',
+                            placeholder: 'Sent message.',
+                            type: false,
+                            id: 'messagesent'
+                        },
+                        {
+                            title: 'Received message',
+                            placeholder: 'Received message.',
+                            type: false,
+                            id: 'receivedmessage'
+                        },
+                        {
+                            title: 'Details',
+                            placeholder: 'Any additional details.',
+                            type: false,
+                            id: 'details'
+                        }]
+                }
+            ]
+        }
