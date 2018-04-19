@@ -2,9 +2,8 @@ An excellent way to test your API calls is to use our Swagger Documentation. You
 
 ##### Sending SMS
 
-**POST: https://rest.mobileresponse.se/2/workflows**
-
 ```
+POST: https://rest.mobileresponse.se/2/workflows
 {
   "workflowid": "00000000-0000-0000-0000-000000000000",
   "metadata": {
@@ -17,9 +16,11 @@ An excellent way to test your API calls is to use our Swagger Documentation. You
 
 ##### Get delivery report (with processID from previous response)
 
-**GET: https://rest.mobileresponse.se/1/messages/00000000-0000-0000-0000-000000000000**
+```
+GET: https://rest.mobileresponse.se/1/messages/00000000-0000-0000-0000-000000000000
+```
 
-**Response:**
+Response:
 
 ```
 {
