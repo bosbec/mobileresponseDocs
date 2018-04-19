@@ -37,18 +37,18 @@ An excellent way to test your API calls is to use our Swagger Documentation. You
 ```
 
 **Possible message statuses;**
-(0) Waiting
-(1) Queued
-(2) Error
-(3) WaitingForAck
-(4) Sent
-(5) Failed
-(6) Delivered
-(7) Expired
-(8) None
-(9) Deleted
-(10) Undeliverable
-(11) Accepted
-(12) Unknown
-(13) Rejected
-(14) Throttled
+* (0) Waiting
+* (1) Queued
+* (2) Error
+* (3) WaitingForAck
+* (4) Sent
+* (5) Failed
+* (6) Delivered
+* (7) Expired
+* (8) None
+* (9) Deleted
+* (10) Undeliverable
+* (11) Accepted
+* (12) Unknown
+* (13) Rejected
+* (14) Throttled
