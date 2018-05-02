@@ -28,4 +28,4 @@ The service currently handles these specific errors:
 **Gotchas**
 
 * The administrator needs to have an email address set in order to receive error notifications.
-* Any account errors are listed in admin, under Tools -> Account errors, regardless of if you have this service or not. The service only handles notifying you about them.
+* Any account errors are listed in admin, under Tools -> Account errors, regardless of if you have this service or not (you need to have sufficient permissions to see them, though). The service only handles notifying you about them.
