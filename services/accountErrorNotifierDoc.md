@@ -15,7 +15,7 @@ Update wait period
 * This changes the buffer period, explained above. Submit number of minutes.
 
 Reset counters
-* Shouldn't have to be used by a regular user. It's more of a development aid. Some actions, like inactivating the workflow while it is in a buffer wait period, will cause the counters to not reset properly. The counters are automatically reset at midnight every day, but you can use this function to reset them manually.
+* Shouldn't have to be used by a regular user. It's more of a development aid. Some actions, like inactivating the workflow while it is in a buffer wait period, will cause the counters to not reset properly, causing no notifications to get sent. The counters are automatically reset at midnight every day, but you can use this function to reset them manually.
 
 **Error types**
 
