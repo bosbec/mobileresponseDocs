@@ -11,11 +11,11 @@ This service notifies the account administrator of errors that occur "behind the
 
 **Components**
 
-Reset counters
-* Shouldn't have to be used, normally. Some actions, like inactivating the workflow while it is in a buffer wait period, will cause the counters to not reset properly. The counters are automatically reset at midnight every day, but you can use this function to reset them manually, if you want to.
-
 Update wait period
 * This changes the buffer period, explained above. Submit number of minutes.
+
+Reset counters
+* Shouldn't have to be used by a regular user. It's more of a development aid. Some actions, like inactivating the workflow while it is in a buffer wait period, will cause the counters to not reset properly. The counters are automatically reset at midnight every day, but you can use this function to reset them manually.
 
 **Error types**
 
