@@ -6,8 +6,12 @@
 ### <center>Billing</center>
 
 
-It is important to know that each account has its own "Account Balance" and the balance consists of credits. Credits can be purchased through PayPal at the moment. You can find that in the "Settings->Billing" menu. There are two types of charges, periodic (monthly fee, services) and consumption based (sms, email). 
+It is important to know that each account has its own "Account Balance" and the balance consists of credits.
+
+Credits can be purchased through PayPal and credit card. You can find that in the "Settings->Account Balance" menu.
+
+There are two types of charges, periodic (monthly fee, services) and consumption based (sms, email). 
 
 If your balance drops to zero no messages will be sent and you need to purchase new credits to continue to use your account.
 
-You can find your orders in "Settings->Orders". 
+You can find your orders via the billing page. 
