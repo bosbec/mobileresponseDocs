@@ -4,7 +4,7 @@ This service provides a way to send zipped files to recipients, by mail.
 
 The service does two things:
 
-1) Whenever a file is uploaded to the Mobile Response file library (through admin, for example), the workflow will create a unit containing information about that file. These "file-reference" units can then be found in the dynamic group "Uploaded files" on the account.
+1) Whenever a file is uploaded to the Mobile Response file library (through admin, for example), the workflow will create a unit containing information about that file. These "file reference units" can then be found in the dynamic group "Uploaded files" on the account.
 
 2) When the service is run, you will be prompted to select a file, a group to send to and some optional settings (see below). This will result in mails with attached zip files.
 
@@ -12,8 +12,8 @@ The service does two things:
 
 Zip and send file
 * When you click this, you are prompted to select, in order:
-1) The file you want to zip and send. The files are listed by file name and creation time.
-2) The receiving group(s). Members of these groups will receive the zip by mail.
+1) The file you want to zip and send. The files are listed by file name and creation time. They are represented by units in the group "Uploaded files" (see above).
+2) The receiving group(s). All members of these groups will receive the zip by mail.
 3) The zip filename. Optional. Is you leave it blank, it will be set to [original filename] + .zip.
 4) The zip password. Optional. If you leave it blank, the zip will not be password protected.
 5) Mail subject. Optional If you leave it blank, it will be set to "A zipped file from Mobile Response".
@@ -21,4 +21,5 @@ Zip and send file
 
 **Gotchas**
 
-* only files from when service is installed
+* The service only sends e-mails, currently. Make sure the recieving group members have e-mail addresses set on them.
+* Since files are selected through "file reference units", which are created by this service, you cannot select files that you uploaded before installing the service.
