@@ -20,6 +20,16 @@ When you click this, you are prompted to select, in order:
 2) The receiving group(s). All members of these groups will receive the zip by mail.
 
 
+3) The zip filename. Optional. Is you leave it blank, it will be set to [original filename] + .zip.
+
+
+4) The zip password. Optional. If you leave it blank, the zip will not be password protected.
+
+
+5) Mail subject. Optional If you leave it blank, it will be set to "A zipped file from Mobile Response".
+
+
+6) Mail body. Optional. If you leave it blank, it will be set to "Attached is a a zipped file from Mobile Response."
 
 
 **Gotchas**
