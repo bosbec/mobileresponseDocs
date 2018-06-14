@@ -10,8 +10,7 @@ The service does two things:
 
 **Components**
 
-Zip and send file
-When you click this, you are prompted to select, in order:
+Zip and send file. When you click this, you are prompted to select, in order:
 
 1) The file you want to zip and send. The files are listed by file name and creation time. They are represented by units in the group "Uploaded files" (see above).
 
