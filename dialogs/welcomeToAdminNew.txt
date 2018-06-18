@@ -1,4 +1,4 @@
-https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/dialogs/welcomeToAdmin.md
-https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/dialogs/welcomeToAdminServices.md
-https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/dialogs/welcomeToAdminWorkflows.md
-https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/dialogs/welcomeToAdminBilling.md
+https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/dialogs/welcomeToAdminNew.md
+https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/dialogs/welcomeToAdminServicesNew.md
+https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/dialogs/welcomeToAdminWorkflowsNew.md
+https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/dialogs/welcomeToAdminBillingNew.md
