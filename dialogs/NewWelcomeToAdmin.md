@@ -5,9 +5,9 @@
 
 ### <center>Thank you for creating a Bosbec account</center>
 
-The **Bosbec WE platform** can be used for many purposes. A few preconfigured services will be installed on your account. Which services are installed depends on what solution you signed up for. You can also create completely customized solutions using the **Workflow Builder**. 
+The **Bosbec WE** platform can be used for many purposes. A few preconfigured services will be installed on your account. Which services are installed depends on what solution you signed up for. You can also create completely customized solutions using the **Workflow Builder**. 
 
-Your account is valid for one month of free testing with enough credits to send a few messages. Use your test period to find out how you prefer to use the **Bosbec WE platform**!
+Your account is valid for one month of free testing with enough credits to send a few messages. Use your test period to find out how you prefer to use the **Bosbec WE** platform!
 
 After your trial period ends, you will probably want to continue using the service. Your new favorite service will continue to be available for 199 euros per month + transfer costs for messages.
 
