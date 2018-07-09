@@ -5,16 +5,12 @@
 
 ### <center>Thank you for creating a Bosbec account</center>
 
-This test account is valid for one month of free testing. You're also getting some credits that can be used to send messages. 
+The **Bosbec WE platform** can be used for many purposes. A few preconfigured services will be installed on your account. Which services are installed depends on what solution you signed up for. You can also create completely customized solutions using the **Workflow Builder**. 
 
-After your trial period, you will probably want to continue using the service. Your new favorite service will continue to be available for 199 euros per month* + transfer costs for messages. 
+Your account is valid for one month of free testing with enough credits to send a few messages. Use your test period to find out how you prefer to use the **Bosbec WE platform**!
 
-A few services will be preinstalled on your account. The services are added to your account and not installed locally on your computer. 
+After your trial period ends, you will probably want to continue using the service. Your new favorite service will continue to be available for 199 euros per month + transfer costs for messages.
 
-The Bosbec WE platform can be used for many purposes. Use your test period to find out how you prefer to use the WE Platform. 
+To continue using the service after your test period ends, add your credit card information under **Settings and Billing**. 
 
-You can also create completely customized solutions with the Workflow Builder. 
-
-To continue using the service after your test period ends, add your credit card information under Settings and Billing. 
-
-Should you have any questions during your development journey, please contact us at support@bosbec.com 
+Should you have any questions during your development journey, please contact us at **support@bosbec.com**.
