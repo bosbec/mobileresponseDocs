@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/dialogs/NewWelcomeToAdmin.md
