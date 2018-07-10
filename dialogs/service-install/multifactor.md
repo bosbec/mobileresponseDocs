@@ -11,7 +11,7 @@
     <div class="service-cost">€99/month</div>
     </div>
     <div>
-    <p>Two-factor authentication</p></br>
+    <p>Two-factor authentication description.</p></br>
 
 <p>Two-factor authentication features:</p>
 
