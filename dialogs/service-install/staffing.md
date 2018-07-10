@@ -1,6 +1,6 @@
 <div>
     <p>
-  <img class="service-logo" src="http://bosbec.io/res/bosbec_navbar_logo_svg.svg">
+  <img class="service-logo" src="../res/bosbec_navbar_logo_svg.svg">
 </p>
 <div class="service-width-100">
         <div class="service-image-container">
@@ -11,13 +11,14 @@
     <div class="service-cost">€99/month</div>
     </div>
     <div>
-    <p>Staffing description.</p></br>
+    <p>The Bosbec Staffing Solution lets you start with the fundamental functions in staffing. You will be up and running in no time.</p></br>
 
-<p>Staffing features:</p>
+<p>Services included:</p>
 
 <ul>
-<li>1</li>
-<li>2</li>
+<li>Write and Send Messages</li>
+<li>First Come, First Served</li>
+    <li>Send Messages with Attribute Filter</li>
 </ul>
 </div>
 </div>
