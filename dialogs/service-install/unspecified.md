@@ -1,6 +1,6 @@
 <div>
     <p>
-  <img class="service-logo" src="http://bosbec.io/res/bosbec_navbar_logo_svg.svg">
+  <img class="service-logo" src="../res/bosbec_navbar_logo_svg.svg">
 </p>
 <div class="service-width-100">
         <div class="service-image-container">
