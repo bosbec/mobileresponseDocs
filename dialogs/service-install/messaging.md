@@ -1,6 +1,6 @@
 <div>
     <p>
-  <img class="service-logo" src="http://bosbec.io/res/bosbec_navbar_logo_svg.svg">
+  <img class="service-logo" src="../res/bosbec_navbar_logo_svg.svg">
 </p>
 <div class="service-width-100">
         <div class="service-image-container">
@@ -11,13 +11,16 @@
     <div class="service-cost">€99/month</div>
     </div>
     <div>
-    <p>Messaging description.</p></br>
+    <p>Bosbec Messaging gives you a comprehensive solution that takes care of all your basic messaging needs. Use in a variety of systems and services or manage online via an easy GUI.</p></br>
 
-<p>Messaging features:</p>
+<p>Services included:</p>
 
 <ul>
-<li>1</li>
-<li>2</li>
+<li>Write and Send Messages</li>
+<li>Send Messages with Replies</li>
+    <li>Send Message Templates</li>
+    <li>App Group Chat</li>
+    <li>API2SMS Standard</li>
 </ul>
 </div>
 </div>
