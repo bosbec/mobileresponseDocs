@@ -1,6 +1,6 @@
 <div>
     <p>
-  <img class="service-logo" src="http://bosbec.io/res/bosbec_navbar_logo_svg.svg">
+  <img class="service-logo" src="../res/bosbec_navbar_logo_svg.svg">
 </p>
 <div class="service-width-100">
         <div class="service-image-container">
@@ -11,13 +11,14 @@
     <div class="service-cost">€99/month</div>
     </div>
     <div>
-    <p>Two-factor authentication description.</p></br>
+    <p>Bosbec Multi-Factor gives you a high security log in feature for your IT-system.</p></br>
 
 <p>Two-factor authentication features:</p>
 
 <ul>
-<li>1</li>
-<li>2</li>
+<li>Access via API</li>
+<li>Generated passwords are sent to recipients as SMS, e-mail och via APP. Add on validation for higher security level.</li>
+<li>Link your AD via ADFS-component (included)</li>
 </ul>
 </div>
 </div>
