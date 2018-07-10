@@ -7,13 +7,13 @@
         <img class="service-image" src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/152079/4103610/o7rzJxK3UHNhPnZ/placeholder%20installer.png"></div>
 <div class="service-padding">
     <div class="service-margin-bottom">
-    <div class="service-header">Incident</div>
+    <div class="service-header">Two-factor authentication</div>
     <div class="service-cost">€99/month</div>
     </div>
     <div>
-    <p>multifactor</p></br>
+    <p>Two-factor authentication</p></br>
 
-<p>multifactor features:</p>
+<p>Two-factor authentication features:</p>
 
 <ul>
 <li>1</li>
