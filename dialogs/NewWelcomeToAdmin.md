@@ -14,3 +14,5 @@ After your trial period ends, you will probably want to continue using the servi
 To continue using the service after your test period ends, add your credit card information under **Settings and Billing**. 
 
 Should you have any questions during your development journey, please contact us at **support@bosbec.com**.
+
+_When clicking "Got it" you'll be prompted to install included services._
