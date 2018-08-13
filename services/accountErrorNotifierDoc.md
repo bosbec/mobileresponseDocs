@@ -1,4 +1,4 @@
-This service notifies the account administrator of errors that occur "behind the scenes" in Mobile Response.
+This service notifies the account administrator of errors that occur "behind the scenes" in Bosbec.
 
 **Overview**
 
