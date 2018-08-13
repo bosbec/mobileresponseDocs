@@ -44,7 +44,7 @@
 
 .service-padding{
     overflow:  hidden;
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 .service-margin-bottom{
