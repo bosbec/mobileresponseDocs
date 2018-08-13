@@ -22,8 +22,8 @@
 </div>
 </div>
 <div>
-    <div class="service-cost">€99/month</div>
-    <div><button style="float:right;" class="text-button" type="button" ng-click="$ctrl.install()">Install</button></div>
+    <div style="float:left;" >€99/month</div>
+    <div><button style="float:right;" class="text-button-store" type="button" ng-click="$ctrl.install()">Install</button></div>
     </div>
 </div>
 
@@ -60,16 +60,20 @@
     font-size: 25px;
 }
 
-.service-cost{
-    display:  inline-block;
-    padding-left: 20px;
-}
-
-
 .service-image{
     display: block;
     margin: 0 auto;
     margin-bottom: 15px;
+}
+
+.text-button-store {
+    font-size: 13px;
+    background: transparent;
+    border: 0;
+    color: #2196f3;
+    font-weight: bold;
+    /* margin-top: 15px; */
+    text-transform: uppercase;
 }
 
 text-component p:nth-child(1){
