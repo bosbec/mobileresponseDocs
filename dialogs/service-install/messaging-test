@@ -39,7 +39,6 @@
 }
 
 .service-image-container{
-    float: left;
     width: 30%;
 }
 
