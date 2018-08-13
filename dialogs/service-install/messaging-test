@@ -6,7 +6,6 @@
         <img class="service-image" src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/152079/4103610/o7rzJxK3UHNhPnZ/placeholder%20installer.png"></div>
 <div class="service-padding">
     <div class="service-margin-bottom">
-    <div class="service-cost">€99/month</div>
     </div>
     <div>
     <p>Bosbec Messaging gives you a comprehensive solution that takes care of all your basic messaging needs. Use in a variety of systems and services or manage online via an easy GUI.</p></br>
@@ -70,5 +69,6 @@ text-component p:nth-child(1){
     margin-bottom: 0px;
 }
 
+    <div class="service-cost">€99/month</div>
 
 </style>
