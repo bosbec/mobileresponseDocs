@@ -21,8 +21,10 @@
 </ul>
 </div>
 </div>
+<div>
     <div class="service-cost">€99/month</div>
     <button style="float:right;" class="text-button" type="button" ng-click="$ctrl.install()">Install</button>
+    </div>
 </div>
 
 <style>
