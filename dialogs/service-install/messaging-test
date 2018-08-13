@@ -21,7 +21,7 @@
 </ul>
 </div>
 </div>
-<div>
+<div class="p-t-20">
     <div style="float:left;" >€99/month</div>
     <div><button style="float:right;" class="text-button-store" type="button" ng-click="$ctrl.install()">Install</button></div>
     </div>
@@ -78,6 +78,10 @@
 
 text-component p:nth-child(1){
     margin-bottom: 0px;
+}
+
+.p-t-20{
+    padding-top: 20px;
 }
 
 </style>
