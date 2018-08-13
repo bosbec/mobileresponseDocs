@@ -38,10 +38,6 @@
     width: 100%;
 }
 
-.service-image-container{
-    width: 30%;
-}
-
 .service-image{
     display: block;
     margin: 0 auto;
