@@ -1,0 +1,84 @@
+<div>
+    <p>
+</p>
+<div class="service-width-100" style="height: 640px">
+        <div class="service-image-container">
+        <img class="service-image" src="https://s3-eu-west-1.amazonaws.com/various-files-bosbec/Messaging.png"></div>
+<div class="service-padding">
+    <div class="service-margin-bottom">
+    </div>
+    <div>
+    <p>Bosbec Messaging gives you a comprehensive solution that takes care of all your basic messaging needs. Use in a variety of systems and services or manage online via an easy GUI.</p>
+    <div style="margin-bottom: 20px; font-weight: 700">€99/month</div>
+<p>Services included:</p>
+
+<ul>
+<li>Write and Send Messages</li>
+<li>Send Messages with Replies</li>
+    <li>Send Message Templates</li>
+    <li>App Group Chat</li>
+    <li>API2SMS Standard</li>
+</ul>
+</div>
+</div>
+</div>
+
+<style>
+
+.service-logo{
+    width: 150px;
+}
+
+.service-float-right {
+    float: right;
+}
+.service-width-100 {
+    width: 100%;
+}
+
+.service-image{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.service-padding{
+    overflow:  hidden;
+    padding: 0 20px;
+}
+
+.service-margin-bottom{
+    margin-bottom: 20px;
+}
+
+.service-header {
+    display:  inline-block;
+    font-size: 25px;
+}
+
+.service-image{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 70%
+}
+
+.text-button-store {
+    font-size: 13px;
+    background: transparent;
+    border: 0;
+    color: #2196f3;
+    font-weight: bold;
+    /* margin-top: 15px; */
+    text-transform: uppercase;
+}
+
+text-component p:nth-child(1){
+    margin-bottom: 0px;
+}
+
+.p-t-20{
+    padding-top: 20px;
+}
+
+</style>
