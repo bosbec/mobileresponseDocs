@@ -9,7 +9,7 @@
     </div>
     <div>
     <p>Bosbec Multi-Factor gives you a high security log in feature for your IT-system.</p>
-    <div style="margin-bottom: 20px; font-weight: 700">€99/month</div>
+    
 <p>Two-factor authentication features:</p>
 
 <ul>
@@ -17,6 +17,7 @@
 <li>Generated passwords are sent to recipients as SMS, e-mail and via APP. Add on validation for higher security level.</li>
 <li>Link your AD via ADFS-component (included)</li>
 </ul>
+<div style="margin-bottom: 20px; font-weight: 700">€99/month</div>
 </div>
 </div>
 </div>
