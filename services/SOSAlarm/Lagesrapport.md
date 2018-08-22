@@ -7,7 +7,7 @@ Inhämta lägesbild från produktionen.
 * Starta genom att klicka på "Starta".
 * Fyll i vad ärendet rör, exempelvis "Nätverket".
 * Välj "Next Step".
-* En överblick visas. Välj "Run" för att skicka ut formuläret till TTL-gruppen.
+* En överblick visas. Välj "Run" för att skicka ut formuläret till TTL-Tjänstgörande Teamledare.
 
 **Följdfrågor**
 
