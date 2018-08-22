@@ -5,7 +5,7 @@ Begäran om stöttning på 112.
 **Starta**
 
 * Starta genom att klicka på "Starta".
-* Välj "Run" för att skicka ut formuläret till TTL-gruppen.
+* Välj "Run" för att skicka ut formuläret till TTL-Tjänstgörande Teamledare.
 
 **Skicka meddelande**
 
