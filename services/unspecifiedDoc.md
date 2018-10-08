@@ -8,7 +8,7 @@ A predefined process to facilitate action during an unspecified event.
 * In every step the user has the option to send information to the original group or a different one.
 * A log of all updates in the incident will be kept and can later be exported.
 * Incidents can be either "Open" or "Closed". The two different states are shown separately on the left side of this view.
-* Note that only one check-in can be done for each incident.
+* Note that only one check-in can be initialized for each incident.
 
 **Tasklist**
 
