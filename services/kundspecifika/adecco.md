@@ -80,7 +80,7 @@ Det som er viktig når du oppretter en gruppe er at den blir delt med avdelingen
 3. Velg "Share list" og deretter "Shared with".
 4. Velg avdelingen din.
 
-Support
+**Support**
 
 Trenger hjelp er den beste og raskeste måten å få tilgang til støttesiden via portalen. 
 
