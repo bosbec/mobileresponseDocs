@@ -1,4 +1,4 @@
-# Execut the workflow #
+# Execute the workflow #
 
 *This window will help you execute a workflow.*
 
