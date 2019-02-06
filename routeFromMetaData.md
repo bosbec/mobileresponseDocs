@@ -10,10 +10,8 @@ We want one set of jobs to be executed when **metadata.last-test** is later than
 The settings for that MetaDataRoute should be *Meta data source* should be set to **metadata.last-test** and *Compare value source* should be set to **metadata.last-ok**. And to make the comparison test that the first metadata (**metadata.last-test**) is later than the **metadata.last-ok** we will set the *Compare operator* to **>** meaning that the source should be bigger than the value we compare it to.    
 If we want something else to happen when this comparison doesn't match we connect another set of jobs to the **Route destination on no match** that is available when hovering over the job.  
 
-_
-
-For a more complete list of operators and how to use them, please read the section on @{text:Comparing MetaData;link:metaDataComparison}@  
-_
+For a more information about what operators are available and how to use them, please read the section on @{text:Comparing MetaData;link:metaDataComparison}@   
+For more information about metadata and how to use it during workflow execution, please refer to the section on @{text:Workflow Context;link:workflowContext}@  
 
 
 **Notes:   
