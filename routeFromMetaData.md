@@ -14,6 +14,7 @@ If we want something else to happen when this comparison doesn't match we connec
 For a more complete list of operators and how to use them, please read the section on @{text:Comparing MetaData;link:metaDataComparison}@
 
 
+
 **Notes:   
 The jobs connected from the "Jobs"-connector will not be executed.**
 
