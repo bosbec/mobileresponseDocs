@@ -14,7 +14,7 @@ You can find your api token, or create a new one, under Tools -> REST-api tokens
 
 Create code and send message to user
 
-**[POST] https://rest.mobileresponse.io/1/workflows**
+**[POST] https://rest.bosbec.io/2/workflows**
 
 ```
 {
@@ -35,7 +35,7 @@ Create code and send message to user
 ```
 **Request to check if code is valid**
 
-**[POST] https://rest.mobileresponse.io/1/workflows**
+**[POST] https://rest.bosbec.io/2/workflows**
 
 ```
 {
@@ -69,7 +69,7 @@ Create code and send message to user
 
 Create code, send message to user and include the generated code in response
 
-**[POST] https://rest.mobileresponse.io/1/workflows**
+**[POST] https://rest.bosbec.io/2/workflows**
 
 ```
 {
