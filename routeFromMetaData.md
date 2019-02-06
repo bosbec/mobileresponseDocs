@@ -4,11 +4,15 @@
 evaluation and a way for the workflow to continue execution with the given series of jobs*
 
 Use this job if you want the workflow to execute different jobs depending on given criteria.  
-For example if you have two **metadata** with different date-times, lets call them **metadata.last-run** and **metadata.current-run**.   
-Then we create two MetaDataRoutes within this job.  
-The first is configured with 
+For example if you have two **metadata** with different date-times, lets call them **metadata.last-ok** and **metadata.last-test**.   
+Then we create a MetaDataRoute within this job.   
+We want one set of jobs to be executed when **metadata.last-test** is later than **metadata.last-ok**.  
+The settings for that MetaDataRoute should be *Meta data source* should be set to **metadata.last-test** and *Compare value source* should be set to **metadata.last-ok**. And to make the comparison test that the first metadata (**metadata.last-test**) is later than the **metadata.last-ok** we will set the *Compare operator* to **>** meaning that the source should be bigger than the value we compare it to.    
+If we want something else to happen when this comparison doesn't match we connect another set of jobs to the **Route destination on no match** that is available when hovering over the job.  
 
-[test-link](https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/dataOperations.md)
+
+For a more complete list of operators and how to use them, please read the section on @{text:comparing MetaData;link:metaDataComparison}@
+
 
 
 **Notes:   
