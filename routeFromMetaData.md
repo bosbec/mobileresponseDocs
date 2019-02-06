@@ -11,8 +11,9 @@ The settings for that MetaDataRoute should be *Meta data source* should be set t
 If we want something else to happen when this comparison doesn't match we connect another set of jobs to the **Route destination on no match** that is available when hovering over the job.  
 
 
-For a more complete list of operators and how to use them, please read the section on @{text:comparing MetaData;link:metaDataComparison}@
+For a more complete list of operators and how to use them, please read the section on @{text:Comparing MetaData;link:metaDataComparison}@
 
+[Testlink](#Comparing MetaData)
 
 
 **Notes:   
