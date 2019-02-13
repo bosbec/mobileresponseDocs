@@ -1,5 +1,3 @@
-## Optimering central ##
-
 Skicka ut följande meddelande till TTL;
 
 Relaterat till rådande belastning på 112 ombeds samtliga TTL att se över och optimera sin central efter bästa förmåga.
