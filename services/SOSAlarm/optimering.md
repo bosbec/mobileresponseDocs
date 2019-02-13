@@ -8,6 +8,10 @@ Kvittera att ni läst detta meddelande med hjälp av länken nedan.
 * Starta genom att klicka på "Starta".
 * Välj "Run" för att skicka ut formuläret till TTL-Tjänstgörande Teamledare.
 
+**Kvittering**
+
+* För att se vilka TTL som kvitterat utskicket klickar ni på det i listningen.
+
 **Avsluta**
 
 * För att avsluta ett ärende, välj "Avsluta".
