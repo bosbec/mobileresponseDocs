@@ -11,3 +11,5 @@ Används för att importera units till kontot som inte ska bli påverkade av den
 Används för att trigga den automatiska importen manuellt.
 
 OBS: Rensar kontot på nuvarande gruppmedlemmar och läser in på nytt. Notera att importen kan ta ett antal minuter att genomföra.
+
+Körs direkt vid klick på "Run".
