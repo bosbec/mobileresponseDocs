@@ -18,7 +18,7 @@
 <ul>
 <li>Access via API</li>
 <li>Generated passwords are sent to recipients as SMS, e-mail and via APP. Add on validation for higher security level.</li>
-<li>Link your AD via ADFS-component (included)</li>
+    <li>Link your AD via <a href="https://help.bosbec.io" target="_blank">ADFS-component</a> (included)</li>
 </ul>
 </div>
 </div>
