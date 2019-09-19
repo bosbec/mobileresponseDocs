@@ -1,22 +1,16 @@
-# Incoming Http Trigger
->*This trigger starts a workflow when an incoming http request matches the criteria specified with the trigger.  
->It provides a HTTP-resource in the workflow context.*  
+# The incoming http trigger #
 
-The trigger need the **Token** property to be configured. The token is a regular Api-token for MobileResponse and you can create one in admin-ui https://admin.mobileresponse.io  
-When you want to send a request and trigger a workflow via the IncomingHttpTrigger, you need to send a HTTP-request to https://in.mobileresponse.io/[YOUR-TOKEN-HERE]  
-If the criteria matches the incoming request, then this trigger will put the information from the request into a named resource on workflow context.
+*Will start the workflow if a request to the in.bosbec.io endpoint matches the criteria. *
+
+This trigger will react to incoming HTTP-requests to the in.bosbec.io/[YOUR_TOKEN] where [YOUR_TOKEN] is an “AuthenticationToken” or a persisten token that you create in the admin-GUI (located at: www.bosbec.io).  
+The workflow will start with a resource called HttpRequestResource that can be accessed from subsequent jobs in the workflow.    
+
+
+**Notes:  
+The workflow must be inactive in order to save and update triggers.  
+The trigger will not catch any incoming requests while the workflow is inactive.  
+Provides an incoming message to the workflow context.**
 
 
 **How to:**  
-
-- Configure the method as one of the currently supported HTTP-methods: POST, GET or * to trigger on either one of them.
-- Make sure you have a **Token** registered and use it to allow requests to in.mobileresponse.io/[YOUR-TOKEN-HERE]   
-If you need to register a token head over to [https://admin.mobileresponse.io/#/rest-api](https://admin.mobileresponse.io/#/rest-api "Api-tokens") TEST: <a href="https://admin.mobileresponse.io/#/rest-api">Testlänk</a>
-- Configure the name of the HTTP-resource in the **IncomingResourceName**
-
-**NOTES**
-
-- **Sets a HTTP-resource in WorkflowContext**
-
-
-[Data operations](Dataoperations.md) 
+Set the Method to GET / POST or use * to indicate that any method is allowed. Set the Token to the id of one of your persistent tokens (created inside www.bosbec.io). Optionally set the resource name.
