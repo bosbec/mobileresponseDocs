@@ -1,4 +1,4 @@
-# Untag units #
+# Tag units #
 
 *This job tags units in WFC temporary group and WFC groups.*
 
