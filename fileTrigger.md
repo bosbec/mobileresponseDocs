@@ -1,4 +1,4 @@
-# The data log trigger #
+# The file trigger #
 
 *Will start the workflow when a file is uploaded to the file service.*
 
