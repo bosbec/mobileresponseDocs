@@ -1,4 +1,4 @@
-An excellent way to test your API calls is to use our Swagger Documentation. You can find this on http://rest.mobileresponse.io
+An excellent way to test your API calls is to use our Swagger Documentation. You can find this on https://rest.bosbec.io
 
 ##### Sending SMS
 
