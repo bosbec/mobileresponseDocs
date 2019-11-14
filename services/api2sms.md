@@ -9,7 +9,7 @@ POST: https://rest.bosbec.io/2/workflows
   "metadata": {
     "recipient": "+46700000000",
     "sender": "Avsändarnamn",
-    "message-text": "Meddelandetext”
+    "message-text": "Meddelandetext"
   }
 }
 ```
