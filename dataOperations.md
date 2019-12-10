@@ -21,9 +21,8 @@ What the different data-operations does:
 	**The result was:** “&lt;h2&gt;Workflow: Hello!&lt;/h2&gt;”
 	Should a specified key have no value, a default value (in this case "1") can be assigned by using the following format; {metadata.key:1}
 - Calculate data
-	- Works like the CalculateValueFromMetadata job does.
+	- Works like the @{text:CalculateValueFromMetadata;link:calculateValueFromMetaData}@ job does.
 	- To calculate something based on values in WFC resources this job can be configured with an expression like this:[metadata.counter]+1
-	- @{text:CalculateValueFromMetadata;link:calculateValueFromMetaData}@
 - Extract value regex
 	- Uses the pattern to find a text in the source and puts the result in destination
 - Get last log data
