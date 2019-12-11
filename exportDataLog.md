@@ -13,7 +13,7 @@ The settings available can be found below.
     "TextWrapper" : "\"",
     "PeriodStart" : "2019-12-11",
     "PeriodEnd" : "2020-01-10",
-        "ExportResultDestination" : "metadata.result-destination",
+        "ExportResultDestination" : "metadata.result",
         "FileIdDestination" : "metadata.result-fileid",
         "HeadersToInclude" : []
 }
