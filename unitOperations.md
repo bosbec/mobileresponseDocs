@@ -25,5 +25,5 @@ FindFromAccount: Search for whole "words" such as **John Doe**, and the search w
 
 **Metadata filter**
 
-To compare data found on the unit, use the following format: unit.metadata.key
-To compare data found on the workflow, use: metadata.key
+* To compare data found on the unit, use the following format: unit.metadata.key
+* To compare data found on the workflow, use: metadata.key
