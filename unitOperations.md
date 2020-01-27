@@ -10,12 +10,20 @@ There are a number of different operations to choose between and the basic conce
 
 
 
-**Notes:  
+**Notes:**
+
 Find-steps can be unsuccessful, and a setting to continue on error must be set if that is the desired behaviour.**
 
 **How to:**
+
 Add one or more find-operations to get units to process, optionally you may filter the given units before you let the job store or delete the resulting units from a given destination. 
 
 
 **Find Operations**
-  *  FindFromAccount: Search for whole "words" such as **John Doe**, and the search will look for **John** OR **Doe**. To search for exact phrase **"John Doe"** use quotation marks around the whole phrase you expect to search for. To search for John as first name, prefix the search with **md:** for metadata and **firstname=** the meta data key; **"md:firstname=John**. Words in quotation marks must all be present to be included in the found units. !Tip: Use a combination of find-operations and filter the result before store!
+
+FindFromAccount: Search for whole "words" such as **John Doe**, and the search will look for **John** OR **Doe**. To search for exact phrase **"John Doe"** use quotation marks around the whole phrase you expect to search for. To search for John as first name, prefix the search with **md:** for metadata and **firstname=** the meta data key; **"md:firstname=John**. Words in quotation marks must all be present to be included in the found units. !Tip: Use a combination of find-operations and filter the result before store!
+
+**Metadata filter**
+
+To compare data found on the unit, use the following format: unit.metadata.key
+To compare data found on the workflow, use: metadata.key
