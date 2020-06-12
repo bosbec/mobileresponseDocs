@@ -1,3 +1,78 @@
-The loyalty program services are used to provide increased value to your customers by rewarding them for their purchases. Each invoice generates points which in turn can redemeed for rewards.
+<div>
+    <p>
+</p>
+<div class="service-width-100" style="height: 640px">
+        <div class="service-image-container">
+        <img class="service-image" src="https://s3-eu-west-1.amazonaws.com/help.bosbec.io/Service+Icons/Loyalty.png"></div>
+<div class="service-padding">
+    <div class="service-margin-bottom">
+    </div>
+    <div>
+    
+<div style="margin-bottom: 20px; font-weight: 700">Free</div>
+    <p>The loyalty program services are used to provide increased value to your customers by rewarding them for their purchases. Each invoice generates points which in turn can redemeed for rewards.</p>
+    
+<p>The loyalty program service handles the customer details requests and adding or redeeming points for a customer while a loyalty program integration service receives and automatically processes the invoice data and generates the loyalty points based on the invoiced amount.</p>
+</div>
+</div>
+</div>
 
-The loyalty program service handles the customer details requests and adding or redeeming points for a customer while a loyalty program integration service receives and automatically processes the invoice data and generates the loyalty points based on the invoiced amount.
+<style>
+
+.service-logo{
+    width: 150px;
+}
+
+.service-float-right {
+    float: right;
+}
+.service-width-100 {
+    width: 100%;
+}
+
+.service-image{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.service-padding{
+    overflow:  hidden;
+    padding: 0 20px;
+}
+
+.service-margin-bottom{
+    margin-bottom: 20px;
+}
+
+.service-header {
+    display:  inline-block;
+    font-size: 25px;
+}
+
+.service-image{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 70%
+}
+
+.text-button-store {
+    font-size: 13px;
+    background: transparent;
+    border: 0;
+    color: #2196f3;
+    font-weight: bold;
+    /* margin-top: 15px; */
+    text-transform: uppercase;
+}
+
+text-component p:nth-child(1){
+    margin-bottom: 0px;
+}
+
+.p-t-20{
+    padding-top: 20px;
+}
+
+</style>
