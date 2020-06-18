@@ -4,6 +4,12 @@ An excellent way to test your API calls is to use our Swagger Documentation. You
 
 ```
 POST: https://rest.bosbec.io/2/workflows
+
+Headers:
+"api-key":"00000000-0000-0000-0000-000000000000"
+"Content-type":"application/json"
+
+Body
 {
   "workflowid": "00000000-0000-0000-0000-000000000000",
   "metadata": {
