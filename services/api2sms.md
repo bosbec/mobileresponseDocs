@@ -23,11 +23,11 @@ Body
 ##### Get delivery report (with processID from previous response)
 
 ```
+GET: https://rest.bosbec.io/2/messages/00000000-0000-0000-0000-000000000000
+
 Headers:
 "api-key":"00000000-0000-0000-0000-000000000000"
 "Content-type":"application/json"
-
-GET: https://rest.bosbec.io/2/messages/00000000-0000-0000-0000-000000000000
 ```
 
 Response:
