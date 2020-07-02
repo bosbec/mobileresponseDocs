@@ -4,7 +4,7 @@
     </p>
     <div class="service-width-100">
         <div class="service-image-container">
-            <img class="service-image" src="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/152079/4103610/o7rzJxK3UHNhPnZ/placeholder%20installer.png" />
+            <img class="service-image" src="https://s3-eu-west-1.amazonaws.com/help.bosbec.io/Service+Icons/Write+and+Send+Messages.png" />
         </div>
         <div class="service-padding">
             <div class="service-margin-bottom">
