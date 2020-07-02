@@ -4,7 +4,7 @@
     </p>
     <div class="service-width-100">
         <div class="service-image-container">
-            <img class="service-image" src="ttps://s3-eu-west-1.amazonaws.com/help.bosbec.io/Service+Icons/Incident.png" />
+            <img class="service-image" src="https://s3-eu-west-1.amazonaws.com/help.bosbec.io/Service+Icons/Incident.png" />
         </div>
         <div class="service-padding">
             <div class="service-margin-bottom">
