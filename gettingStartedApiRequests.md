@@ -54,16 +54,16 @@ Acquire the API-token on the admin page of Bosbec. The proceedings are as follow
 2. In the navigation sidebar to the left of the admin page, locate “Administrator Tools”, click it
     and select “REST-Api tokens”.
     
-![image1](help.bosbec.io/tutorials/img/getting-started-api-requests/image1.png)
+![image1](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image1.png)
 
 3. To create a new API-token, click the plus-sign located in the top right corner.
 
-![image2](help.bosbec.io/tutorials/img/getting-started-api-requests/image2.png)
+![image2](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image2.png)
 
 4. Click “Create” when the pop-up appears, and now your new API-token will be available in
     the list which can be used for both REST-API requests as well as HTTP-IN requests.
     
-![image3](help.bosbec.io/tutorials/img/getting-started-api-requests/image3.png)
+![image3](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image3.png)
 
 ## REST-API
 
@@ -178,19 +178,19 @@ Workflow with a REST-API request.
        also is responsible for handling the REST-API call.
     - In the navigation bar on the left side of the admin page, click “Workflows”.
 
-![image4](help.bosbec.io/tutorials/img/getting-started-api-requests/image4.png)
+![image4](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image4.png)
 
     - Click the plus-sign in the top right corner to create a new workflow.
 
-![image5](help.bosbec.io/tutorials/img/getting-started-api-requests/image5.png)
+![image5](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image5.png)
 
 - Give your workflow a name. For this example the name will be ”rest-api-request”. The
     workflow will be created, and the admin page will redirect to the Workflow Builder. To start
     building your solution, click the button “Open in Workflow Builder”.
 
-![image6](help.bosbec.io/tutorials/img/getting-started-api-requests/image6.png)
+![image6](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image6.png)
 
-![image7](help.bosbec.io/tutorials/img/getting-started-api-requests/image7.png)
+![image7](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image7.png)
 
 
 - Add a trigger, which will initiate the workflow by
@@ -201,13 +201,13 @@ Workflow with a REST-API request.
     somewhere on the canvas.
     Select “Execution workflow trigger”.
 
-![image8](help.bosbec.io/tutorials/img/getting-started-api-requests/image8.png)
+![image8](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image8.png)
 
 - Give the workflow trigger a name, which will
     later be used in the REST-API call of the end
     system.
 
-![image9](help.bosbec.io/tutorials/img/getting-started-api-requests/image9.png)
+![image9](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image9.png)
 
 - The data which was sent in the REST-API request will be available in the execution data
        of the workflow. This scope of information is called a **workflow context**. So, everything
@@ -221,7 +221,7 @@ Workflow with a REST-API request.
     the left side of the screen. Drag it to the canvas, next to the trigger. In the search-field,
     search for “Data Operations”, and click it in the list below.
 
-![image10](help.bosbec.io/tutorials/img/getting-started-api-requests/image10.png)
+![image10](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image10.png)
 
 - Click the newly added Data operations-job, select “New Operation” and choose
     “setData”.
@@ -230,17 +230,17 @@ Workflow with a REST-API request.
     called form_input), which is stored in **metadata**. The destination is your new variable.
 
 
-![image11](help.bosbec.io/tutorials/img/getting-started-api-requests/image11.png)
+![image11](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image11.png)
 
 - Connect the trigger to the newly added job to complete the flow of the work. Hover
     over the “Job”-bar of the orange trigger and drag it to the job you wish to connect.
 
-![image12](help.bosbec.io/tutorials/img/getting-started-api-requests/image12.png)
+![image12](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image12.png)
 
 - Activate the workflow in the top right corner of the screen to make it listen for REST-API
     requests.
 
-![image13](help.bosbec.io/tutorials/img/getting-started-api-requests/image13.png)
+![image13](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image13.png)
 
 2. Build the REST-API request on the end system. In this simple Javascript application, a request
     is built in the same manner which was presented in this document.
@@ -301,7 +301,7 @@ angular.module("app", []).controller("RestApiController", [
     workflow. A navigation bar will appear on the right side where you will find the
     workflow ID.
 
-![image14](help.bosbec.io/tutorials/img/getting-started-api-requests/image14.png)
+![image14](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image14.png)
 
 - In the request header, add your API-token as “api-key”.
 - In ResponseData you can define what data you wish to be sent back to the end system
@@ -311,13 +311,13 @@ angular.module("app", []).controller("RestApiController", [
 the execution in the **workflow context**. Right-click on the workflow and select
 “Workflow execution contexts”.
 
-![image15](help.bosbec.io/tutorials/img/getting-started-api-requests/image15.png)
+![image15](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image15.png)
 
 - Select the latest execution in the list and look through the workflow context. There you
     will find a variable with the value “Hello Bosbec!” which was sent as input by the REST
     API-call.
 
-![image16](help.bosbec.io/tutorials/img/getting-started-api-requests/image16.png)
+![image16](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image16.png)
 
 - That is it! From here on now you can modify the input and the output. This input could
     be a staff member which you want to add to a group. The output could be an updated
@@ -357,15 +357,15 @@ address can implement this.
     - If you do not already have a token, create one on the admin page.
     - Traverse to the REST-API token-page, explained below.
 
-![image17](help.bosbec.io/tutorials/img/getting-started-api-requests/image17.png)
+![image17](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image17.png)
 
 - Click the plus-sign in the top right corner to create a new token.
 
-![image18](help.bosbec.io/tutorials/img/getting-started-api-requests/image18.png)
+![image18](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image18.png)
 
 - Your API-token is now available in the list on the “REST-API tokens”-page.
 
-![image19](help.bosbec.io/tutorials/img/getting-started-api-requests/image19.png)
+![image19](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image19.png)
 
 2. Create your HTTP-IN URL:
     - The HTTP-IN URL would therefore look like:
@@ -380,18 +380,18 @@ _Code 5: HTTP-IN URL_
        account. A unit which can be a any arbitrary entity of your choosing, such as a staffing
        member, a certain state of an application, or hold larger amounts of data.
 
-![image20](help.bosbec.io/tutorials/img/getting-started-api-requests/image20.png)
+![image20](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image20.png)
 
 4. Execute the workflow with HTTP-IN
     - This request is sent through Postman, although any browser or URL-handler will be able
        to initiate this request.
 
 
-![image21](help.bosbec.io/tutorials/img/getting-started-api-requests/image21.png)
+![image21](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image21.png)
 
 5. See the results on the admin page
     - When traversing to the Unit-page, a “John Doe”-unit has successfully been created!
 
-![image22](help.bosbec.io/tutorials/img/getting-started-api-requests/image22.png)
+![image22](https://help.bosbec.io/tutorials/img/getting-started-api-requests/image22.png)
 
 ## Further reading
