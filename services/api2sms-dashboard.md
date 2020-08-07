@@ -1,3 +1,5 @@
+<style >h1 {color:red;}</style>
+
 # API2SMS Documentation
 
 An excellent way to test your API calls is to use our Swagger Documentation. You can find this on https://rest.bosbec.io
