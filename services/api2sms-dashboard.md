@@ -1,35 +1,35 @@
 <style>
-    h1,h2,h3,h4,h5,p {
+    .dashboard-container h1,.dashboard-container h2,.dashboard-container h3,.dashboard-container h4,.dashboard-container h5,.dashboard-container p {
     color: #353A40;
 }
-h1 {
+.dashboard-container h1 {
     font-weight: 300;
     font-size: 96px !important;
     letter-spacing: -1.5px;
 }
-h2 {
+.dashboard-container h2 {
     font-weight: 300;
     font-size: 60px;
     letter-spacing: 0.01px;
     margin-bottom: 16px;
     padding-top: 52px;
 }
-h3 {
+.dashboard-container h3 {
     font-weight: 400;
     font-size: 48px;
     letter-spacing: 0px;
 }
-h4 {
+.dashboard-container h4 {
     font-weight: 400;
     font-size: 34px;
     letter-spacing: 0.25px;
 }
-h5 {
+.dashboard-container h5 {
     font-weight: 400;
     font-size: 24px;
     letter-spacing: 0px;
 }
-h6 {
+.dashboard-container h6 {
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 0.15px;
@@ -37,7 +37,7 @@ h6 {
     text-align: left;
     line-height: normal;
 }
-p {
+.dashboard-container p {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.01px;
