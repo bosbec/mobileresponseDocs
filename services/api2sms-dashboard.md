@@ -29,7 +29,7 @@
     font-size: 13px;
 }
 .service-component {
-    max-width: 600px;    
+    max-width: 580px;    
 }
 </style>
 
