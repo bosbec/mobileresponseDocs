@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/services/text-dashboard.css">
+<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/services/text-dashboard.css">
 
 # API2SMS Documentation
 
