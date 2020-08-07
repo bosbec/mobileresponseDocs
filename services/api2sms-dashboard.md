@@ -34,6 +34,7 @@
 An excellent way to test your API calls is to use our Swagger Documentation. You can find this on https://rest.bosbec.io
 
 ## Usage
+Use the examples of API calls below to send your messages.
 
 ### Sending SMS
 
