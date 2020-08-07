@@ -5,6 +5,7 @@
 .dashboard-container h1 {
     font-weight: 400;
     font-size: 32px !important;
+    margin-top: 0;
 }
 .dashboard-container h2 {
     font-weight: 400;
