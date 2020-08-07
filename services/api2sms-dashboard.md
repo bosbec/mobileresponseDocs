@@ -1,33 +1,4 @@
-<style>
-    .dashboard-container h1,.dashboard-container h2,.dashboard-container h3,.dashboard-container h4,.dashboard-container h5,.dashboard-container p {
-    color: #353A40;
-}
-.dashboard-container h1 {
-    font-weight: 400;
-    font-size: 32px !important;
-}
-.dashboard-container h2 {
-    font-weight: 400;
-    font-size: 24px;
-}
-.dashboard-container h3 {
-    font-weight: 400;
-    font-size: 20px;
-}
-.dashboard-container h4 {
-    font-weight: 400;
-    font-size: 16px;
-}
-.dashboard-container h5 {
-    font-weight: 400;
-    font-size: 13px;
-    letter-spacing: 0px;
-}
-.dashboard-container p {
-    font-weight: 400;
-    font-size: 13px;
-}
-</style>
+<link rel="stylesheet" href="https://raw.githubusercontent.com/bosbec/mobileresponseDocs/master/services/text-dashboard.css">
 
 # API2SMS Documentation
 
