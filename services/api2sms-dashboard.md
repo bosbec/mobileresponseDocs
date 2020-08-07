@@ -2,9 +2,9 @@
 
 An excellent way to test your API calls is to use our Swagger Documentation. You can find this on https://rest.bosbec.io
 
-## Usage
+### Usage
 
-### Sending SMS
+## Sending SMS
 
 ```JSON
 POST: https://rest.bosbec.io/2/workflows
@@ -24,7 +24,7 @@ Body
 }
 ```
 
-### Get delivery report
+## Get delivery report
 To get the delivery status of messages, use the API call below. The guid in the URL is replaced by the process ID of the message you want to look up.
 
 ```JSON
@@ -35,7 +35,7 @@ Headers:
 "Content-type":"application/json"
 ```
 
-### Response
+## Response
 The response will contain messageId, the recipient number, and the delivery status.
 
 ```JSON
