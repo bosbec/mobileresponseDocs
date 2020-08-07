@@ -1,35 +1,33 @@
 <style>
-    .text-dashboard h1,.text-dashboard h2,.text-dashboard h3,.text-dashboard h4,.text-dashboard h5,.text-dashboard p {
+    .dashboard-container h1,.dashboard-container h2,.dashboard-container h3,.dashboard-container h4,.dashboard-container h5,.dashboard-container p {
     color: #353A40;
 }
-.text-dashboard h1 {
+.dashboard-container h1 {
     font-weight: 400;
     font-size: 32px !important;
 }
-.text-dashboard h2 {
+.dashboard-container h2 {
     font-weight: 400;
     font-size: 24px;
 }
-.text-dashboard h3 {
+.dashboard-container h3 {
     font-weight: 400;
     font-size: 20px;
 }
-.text-dashboard h4 {
+.dashboard-container h4 {
     font-weight: 400;
     font-size: 16px;
 }
-.text-dashboard h5 {
+.dashboard-container h5 {
     font-weight: 400;
     font-size: 13px;
     letter-spacing: 0px;
 }
-.text-dashboard p {
+.dashboard-container p {
     font-weight: 400;
     font-size: 13px;
 }
 </style>
-
-<div class="text-dashboard">
 
 # API2SMS Documentation
 
@@ -104,5 +102,3 @@ The response will contain messageId, the recipient number, and the delivery stat
 * (12) Unknown
 * (13) Rejected
 * (14) Throttled
-
-</div>
