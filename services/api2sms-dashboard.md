@@ -1,12 +1,56 @@
-<style >h1 {color:red;}</style>
+<style>
+    h1,h2,h3,h4,h5,p {
+    color: #353A40;
+}
+h1 {
+    font-weight: 300;
+    font-size: 96px !important;
+    letter-spacing: -1.5px;
+}
+h2 {
+    font-weight: 300;
+    font-size: 60px;
+    letter-spacing: 0.01px;
+    margin-bottom: 16px;
+    padding-top: 52px;
+}
+h3 {
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: 0px;
+}
+h4 {
+    font-weight: 400;
+    font-size: 34px;
+    letter-spacing: 0.25px;
+}
+h5 {
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0px;
+}
+h6 {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.15px;
+    color: #353A40;
+    text-align: left;
+    line-height: normal;
+}
+p {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01px;
+}
+</style>
 
-# API2SMS Documentation
+### API2SMS Documentation
 
 An excellent way to test your API calls is to use our Swagger Documentation. You can find this on https://rest.bosbec.io
 
-### Usage
+#### Usage
 
-## Sending SMS
+##### Sending SMS
 
 ```JSON
 POST: https://rest.bosbec.io/2/workflows
@@ -26,7 +70,7 @@ Body
 }
 ```
 
-## Get delivery report
+##### Get delivery report
 To get the delivery status of messages, use the API call below. The guid in the URL is replaced by the process ID of the message you want to look up.
 
 ```JSON
@@ -37,7 +81,7 @@ Headers:
 "Content-type":"application/json"
 ```
 
-## Response
+##### Response
 The response will contain messageId, the recipient number, and the delivery status.
 
 ```JSON
@@ -55,7 +99,7 @@ The response will contain messageId, the recipient number, and the delivery stat
 }
 ```
 
-#### Possible message statuses
+###### Possible message statuses
 
 * (0) Waiting
 * (1) Queued
