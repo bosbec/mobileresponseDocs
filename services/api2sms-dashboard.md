@@ -27,6 +27,9 @@
     font-weight: 400;
     font-size: 13px;
 }
+.service-component {
+    max-width: 600px;    
+}
 </style>
 
 # API2SMS Documentation
