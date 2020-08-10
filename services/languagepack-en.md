@@ -1,4 +1,4 @@
-Currently available language packs;
+Currently available language packs
 
 * English
 * Swedish
