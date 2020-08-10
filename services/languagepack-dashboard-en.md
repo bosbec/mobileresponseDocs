@@ -41,4 +41,6 @@ Some services, like Staffing, Messaging, and Incident, have a language setting. 
 
 The included message templates, forms, and form paths are all installed using a separate workflow containing all resources. These can be changed, but note that they will be reset to default texts when an update of the language pack is installed.
 
-You can have multiple language packs installed, but only one can be active at a time. Any activities using a specific language setting will continue to use resources from this language pack even if the setting is changed. If you want to switch the language pack, please also start a new activity.
+You can have multiple language packs installed, but only one can be active at a time. Any activities using a specific language setting will continue to use resources from this language pack even if the setting is changed.
+
+If you want to switch the language pack, please also start a new activity.
