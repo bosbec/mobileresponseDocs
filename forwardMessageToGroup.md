@@ -1,4 +1,4 @@
-# Forward message to everyone #
+# Forward message to group #
 
 *Use this job to forward contents of incoming message to a group.*
 
