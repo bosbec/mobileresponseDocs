@@ -11,7 +11,7 @@ _Will start a workflow on a given schedule._
 
 * **Starts on*** - Select starting date of scheduled process
 * **Ends on*** - Select end date of scheduled process 
-* **Fixed amount*** - Number of occurrences (e.g 1)
+* **Fixed amount** - Number of occurrences (e.g 1)
 * **Executes on** - 
 * **Description** -  
 
