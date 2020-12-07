@@ -19,6 +19,10 @@ This job can be connected to the following workflow elements.
 * This requirement needs to be satisfied for the job to work
 * This is another requirement
 
+## Other
+
+Put additional information and details about the job here
+
 ___
 
 # Data Operations
@@ -54,3 +58,7 @@ This job can be connected to the following workflow elements.
 
 * Fields marked with `*` require input.
 * You need to ad the prefix `metadata.` to access data in your WFC
+
+## Other
+
+No further information available.
