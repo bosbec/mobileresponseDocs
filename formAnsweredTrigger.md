@@ -15,6 +15,7 @@ _Execute a workflow when a form has been submitted._
 This job can be connected to the following workflow elements.
 
 * Jobs
+* Forms
 
 ## Requirements
 
