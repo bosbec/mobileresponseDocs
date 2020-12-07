@@ -1,17 +1,25 @@
-# The incoming email message trigger #
+# Incoming email message trigger #
 
-*Will start the workflow if an incoming email matches the settings for this trigger.*
+_Will start the workflow if an incoming email matches the settings for this trigger._
 
-You can, by creating an IncomingEmailMessageTrigger, make a reservation for an arbitrary email at the @qlnk.se domain.  
-For exampl, you may want to start your workflow when an email is sent to **my_workflow_test_1@qlnk.se**.  
-To do this it is as simple as putting that email address into the setting for **"Receiver"** in the properties for this trigger.  
-If you don't care about what email senders may initiate your workflow, you should just leave the **"Sender"** property with a *****
-Finally you may also chose to set a keyword as a criteria for when to react and start the workflow. A Keyword is the first word in the incoming email Subject+Body. So if the incoming email is without a subject then the keyword would be the first word in the email body. If there is a subject, then the trigger will try to match the first word in the subject. Setting the **Subject** to ***** will allow anything as subject and body in the incoming email.
+## Properties
 
+### Reservation
 
-**Notes:  
-The workflow must be inactive in order to save and update triggers.  
-The trigger will not catch any incoming emails while the workflow is inactive.  
+* **Receiver*** - Adress of the receiver (e.g `example@qlnk.se`)
+* **Keyword*** - This trigger will execute if the keyword is matched. `*` will not filter any incoming emails from the sender. (e.g `cancel`, or `*`)
+* **Sender*** - Specify allowed sender domains. `*` will not filter any incoming senders. (e.g `firstname@bosbec.com`, `*@bosbec.com` or `*`) 
 
-**How to:**  
-Set the **Receiver**, **Keyword** and **Sender** properties, connect the trigger to a job and activate the workflow.
+## Connections
+
+This job can be connected to the following workflow elements.
+
+* Jobs
+
+## Requirements
+
+* The workflow needs to be activated for the trigger to activate.
+* Any new reservations needs to be enabled. Contact our support team for further help.
+
+## Other
+ A Keyword is the first word in the incoming email Subject+Body. So if the incoming email is without a subject then the keyword would be the first word in the email body. If there is a subject, then the trigger will try to match the first word in the subject.
