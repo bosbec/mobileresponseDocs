@@ -1,4 +1,4 @@
-# Name of job #
+# Executing workflow trigger #
 
 _Used to manually execute a workflow._
 
