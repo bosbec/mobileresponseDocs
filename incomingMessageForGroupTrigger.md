@@ -1,4 +1,4 @@
-# The incoming iot message trigger #
+# Incoming message for group trigger #
 
 *Will start the workflow if matching the incoming message sender or receiver in a group.*
 
