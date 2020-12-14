@@ -1,7 +1,7 @@
 # Incoming http trigger #
 
 
-*Will start the workflow if a request to the in.bosbec.io endpoint matches the criteria. *
+_Will start the workflow if a request to the in.bosbec.io endpoint matches the criteria_
 
 ## Properties
 
