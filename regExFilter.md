@@ -1,4 +1,4 @@
-# The get users from incoming message #
+# Regex filter #
 
 *The regex-job is also available in DataOperations as separate operations for the different types of regex-filters.
 What it does is simply execute a regex on a text and make use of options to decide on whether or not to insert, extract, replace… before, after…*
