@@ -15,7 +15,7 @@
 
 ## Connections
 
-This job can be connecte to the following workflow elements.
+This job can be connected to the following workflow elements.
 
 * Jobs
 
