@@ -9,6 +9,14 @@ _Operations, calculations and manipulation on data in workflow context, units, g
 * **Destination*** - Destination of stored value, could be a resource on the account, or in WFC (e.g `metadata.counter`, or `incomingUnit.metadata.counter`)
 * **Order** - Order in which the jobs are executed. Lowest value equals highest priority (e.g 0)
 
+### Calculate date time diff
+* **From date time*** - Value or source of value of first timestamp
+* **Until date time*** - Value or source of value of second timestamp
+* **Destination*** - Destination of calculated time difference. Could be a resource on the account, or in WFC (e.g `metadata.time_difference`)
+* **Output setting*** - Set output format: `totaldays`, `totalhours`, `totalminutes`, `totalseconds` or `totalmilliseconds`
+* **Default for missing values** - 
+* **Order** - Order in which the jobs are executed. Lowest value equals highest priority (e.g 0)
+
 ### Concat
 * **Source with format*** - String of values (e.g `{incomingUnit.metadata.firstname} {incomingUnit.metadata.lastname}`)
 * **Destination*** - Destination of stored concated string, could be a resource on the account, or in WFC (e.g `metadata.full_name`) 
