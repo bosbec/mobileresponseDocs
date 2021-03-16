@@ -1,6 +1,6 @@
-<!--# Workflow data
+<!--# Workflow data -->
 
-Workflows can manage information both on your account, as well as dynamic content in specific executions. Information or data could be sent to a workflow, calculated or created in an execution or located as a temporary resource. Use this section to understand how you can work with data and information on the Bosbec Workflow Builder. -->
+<!-- Workflows can manage information both on your account, as well as dynamic content in specific executions. Information or data could be sent to a workflow, calculated or created in an execution or located as a temporary resource. Use this section to understand how you can work with data and information on the Bosbec Workflow Builder. -->
 
 ## Incoming data
 Depending on your workflow trigger, your workflow can react on different events. In this way, you can trigger a workflow with an SMS, email, API-request or a form reply. Here you will find information about how to access and work with incoming data to your workflow.
