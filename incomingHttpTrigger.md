@@ -19,6 +19,7 @@ This job can be connected to the following workflow elements.
 
 * The workflow needs to be activated for the trigger to activate.
 * Your token needs to be of type "persistent"
+* Format for URL used for the trigger to react: `https://in.bosbec.io/2/00000000-0000-0000-0000-000000000000`
 
 ## Other
 
