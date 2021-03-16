@@ -6,7 +6,7 @@
 Depending on your workflow trigger, your workflow can react on different events. In this way, you can trigger a workflow with an SMS, email, API-request or a form reply. Here you will find information about how to access and work with incoming data to your workflow.
 
 ### Incoming message
-SMS pr email messages can trigger a workflow and the informaiton about this triggering event is stored in the workflow context as the resource "incomingMessage". The `incomingMessage` consists of different parameters which hold information about the message. Below is an example of an incoming SMS message and how you can access that information in the workflow builder:
+SMS or email messages can trigger a workflow and the information about this triggering event is stored in the workflow context as the resource "incomingMessage". The `incomingMessage` consists of different parameters which hold information about the message. Below is an example of an incoming SMS message and how you can access that information in the workflow builder:
 
 ```
 "incomingMessage": {
