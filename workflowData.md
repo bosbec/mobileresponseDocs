@@ -21,7 +21,7 @@ SMS or email messages can trigger a workflow and the information about this trig
 ```
 _Example of an incoming SMS message_
 
-Syntax för accessing information in the incomingMessage:
+Syntax for accessing information in the incomingMessage:
 
 * `incomingmessage.body` - Access the message body
 * `incomingmessage.sender` - Access the sender (String-object)
@@ -92,10 +92,10 @@ To access specific key-values in the request body, use the job "Parse json to re
 
 ### Incoming Form Answers
 
-A form can trigger an execution of a workflow and information about the respondent and the form answers are accessible in the Workflow Builder. To access this information, use the job "Extract data" and set the property to "UpdateMetaDataWithFormAnswers". This will transfer all information to the dynamic variables of the workflow context.
+A form reply can start a workflow and information about the respondent and the form answers is accessible in the Workflow Builder. To access this information, use the job "Extract data" and set the property to "UpdateMetaDataWithFormAnswers". This will transfer all information to the dynamic variables accessible in your workflow.
 
 ## Dynamic data in your workflow
-Dynamic data are temporary variables used to store, process and calculate information in your workflow execution. This data is only stored during the execution, similar to a RAM-memory of your computer - this data needs to be stored manually in a resource on the account to save it after execution.
+Dynamic data are temporary variables used to store, process and calculate information in your workflow. This data is only available when the workflow is running, if you want to store this data temporary you need to save it to your account in a data log or a data unit.
 
 ### Metadata
 Metadata contains all dynamic variables of your workflow. Store temporary data, place incoming information and calculate new data with this information. To access and store metadata in your workflow, use the syntax below:
