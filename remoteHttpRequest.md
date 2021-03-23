@@ -12,7 +12,7 @@ _Send HTTP request and handle the HTTP response._
 
 ### Remote http response settings
 
-* **Continue on any requewst error** -
+* **Continue on any request error** -
 * **Response status code destination** - Destination of status code of response, could be a resource on the account, or in WFC as metadata (e.g `metadata.response_code`)
 * **Response body destination** - Destination of body of response, could be a resource on the account, or in WFC as metadata (e.g `metadata.response_body`)
 * **Response header destination** - Destination of header of response, could be a resource on the account, or in WFC as metadata (e.g `metadata.response_header`) 
