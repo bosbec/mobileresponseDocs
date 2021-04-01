@@ -1,0 +1,96 @@
+<div>
+    <p>
+</p>
+<div class="service-width-100" style="height: 640px">
+        <div class="service-image-container">
+        <img class="service-image" src="https://help.bosbec.io/Service+Icons/NPS.png"></div>
+<div class="service-padding">
+    <!--<div class="service-margin-bottom">
+    </div>-->
+    <div>
+
+<div style="margin-bottom: 20px; font-weight: 700">Digital Queue</div>
+
+<p></p>
+
+<p></p>
+    
+<p>Functions included:</p>
+
+<ul>
+<li>Add queue members.</li>
+<li>Iterate through the queue.</li>
+<li>Visual presentation of your queue.</li>
+</ul>
+
+<p>Required:</p>
+
+<ul>
+<li>Change [workflowid] in the URL in the two message templates to the actual workflow id.</li>
+<li>update API token to allow for "Resource":"api"..</li>
+<li>Change name of columns in service. Change to the chosen queue name.</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<style>
+
+.service-logo{
+    width: 150px;
+}
+
+.service-float-right {
+    float: right;
+}
+.service-width-100 {
+    width: 100%;
+}
+
+.service-image{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.service-padding{
+    overflow:  hidden;
+    padding: 0 20px;
+}
+
+.service-margin-bottom{
+    margin-bottom: 20px;
+}
+
+.service-header {
+    display:  inline-block;
+    font-size: 25px;
+}
+
+.service-image{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 70%
+}
+
+.text-button-store {
+    font-size: 13px;
+    background: transparent;
+    border: 0;
+    color: #2196f3;
+    font-weight: bold;
+    /* margin-top: 15px; */
+    text-transform: uppercase;
+}
+
+text-component p:nth-child(1){
+    margin-bottom: 0px;
+}
+
+.p-t-20{
+    padding-top: 20px;
+}
+
+</style>
