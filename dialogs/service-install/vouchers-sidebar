@@ -5,8 +5,8 @@
         <div class="service-image-container">
         <img class="service-image" src="https://help.bosbec.io/Service+Icons/Voucher.png"></div>
 <div class="service-padding">
-    <div class="service-margin-bottom">
-    </div>
+    <!--<div class="service-margin-bottom">
+    </div>-->
     <div>
 
 <div style="margin-bottom: 20px; font-weight: 700">Vouchers</div>
