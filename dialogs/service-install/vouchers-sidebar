@@ -1,0 +1,91 @@
+<div>
+    <p>
+</p>
+<div class="service-width-100" style="height: 640px">
+        <div class="service-image-container">
+        <img class="service-image" src="https://help.bosbec.io/Service+Icons/Voucher.png"></div>
+<div class="service-padding">
+    <div class="service-margin-bottom">
+    </div>
+    <div>
+
+<div style="margin-bottom: 20px; font-weight: 700">Vouchers</div>
+
+<p>This service allows you to create and manage digital vouchers in your retail operation.</p>
+
+<p>Create a new voucher in this service, and your customer will receive an information email with a voucher code and voucher value. 
+The voucher code, in the format "AA BB CC 11 22 33", is given to the cashier at checkout who will then redeem the code.</p>
+
+<p>Redeem, or verify, a voucher by submitting the voucher code in the service interface. Customers will receive updates by email and all the activity will be logged, trackable in your service interface.</p>
+    
+<p>Functions included:</p>
+
+<ul>
+<li>Create digital vouchers with custom voucher values.</li>
+<li>Redeem vouchers.</li>
+<li>Verify status of voucher codes.</li>
+<li>Track all voucher activities.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<style>
+
+.service-logo{
+    width: 150px;
+}
+
+.service-float-right {
+    float: right;
+}
+.service-width-100 {
+    width: 100%;
+}
+
+.service-image{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.service-padding{
+    overflow:  hidden;
+    padding: 0 20px;
+}
+
+.service-margin-bottom{
+    margin-bottom: 20px;
+}
+
+.service-header {
+    display:  inline-block;
+    font-size: 25px;
+}
+
+.service-image{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 70%
+}
+
+.text-button-store {
+    font-size: 13px;
+    background: transparent;
+    border: 0;
+    color: #2196f3;
+    font-weight: bold;
+    /* margin-top: 15px; */
+    text-transform: uppercase;
+}
+
+text-component p:nth-child(1){
+    margin-bottom: 0px;
+}
+
+.p-t-20{
+    padding-top: 20px;
+}
+
+</style>
