@@ -8,7 +8,9 @@
     <div class="service-margin-bottom">
     </div>
     <div>
-    
+
+<div style="margin-bottom: 20px; font-weight: 700">NPS</div>
+
 <p>“How likely is it that you would recommend our product to a friend or colleague?”</p>
 
 <p>This question is the basis of Net Promoter Score, NPS, which you can use to quickly and easily find out what your customer think of your products and services.</p>
@@ -16,12 +18,12 @@
 <p>This survey is based on a scale between 0-10, which is divided into three categories; Dectractors (0-6), Passives (7-8). and Promoters (9-10). 
 The NPS score is result of subtracting the share of Detractors form the share of Promoters, providing a score ranging from -100 to 100.</p>
     
-<p>Services included:</p>
+<p>Functions included:</p>
 
 <ul>
-<li>Write and Send Messages</li>
-<li>First Come, First Served</li>
-<li>Send Messages with Attribute Filter</li>
+<li>Send out NPS surveys.</li>
+<li>Calculate current NPS score.</li>
+<li>Send NPS reports to your team.</li>
 </ul>
 </div>
 </div>
