@@ -13,9 +13,8 @@
 
 <p>This service allows you to create and manage digital vouchers in your retail operation.</p>
 
-<p>Create a new voucher in this service, and your customer will receive an information email with a voucher code and voucher value. 
-The voucher code, in the format "AA BB CC 11 22 33", is given to the cashier at checkout who will then redeem the code.</p>
-
+<p>Create a new voucher in this service, and your customer will receive an information email with a voucher code and voucher value.</p>
+<p>The voucher code, in the format "AA BB CC 11 22 33", is given to the cashier at checkout who will then redeem the code.</p>
 <p>Redeem, or verify, a voucher by submitting the voucher code in the service interface. Customers will receive updates by email and all the activity will be logged, trackable in your service interface.</p>
     
 <p>Functions included:</p>
