@@ -3,7 +3,7 @@
 </p>
 <div class="service-width-100" style="height: 640px">
         <div class="service-image-container">
-        <img class="service-image" src="https://help.bosbec.io/Service+Icons/NPS.png"></div>
+        <img class="service-image" src="https://s3-eu-west-1.amazonaws.com/help.bosbec.io/Service+Icons/Digital+Queue.png"></div>
 <div class="service-padding">
     <!--<div class="service-margin-bottom">
     </div>-->
@@ -11,24 +11,27 @@
 
 <div style="margin-bottom: 20px; font-weight: 700">Digital Queue</div>
 
-<p></p>
-
-<p></p>
+<p>Digitial queuing system where the queue member receives tickets and updates in their phones as SMS messages.</p>
     
 <p>Functions included:</p>
 
 <ul>
 <li>Add queue members.</li>
 <li>Iterate through the queue.</li>
+<li>Create QR code for customers to add themselves to the queue</li>
+<li>Check current queue status</li>
 <li>Visual presentation of your queue.</li>
 </ul>
 
-<p>Required:</p>
+If you want to send a link with the current queue status in your queue ticket message, contact our support team, who then will implement Pages-functionality.
+
+<p>Required for Pages-functionality</p>
 
 <ul>
 <li>Change [workflowid] in the URL in the two message templates to the actual workflow id.</li>
-<li>update API token to allow for "Resource":"api"..</li>
+<li>Create and update an API token which allow "Resource":"api"..</li>
 <li>Change name of columns in service. Change to the chosen queue name.</li>
+<li>Change the logo. Bosbec logo is deafult.</li>
 </ul>
 
 </div>
