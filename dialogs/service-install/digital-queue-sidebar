@@ -23,9 +23,9 @@
 <li>Visual presentation of your queue.</li>
 </ul>
 
-If you want to send a link with the current queue status in your queue ticket message, contact our support team, who then will implement Pages-functionality.
+<p>If you want to send a link with the current queue status in your queue ticket message, contact our support team, who then will implement Pages-functionality.</p>
 
-<p>Required for Pages-functionality</p>
+<p>Required for Pages-functionality:</p>
 
 <ul>
 <li>Change [workflowid] in the URL in the two message templates to the actual workflow id.</li>
