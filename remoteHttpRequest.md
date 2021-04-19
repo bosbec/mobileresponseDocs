@@ -6,7 +6,7 @@ _Send HTTP request and handle the HTTP response._
 
 * **Url*** - Web URL to send your request to
 * **Http method*** - GET, POST, UPDATE or DELETE
-* **Http header** - Headers for your request. Format: `example-header: ExampleHeader`
+* **Http header** - Headers for your request. Format: `example-header: ExampleHeader`, one header for each line.
 * **Post template** - Template and content of the request body for POST. Format: `key1=value1&key2=[metadata.value2]`
 * **Content type** - Content type for POST template (e.g `application/x-www-form-urlencoded`)
 
