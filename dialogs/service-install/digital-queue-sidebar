@@ -28,8 +28,7 @@
 <p>Required for Pages-functionality:</p>
 
 <ul>
-<li>Change [workflowid] in the URL in the two message templates to the actual workflow id.</li>
-<li>Create and update an API token which allow "Resource":"api"..</li>
+<li>Change the token in the workflow: Incoming HTTP Trigger "pages_new" and message templates for "pages"</li>
 <li>Change name of columns in service. Change to the chosen queue name.</li>
 <li>Change the logo. Bosbec logo is deafult.</li>
 </ul>
