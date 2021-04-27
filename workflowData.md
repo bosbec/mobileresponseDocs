@@ -109,3 +109,28 @@ Resources are placeholders for larger enteties than metadata, e.g an API-request
 ### Temporary group
 
 The temporary group is, as the name would imply, a temporary recipient group in the workflow context used to send messages to. This group contains units only found in the workflow context. If you want to collect and filter certain units on your account for mailings - store them in the temporary group. In the job "Send messages to groups", toggle the checkbox "Use workflow context" to send messages to the temporary group.
+
+### Variable functions
+
+The Bosbec Workflow Builder include built in-functions to alter and create data. Use these functions to create and format dates or generate random characters and values.
+
+**Datetime** - Get the current date and time, set the format inside the parenthesis or leave them blank. Format `[datetime()]` or `[datetime(yyyy-MM-dd)]`
+
+**Subtract time** - Subtract time from a date, remember to use the same time format when subtracting or adding time. Format `[datetime(yyyy-MM-ddTHH:mm:ssZ).subtimespan(000.00:00:00)]`
+
+**Add time** - Add time to a date, remember to use the same time format when subtracting or adding time. Format `[datetime(yyyy-MM-ddTHH:mm:ssZ).subtimespan(000.00:00:00)]`
+
+**Generate random number** - Generate a random number within a certain range: `[rndnum(10,100)]`
+
+**Generate random number** - Generate a random number from 0 up to a certain number: `[rndnum(50)]`
+
+**Generate random characters** - Generate X amount of random characters: `[rndchar(X)]` from the following set of possible characters: `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!#¤%/>()=?'@£$€{[]}\öäåÅÄÖ`
+
+**Generate random alpa characters** - Generate X amount of random alpha characters (letters): `[rndalpha(5)]`
+
+**Generate random float** - Generate decimal value ranging from 0 to 1: `[rnddecimal()]`
+
+**Set upper case** - In the Destination property, set value to upper case: `.toupper()`
+
+**Set lower case** - In the Destination property, set value to lower case: `.tolower()`
+
