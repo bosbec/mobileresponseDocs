@@ -11,4 +11,4 @@ Syntax for accessing information in the incomingMessage:
 
 ### Example
 
-Store the incoming message body in your metadata using Data Operations and "Set data", with the source `incomingmessage.body` and destination `metadata.message-text`. Now you can extract information from the message text, or forward the information to another recipient.
+Store the incoming message body in your metadata using Data Operations and "Set data", with the source `incomingmessage.body` and destination `metadata.message-text`. Use the set metadata to extract information from the message text, or forward the information to another recipient.
