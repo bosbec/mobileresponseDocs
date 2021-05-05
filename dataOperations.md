@@ -91,16 +91,41 @@ _Operations, calculations and manipulation on data in workflow context, units, g
 * **Item metadata** - 
 
 ### Modify date
-* **Source*** - Source of timestamp  
+* **Source*** - Source of timestamp
 * **Destination*** - Destination of new date, could be a resources on the account or in WFC (e.g `metadata.new_date`)
-* **Change year** - New value
-* **Change month** - New value
-* **Change day** - New value
-* **Change hour** - New value
-* **Change minute** - New value
-* **Change second** - New value
-* **Parse formats** -New value
-* **Destination format** -  
+* **Change year** - Add or remove years (format `1` or `-1`)
+* **Change month** - Add or remove months (format `1` or `-1`)
+* **Change day** - Add or remove days (format `1` or `-1`)
+* **Change hour** - Add or remove hours (format `1` or `-1`)
+* **Change minute** - Add or remove minutes (format `1` or `-1`)
+* **Change second** - Add or remove seconds (format `1` or `-1`)
+* **Parse formats** - The original format. Will try the below formats if not specified.
+    - `dd.MM.yyyy hh:mm:ss tt`
+    - `dd.MM.yyyy HH:mm:ss`
+    - `dd.MM.yyyy HH:mm:ss 'GMT'K`
+    - `ddd MMM dd yyyy HH:mm:ss 'GMT'K`
+    - `d.MMMMM.yyyy HH:mm:ss`
+    - `d MMMMM yyyy HH:mm:ss`
+    - `d/MMMMM/yyyy HH:mm:ss`
+    - `M/d/yy HH:mm:ss`
+    - `M/d/yyyy HH:mm:ss`
+    - `d MMM yyyy HH:mm:ss`
+    - `d MMMMM yyyy HH:mm:ss`
+    - `dd/MM yyyy HH:mm:ss`
+    - `dd.MM.yyyy HH:mm:ss`
+    - `dd MM yyyy HH:mm:ss`
+    - `MM/dd/yyyy hh:mm:ss tt`
+    - `yyyy-MM-ddTHH:mm:ss.fffZ`
+    - `yyyy-MM-ddTHH:mm:ssZ`
+    - `yyyy-MM-dd HH:mm:ss`
+    - `yyyy-MM-dd`
+    - `yyyy/MM/dd HH:mm:ssZ`
+    - `yyyy/MM/dd HH:mm:ss`
+    - `u`
+    - `U`
+    - `s`
+    - `M/dd/yyyy hh:mm:ss tt`
+* **Destination format** - The desired date format
 * **Order** - Order in which the jobs are executed. Lowest value equals highest priority (e.g 0)
 
 ### Parse phone
