@@ -118,7 +118,7 @@ The Bosbec Workflow Builder include built in-functions to alter and create data.
 
 **Subtract time** - Subtract time from a date, remember to use the same time format when subtracting or adding time. Format `[datetime(yyyy-MM-ddTHH:mm:ssZ).subtimespan(000.00:00:00)]`
 
-**Add time** - Add time to a date, remember to use the same time format when subtracting or adding time. Format `[datetime(yyyy-MM-ddTHH:mm:ssZ).subtimespan(000.00:00:00)]`
+**Add time** - Add time to a date, remember to use the same time format when subtracting or adding time. Format `[datetime(yyyy-MM-ddTHH:mm:ssZ).addtimespan(000.00:00:00)]`
 
 **Generate random number** - Generate a random number within a certain range: `[rndnum(10,100)]`
 
