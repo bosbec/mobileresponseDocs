@@ -14,7 +14,7 @@
 <p>This service allows you to create a referral program for your business!</p>
 
 <p>Create a QR code that your customers can scan to refer their friends.</p>
-<p>The friend will received a code, in the format "AA BB CC 11 22 33", that is given to the cashier at checkout who will then redeem the code.</p>
+<p>The friend will received a code, in the format "AA 11 22", that is given to the cashier at checkout who will then redeem the code.</p>
 <p>When the referral code is redeemed, the referrer will receive a reward code that can be redemeed in the same manner</p>
     
 <p>Functions included:</p>
