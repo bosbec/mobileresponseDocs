@@ -14,7 +14,7 @@
 <p>This service allows you to create and manage digital stamp cards in your retail operation.</p>
 
 <p>Create a new stamp cards in this service, and your customer will receive an information email with a stamp card code and the number of stamps which remain until redemption.</p>
-<p>The stamp card code, in the format "AA BB CC 11 22 33", is given to the cashier at checkout who will then redeem or add additional stamps to the digital stamp card.</p>
+<p>The stamp card code, in the format "AA 11 22", is given to the cashier at checkout who will then redeem or add additional stamps to the digital stamp card.</p>
 <p>Redeem, or verify, a stamp code by submitting the stamp card code in the service interface. Customers will receive updates by email and all the activity will be logged, trackable in your service interface.</p>
     
 <p>Functions included:</p>
