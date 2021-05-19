@@ -134,3 +134,4 @@ The Bosbec Workflow Builder include built in-functions to alter and create data.
 
 **Set lower case** - In the Destination property, set value to lower case: `.tolower()`
 
+**Count units in resource** - Data Operations/Set Data. In the Source-property add prefix `count()` to the end of the resource. Format: `[resource_name].count()`
