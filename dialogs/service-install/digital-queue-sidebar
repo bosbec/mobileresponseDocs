@@ -23,16 +23,6 @@
 <li>Visual presentation of your queue.</li>
 </ul>
 
-<p>If you want to send a link with the current queue status in your queue ticket message, contact our support team, who then will implement Pages-functionality.</p>
-
-<p>Required for Pages-functionality:</p>
-
-<ul>
-<li>Change the token in the workflow: Incoming HTTP Trigger "pages_new" and message templates for "pages"</li>
-<li>Change name of columns in service. Change to the chosen queue name.</li>
-<li>Change the logo. Bosbec logo is deafult.</li>
-</ul>
-
 </div>
 </div>
 </div>
