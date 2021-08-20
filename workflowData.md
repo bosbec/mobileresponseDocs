@@ -155,13 +155,11 @@ As an example, the workflow job "Unit Operations" let you find units from your a
 Include all 100 units on one page by including all units on one page
 
 * Page size: 100
-
 * Page index: 1
 
 **Method 2: Several pages with smaller amounts of units per page**
 
 * Page size: 10
-
 * Page index: `metadata.index_counter`
 
 Define your index_counter in a Data Operations job before Unit Operations. "Data Operations" and "Set data". Source: 1, Destination: `metadata.index_counter` 
