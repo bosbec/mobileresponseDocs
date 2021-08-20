@@ -138,7 +138,7 @@ The Bosbec Workflow Builder include built in-functions to alter and create data.
 
 ## Searching data on your account (page size & page index)
 
-Working with large quantities of units on your account can quickly impact your work. In the admin panel, your Unit dashboard can grow long and it can be difficult to manage units in uyour workflow to manage statistics, mailings or other solutions you build.
+Working with large quantities of units on your account can quickly impact your work. In the admin panel, your Unit dashboard can grow long and it can be difficult to manage units in your workflow to manage statistics, mailings or other solutions you build.
 
 In the same way your Unit dashboard divides all units in several pages you can import your unit in pages, with custom page sizes, to work with them in batches. In this way, the workflow can work faster and the Bosbec system will operate better. 
 
