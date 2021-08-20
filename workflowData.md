@@ -147,7 +147,7 @@ As an example, the workflow job "Unit Operations" let you find units from your a
 **Page size:** Amount of units for each page. If you want to import all your units in one batch, set this value to a high number to include all your units
 **Page index:** Which page do you want to import? If you set page size to a low number, e.g. 10 units per page, you can increment the page index to work with several pages, 10 units per page. (Start with 1)
 
-### Example, Two ways of working with 100 units:
+### Two methods of working with 100 units:
 
 **Method 1: Large page size**
 Include all 100 units on one page by including all units on one page
