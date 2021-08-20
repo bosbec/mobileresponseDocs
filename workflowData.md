@@ -144,28 +144,24 @@ In the same way your Unit dashboard divides all units in several pages you can i
 
 As an example, the workflow job "Unit Operations" let you find units from your account and you decide the amount of units with custom page sizes and the amount pages to import.
 
-**Page size:** Amount of units for each page. If you want to import all your units in one batch, set this value to a high number to include all your units.  
- 
-**Page index:** Which page do you want to import? If you set page size to a low number, e.g. 10 units per page, you can increment the page index to work with several pages, 10 units per page. (Start with 1)  
-
 ### Two methods of working with 100 units:
 
 **Method 1: Large page size**
 
 Include all 100 units on one page by including all units on one page
 
-Page size: 100
+* Page size: 100
 
-Page index: 1
+* Page index: 1
 
 **Method 2: Several pages with smaller amounts of units per page**
 
-Page size: 10
+* Page size: 10
 
-Page index: metadata.index_counter
+* Page index: `metadata.index_counter`
 
-Define your index_counter in a Data Operations job before Unit Operations. "Data Operations" and "Set data". Source: 1, Destination: metadata.index_counter 
+Define your index_counter in a Data Operations job before Unit Operations. "Data Operations" and "Set data". Source: 1, Destination: `metadata.index_counter` 
 
-Increment your page index with "Data Operations" and "Calculate". E.g Source: [metadata.index_counter]+1, Destination: metadata.index_counter.
+Increment your page index with "Data Operations" and "Calculate". E.g Source: `[metadata.index_counter]+1`, Destination: `metadata.index_counter`.
 
 A general rule of thumb, if you have large quantities of units on your account, use Method 2, and work with units in batches. If you have smaller amount of units, use Method 1 to include all units on one page.
