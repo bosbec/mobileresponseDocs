@@ -104,7 +104,7 @@ Metadata contains all dynamic variables of your workflow. Store temporary data, 
 ### Resources
 
 Resources are placeholders for larger enteties than metadata, e.g an API-request, a Unit on the account or a list of data logs. Use "Resources" as a pool for storing and accessing larger and more complex data entities. To access a resource in your workflow, use the syntax below:
-* `[RESOURCE_NAME].[YOUR_DATA]` - Access data of a resource (e.g `found_unit.firstname`)
+* `[RESOURCE_NAME].metadata.[YOUR_DATA]` - Access data of a resource (e.g `found_unit.metadata.firstname`)
 
 ### Temporary group
 
