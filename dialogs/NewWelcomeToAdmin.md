@@ -15,4 +15,4 @@ To continue using the service after your test period ends, add your credit card 
 
 Should you have any questions during your development journey, please contact us at **support@bosbec.com**.
 
-_When you click "Got it", you'll be prompted to install included services._
+_Now go ahead and click "Take a tour!" to take a short tour describing some of the fundamentals._
