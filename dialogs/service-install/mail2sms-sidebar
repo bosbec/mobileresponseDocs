@@ -1,7 +1,7 @@
 <div>
     <p>
 </p>
-<div class="service-width-100" style="height: 640px">
+<div class="service-width-100" style="height: 100%;margin-bottom:20px;">
         <div class="service-image-container">
         <img class="service-image" src="https://s3-eu-west-1.amazonaws.com/help.bosbec.io/Service+Icons/Default+Service+Icon.png"></div>
 <div class="service-padding">
