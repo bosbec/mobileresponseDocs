@@ -1,60 +1,21 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@CarlJohansson 
-bosbec
-/
-mobileresponseDocs
-Public
-5
-0
-2
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-mobileresponseDocs/dialogs/service-install/incident-sidebar
-@johanlevin
-johanlevin Update incident-sidebar
-Latest commit 8c12345 on 20 Aug 2018
- History
- 1 contributor
-89 lines (74 sloc)  1.83 KB
-  
 <div>
     <p>
 </p>
 <div class="service-width-100" style="height: 640px">
         <div class="service-image-container">
-        <img class="service-image" src="https://s3-eu-west-1.amazonaws.com/help.bosbec.io/Service+Icons/Incident.png"></div>
+        <img class="service-image" src="https://s3-eu-west-1.amazonaws.com/help.bosbec.io/Service+Icons/Default+Service+Icon.png"></div>
 <div class="service-padding">
     <div class="service-margin-bottom">
     </div>
     <div>
     
 <div style="margin-bottom: 20px; font-weight: 700">€99/month</div>
-    <p>An incident can come from anywhere; a system failure, a business application going down, or a security breach. The key success factor is to have a rapid communication process, quickly identifying the problem, and finding a solution in order for operations to return to normal.</p>
+    <p>A standard setup for mail to sms.</p>
     
-<p>These are the key features included in the Bosbec Incident Service:</p>
+<p>Key features:</p>
 
 <ul>
-<li>Incident group summon</li>
-<li>Relevant communication</li>
-    <li>Status Updates</li>
-    <li>Verification of received information</li>
-    <li>Reminders</li>
-    <li>Chat groups</li>
-    <li>Dynamic forms/checklists</li>
-    <li>Documentation/reports per incident</li>
+<li>Send an email to your account and let the service turn it into SMS messages to your receivers</li>
 </ul>
 </div>
 </div>
@@ -119,15 +80,3 @@ text-component p:nth-child(1){
 }
 
 </style>
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
