@@ -130,6 +130,8 @@ The Bosbec Workflow Builder include built in-functions to alter and create data.
 
 **Generate random float** - Generate decimal value ranging from 0 to 1: `[rnddecimal()]`
 
+**Generate guid** - Generate a Globally Unique Identifier: `[uid()]` or `uid()`
+
 **Set upper case** - In the Destination property, set value to upper case: `.toupper()`
 
 **Set lower case** - In the Destination property, set value to lower case: `.tolower()`
