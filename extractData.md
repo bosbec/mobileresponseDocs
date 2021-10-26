@@ -7,6 +7,7 @@ There are three different features available at this moment (and you can set the
   * Gets the group(s) from the ImportFinished-event and adds the group to the workflow groups (NOTE: not to the temporary group)
 * MoveWorkflowGroupMembersToTemporaryGroup
   * Reads the group-members from the workflow groups, removes those groups from the current execution and adds all members from the workflow groups to the WFC temporary group instead. (This is done so that you may apply WFC temporary group-filters)
+  * Unit resource will have a name like unit-resource-1 where the job will try not to overwrite, so if unit-resource-1 exists it will use unit-resource-2
 * GetGroupFromDynamicGroupCreationFinishedEvent
   * Just like (1), this extraction finds out what group was just compiled and adds that group(s) to the workflow groups (NOTE: not to the temporary group)
   
