@@ -16,9 +16,11 @@ If the property SingleFoundUnitAsIncomingUnit is set to true, and the job found 
 
 
 
-**Notes:  
-Can set the IncomingUnit.  
-Will not create units, only find existing units.**
+**Notes:     
+Can set the IncomingUnit.     
+Will not create units, only find existing units.     
+Remember to check the box if you want the job to get data from worflow context "metadata.xyz"
+**
 
 
 **How to:**  
