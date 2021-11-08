@@ -2,8 +2,6 @@
 
 *MetaData can be compared in different ways depending on what type of metadata that can be identified.*
 
-**This documentation is just a place holder**
-
 Below is the different aliases:  
 Use the value to the left e.g.  **{ "equals", "Equals" },** means that you can write equals **or** the **=** as operator, and both of them will be interpreted as a tests where we want both sides to be equal.
             // Equals
