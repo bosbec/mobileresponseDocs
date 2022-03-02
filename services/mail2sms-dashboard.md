@@ -35,8 +35,8 @@
 
 # Mail2SMS
 
-Add addresses that are allowed to send via your account by adding them to the group "Mail2SMS Allowed Senders".
+The recipient syntax is decided by the email channel used, but the standard setups uses either [phonenumber]@[subdomain].[domain].[tld] (i.e. +46700000000@bosbec.qlnk.se) or [phonenumber]@[domain].[tld] (i.e +46700000000@qlnk.se).
 
-Emails sent to phonenumber@qlnk.se (i.e. +46700000000@qlnk.se) from one of the allowed senders will be converted to SMS.
+Allowed senders are also decided by the used channel.
 
 Please make sure you remove any signatures, especially images, to ensure a higher SMS delivery rate.
