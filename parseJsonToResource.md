@@ -4,7 +4,7 @@ _This job will parse a json in the "Json source" either from a resource/metadata
 The result is a json resource in the workflow context._
 
 ## Properties
-* **Json source*** - (input) A value with a json eg. _{"sample" : "json"}_ or a reference to a resource or metadata in the workflow context _metadata.my_json_
+* **Json source*** - (input) A value with a json eg. _{"sample" : "json"}_ or a reference to a resource (could for example be a UnitResource) or metadata in the workflow context _metadata.my_json_
 * **Destination resource name*** - (output) A name for the created json resource.
 
 ## Other
