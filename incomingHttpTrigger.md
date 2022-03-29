@@ -52,6 +52,21 @@ When is public is set to `true`:
 
 * The requests are formed as above, but don't require any token
 
+
+When trying to access data from the incoming request, assuming that the request-resource has name `request1`:
+
+* `request1.header.content-type` would get the value in the content-type header.
+* `request1.body` gets the body
+* `request1.headers` gets all headers comma-separated
+* `request1.path` gets the path 
+* `request1.full_path` gets the full path
+* `request1.method` gets the method eg. post/get
+* `request1.querykeys` gets the keys in the query as comma-separated
+* `request1.query.x` gets the value for the query-parameter 'x'
+* `request1.contenttype` a shortcut to get the contet-type header
+* `request1.ip` gets the requester-ip
+
+
 ## Authentication tokens
 The authentication tokens used must have permissions to run the trigger or workflow. When resticting the permissions it's possible to set that only a specific trigger or workflow can be started.
 
