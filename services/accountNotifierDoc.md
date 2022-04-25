@@ -22,6 +22,6 @@
 <p><b>Gotchas</b></p>
 
 <ul>
-<li>The account owner needs to have an email address set in order to receive error notifications.
-<li>Any account errors are listed in admin, under Administrator Tools -> Account Log, regardless of if you have this service or not (you need to have sufficient permissions to see them, though). This service only handles notifying you about them via email.
+<li>The account owner needs to have an email address set under Account Settings -> Administrator Settings, in order to receive notifications.
+<li>Any account errors and -warnings are listed in admin, under Administrator Tools -> Account Log, regardless of if you have this service or not (you need to have sufficient permissions to view that page, though). This service only handles <i>notifying</i> you about them via email.
 </ul>
