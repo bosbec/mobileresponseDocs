@@ -5,12 +5,12 @@
 <ul>
 <li>The administrator will receive notifications by email.
 <li>A notification will contain details for the latest log item only; the log message and and what type it is. If there have been multiple errors in the last hour, it will simply state that multiple issues have been triggered, and refer you to the account log page for details.
-<li>The service will check for any pending errors or warnings every 60 minutes.
+<li>The service will check for pending errors and/or warnings every 60 minutes.
 </ul>
 
 <p><b>Error types</b></p>
 
-<p>The service currently handles these specific errors:</p>
+<p>Examples of the types of errors you could get notified about:</p>
 
 <ul>
 <li>Billing errors. On paying orders, mainly, but also on general errors with the payment method.
