@@ -1,4 +1,4 @@
-<p>This service notifies the account administrator when errors or warnings occur during background tasks.</p>
+<p>This service notifies the account owner when errors or warnings occur during background tasks.</p>
 
 <p><b>Overview</b></p>
 
