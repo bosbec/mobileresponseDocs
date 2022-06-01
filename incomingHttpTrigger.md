@@ -104,3 +104,5 @@ someworkflow is the wokflow name
 ## Other
 
 If it's possible use the api-token header instead of adding your token to the request path.
+If you run into problems where the workflow execution stops before you get a response, as an example this can happen when you make a Remote-Http-Request before the response to the api-endpoint. You can add the header *processing-until-response : true* to the request, and the request will not stop processing until a response has been created (or some time out).
+You can also set a custom timeout with the header *processing-time-out : 1000* where the value is milliseconds to wait.
