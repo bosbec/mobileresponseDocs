@@ -9,17 +9,18 @@
     </div>
     <div>
     
-<div style="margin-bottom: 20px; font-weight: 700">€99/month</div>
-    <p>Bosbec Messaging gives you a comprehensive solution that takes care of all your basic messaging needs. Use in a variety of systems and services or manage online via an easy GUI.</p>
+<div style="margin-bottom: 20px; font-weight: 700">€x/month</div>
+    <p>
+        The Bosbec Refer a friend (WordPress) service is used in combination with the Bosbec WordPress plugin. <br/>
+        If you're using a WordPress setup with WooCommerce you can utilize the Refer a friend feature and have your Bosbec account send the messages!
+    </p>
     
-<p>Services included:</p>
+<p>Features included:</p>
 
 <ul>
-<li>Write and Send Messages</li>
-<li>Send Messages with Replies</li>
-    <li>Send Message Templates</li>
-    <li>App Group Chat</li>
-    <li>API2SMS Standard</li>
+    <li>Have your customers invite their friends</li>
+    <li>Track invites</li>
+    <li>Produce coupons for customers and invitees</li>
 </ul>
 </div>
 </div>
