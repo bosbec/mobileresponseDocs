@@ -22,9 +22,10 @@
                 <li>Track invites</li>
                 <li>Produce coupons for customers and invitees</li>
             </ul>
+            
+            <i> Note: You need to select an incoming http-channel from your account for this service to be installed correct! </i>
         </div>
     </div>
-    <p> Note: You need to select an incoming http-channel from your account for this service to be installed correct! </p>
 </div>
 
 <style>
