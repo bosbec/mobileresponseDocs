@@ -9,21 +9,22 @@
     </div>
     <div>
     
-<div style="margin-bottom: 20px; font-weight: 700">€x/month</div>
-    <p>
-        The Bosbec Refer a friend (WordPress) service is used in combination with the Bosbec WordPress plugin. <br/>
-        If you're using a WordPress setup with WooCommerce you can utilize the Refer a friend feature and have your Bosbec account send the messages!
-    </p>
-    
-<p>Features included:</p>
+        <div style="margin-bottom: 20px; font-weight: 700">€ x /month</div>
+            <p>
+                The Bosbec Refer a friend (WordPress) service is used in combination with the Bosbec WordPress plugin. <br/>
+                If you're using a WordPress setup with WooCommerce you can utilize the Refer a friend feature and have your Bosbec account send the messages!
+                </p>
 
-<ul>
-    <li>Have your customers invite their friends</li>
-    <li>Track invites</li>
-    <li>Produce coupons for customers and invitees</li>
-</ul>
-</div>
-</div>
+            <p>Features included:</p>
+
+            <ul>
+                <li>Have your customers invite their friends</li>
+                <li>Track invites</li>
+                <li>Produce coupons for customers and invitees</li>
+            </ul>
+        </div>
+    </div>
+    <p> Note: You need to select an incoming http-channel from your account for this service to be installed correct! </p>
 </div>
 
 <style>
