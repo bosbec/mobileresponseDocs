@@ -33,7 +33,7 @@
 }
 </style>
 
-# Two-factor authentication Documentation
+# Two-factor authentication
 
 Two-factor authentication, or multi-factor authentication, is a method for granting access to a user after successfully presenting at least two pieces of evidence. This evidence, or factors, is a combination of something they know (e.g., password) and something they have (2FA-code) or something they are. This documentation will explain how the Bosbec Two-factor authentication service is used.
 
