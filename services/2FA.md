@@ -1,14 +1,11 @@
 There are two ways of using the service:
 
-1. Make a request to generate a code and send message to the user. Collect the code from the
-user and make a second request to verify the code.
-2. Make a request to generate a code and send message to the user and ask to include the
-generated code in the response.
+1. Request to generate a code and send a message to the user. Then, collect the code from the user and make a second request to verify the code.
+2. Request to generate a code, send a message to the user, and ask to include the generated code in the response.
 
-For each call to the rest api you must include your “api-token” and declare the “content-type” to
-“json/application”.
+For each call to the rest API, you must include your "API-token" and declare the "content-type" to "json/application".
 
-You can find your api token, or create a new one, under Tools -> REST-api tokens in the top navigation menu.
+You can find your API token, or create a new one, under Tools -> REST-api tokens in the top navigation menu.
 
 ##### Request Case 1
 
