@@ -54,6 +54,7 @@ For each call to the REST API, you must include your API token and declare the "
 ```JSON
 {
   "workflowid": "00000000-0000-0000-0000-000000000000",
+  "triggernames":"generate-code",
   "metadata": {
     "receiver": "+46707123456"
   }
