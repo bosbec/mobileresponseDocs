@@ -33,17 +33,17 @@
 }
 </style>
 
-# Two-factor authentication Documentation
+# Two-factor authentication
 
-Two-factor authentication, or multi-factor authentication is a method used for granting access to a user after it has successfully presented atleast two peices of evicende. These evidences, or factors, is a combination of something they know (e.g password) and something they have (2FA-code), or something they are. This documentation will explain how Bosbec Two-factor authentication service is used.
+Two-factor authentication, or multi-factor authentication, is a method for granting access to a user after successfully presenting at least two pieces of evidence. This evidence, or factors, is a combination of something they know (e.g., password) and something they have (2FA-code) or something they are. This documentation will explain how the Bosbec Two-factor authentication service is used.
 
 ## Usage
 There are two ways of using the service:
 
-1. Make a request to generate a code and wsend message to the user. Collect the code from the user and make a secind request to veryfy the code.
-2.  Make a request to generate a code and send mesage to the user and ask t oinculde the generated code in the response.
+1. Request to generate a code and send a message to the user. Then, collect the code from the user and make a second request to verify the code.
+2. Request to generate a code, send a message to the user, and ask t include the generated code in the response.
 
-For each call to the REST API you myust include your API-token and declare the "content-type" to "json/application". You can find your API-token, or create a new one on the Bosbec admin interface. Select "Administrator Tools" -> "REST Api-token" in the navigation menu.
+For each call to the REST API, you must include your API token and declare the "content-type" to "json/application". You can find your API-token or create a new one on the Bosbec admin interface. Select "Administrator Tools" -> "REST Api-token" in the navigation menu.
 
 
 
