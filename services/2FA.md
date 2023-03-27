@@ -16,6 +16,7 @@ Create code and send message to user
 ```
 {
 "workflowid": "00000000-0000-0000-0000-000000000000",
+  "triggernames":"generate-code",
 "metadata": {
   "receiver": "+46707123456"
   }
