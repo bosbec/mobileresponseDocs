@@ -27,3 +27,8 @@ FindFromAccount: Search for whole "words" such as **John Doe**, and the search w
 
 * To compare data found on the unit, use the following format: unit.metadata.key
 * To compare data found on the workflow, use: metadata.key
+
+**Operate - Update meta data**
+
+* To assign a metadata in the left column, use the following format: unit.metadata.key
+* To retrieve a value from the workflow context metadata in the right column (get a value), use: metadata.key
