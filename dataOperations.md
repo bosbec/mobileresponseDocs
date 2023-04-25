@@ -46,7 +46,7 @@ _Operations, calculations and manipulation on data in workflow context, units, g
 
 ### Encode decode
 * **Source*** - Value or source of value. Use format `{{metadata.some_value}}` for dynamic content.
-* **Destination*** - Destination of extracted value, could be a resource on the account, or in WFC (e.g `metadata.full_name`) 
+* **Destination*** - Destination of value, could be a resource on the account, or in WFC (e.g `metadata.result`) 
 * **Encode decody type*** - Select encode decode type
 * **Parse encode decode type** - Choose parse format, for example `utf-8` or `ascii`
 * **Non default encoding name** - defaults to `X2` but can be changed to `x2` for lower case result format
@@ -80,6 +80,24 @@ _Operations, calculations and manipulation on data in workflow context, units, g
 * **Destination*** - Destination of log data value, could be a resource on the account, or in WFC (e.g `metadata.full_name`)
 * **Log key*** - Log key
 * **Order** - Order in which the jobs are executed. Lowest value equals highest priority (e.g 0)
+
+### Hash 
+* **Source*** - Value or source of value. Use format `{{metadata.some_value}}` for dynamic content.
+* **Destination*** - Destination of value, could be a resource on the account, or in WFC (e.g `metadata.result`) 
+* **Hash method*** - Choose hash method `Standard` or `Hmac` (uses a key when encoding)
+* **Standard**
+    * **Parse hash name** - Value or source of value. Use format `{{metadata.hash_name}}` for dynamic content. Supported values are the same as Bosbec hasg type drop down.
+    * **Bosbec hash type** - Choose form predefined hash type
+    * **Non default encoding name** - override parse format, for example `utf-8` or `ascii`
+    * **Non default ouput format** - defaults to `X2` but can be changed to `x2` for lower case result format
+* **HMAC keynased algorithm**
+    * **Key*** - Value or source of value. Use format `{{metadata.hash_key}}` for dynamic content.
+    * **Key is hex string** - option to handle key as hex value
+    * **Parse hash name** - Value or source of value. Use format `{{metadata.hash_name}}` for dynamic content. Supported values are the same as Bosbec hasg type drop down.
+    * **Bosbec hash type** - Choose form predefined hash type
+    * **Non default encoding name** - override parse format, for example `utf-8` or `ascii`
+    * **Non default ouput format** - defaults to `X2` but can be changed to `x2` for lower case result format        
+
 
 ### Insert regex
 * **Source text*** - Value or source of value.
