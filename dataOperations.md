@@ -44,6 +44,13 @@ _Operations, calculations and manipulation on data in workflow context, units, g
 * **Destination*** - Destination of stored value, could be a resource on the account, or in WFC (e.g `metadata.full_name`) 
 * **Order** - Order in which the jobs are executed. Lowest value equals highest priority (e.g 0)
 
+### Encode decode
+* **Source*** - Value or source of value. Use format `{{metadata.some_value}}` for dynamic content.
+* **Destination*** - Destination of extracted value, could be a resource on the account, or in WFC (e.g `metadata.full_name`) 
+* **Encode decody type*** - Select encode decode type
+* **Parse encode decode type** - Choose parse format, for example `utf-8` or `ascii`
+* **Non default encoding name** - defaults to `X2` but can be changed to `x2` for lower case result format
+
 ### Extract value regex
 * **Source text*** - Value or source of value.
 * **Result destination*** - Destination of extracted value, could be a resource on the account, or in WFC (e.g `metadata.full_name`) 
