@@ -21,4 +21,8 @@ _Find, filter, operate on files_
 * **Regex pattern** - Regex pattern to filter files found on server
 
 ### Operate on file - Save information as resource
-* **Resource name** - Name of file resource
+* **Resource name** - Name of resource with information about the files found on the server
+
+### Operate on file - Save to file service
+* **File resource name** - Name of file resource
+* **File name** - File name to use in file library
