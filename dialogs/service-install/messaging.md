@@ -9,7 +9,6 @@
         <div class="service-padding">
             <div class="service-margin-bottom">
                 <div class="service-header">Messaging</div>
-                <div class="service-cost">€99/month</div>
             </div>
             <div>
                 <p>Bosbec Messaging gives you a comprehensive solution that takes care of all your basic messaging needs. Use in a variety of systems and services or manage online via an easy GUI.</p>
