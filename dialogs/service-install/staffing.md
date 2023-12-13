@@ -9,7 +9,6 @@
         <div class="service-padding">
             <div class="service-margin-bottom">
                 <div class="service-header">Staffing</div>
-                <div class="service-cost">€99/month</div>
             </div>
             <div>
                 <p>The Bosbec Staffing Solution lets you start with the fundamental functions in staffing. You will be up and running in no time.</p>
