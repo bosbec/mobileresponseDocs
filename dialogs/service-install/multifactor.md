@@ -9,7 +9,6 @@
         <div class="service-padding">
             <div class="service-margin-bottom">
                 <div class="service-header">Two-factor authentication</div>
-                <div class="service-cost">€99/month</div>
             </div>
             <div>
                 <p>Bosbec Multi-Factor gives you a high security log in feature for your IT-system.</p><br />
