@@ -40,4 +40,4 @@ This job can be connected to the following workflow elements.
 
 ## Other
 
-No further information available.
+When working with datalog items, you may store searchable metadata for each individual log item by having the key prefixed with _search_example (underscore search underscore data-name). So the example "_search_example" set to "test123" will store a searchable value "example=test123". Finding data log items by metadata can utilize this, compose a search phrase with the key (excluding the underscore-search-underscore part and separate key and value with equal sign = )
