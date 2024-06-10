@@ -2,11 +2,11 @@
 
 The following keys need to be entered in Account Settings:
 
-* starweb_shop_name
-* starweb_client_id
-* starweb_client_secret
-* starweb_group_key
-* rule_api_key
+* `starweb_shop_name`
+* `starweb_client_id`
+* `starweb_client_secret`
+* `starweb_group_key`
+* `rule_api_key`
 
 A channel also needs to be created and selected in the triggers "Newsletter" and "order-created."
 
