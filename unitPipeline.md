@@ -8,8 +8,8 @@ The pipeline will start with an empty resource, in this case an empty unit-resou
 
 So the unit-pipeline operates independently within its own context, starting with an empty unit-resource.  
 This context is separate from the larger workflow and is discarded once the pipeline completes.  
-* LoadResource: Replaces the current unit-resource with the loaded one.
-* Find: Adds units to the existing unit-resource within the pipeline's context.
+* **LoadResource**: Replaces the current unit-resource with the loaded one.
+* **FindXX**: Adds units to the existing unit-resource within the pipeline's context.
 * After the steps run, the unit-pipeline's context is cleared.  
 
 ## Properties
