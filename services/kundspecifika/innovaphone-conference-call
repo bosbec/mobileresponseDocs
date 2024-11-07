@@ -1,0 +1,16 @@
+<h2>Instructions</h2>
+
+<p>Ensure that the following settings are available on the account:</p>
+
+<ol>
+    <li><strong>m_key</strong>
+        <ol>
+            <li>Enter your API key.</li>
+        </ol>
+    </li>
+    <li><strong>conf_url</strong>.
+        <ol>
+            <li>The URL is specified without a query. Example: <em>{conf_url}?m={string_base64_mod}</em></li>
+        </ol>
+    </li>
+</ol>
