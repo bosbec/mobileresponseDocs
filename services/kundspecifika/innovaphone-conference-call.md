@@ -1,6 +1,8 @@
-**Instruktioner**
+**Instructions**
 
-Säkerställ att följande inställningar finns tillgängliga på kontot:
+Ensure that the following settings are available on the account:
 
 1. **m_key**
-2. **conf_url**. URL anges utan query. Exempel: {conf_url}?m={string_base64_mod}.
+    1. Enter your API key.
+2. **conf_url**.
+    1. The URL is specified without a query. Example: _{conf_url}?m={string_base64_mod}_
