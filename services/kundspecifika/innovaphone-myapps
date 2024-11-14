@@ -1,0 +1,26 @@
+<h2>Instructions</h2>
+
+<strong>Read before installing</strong>
+
+<ol>
+    <li>Create an HTTP channel.</li>
+    <li>Select the created channel below.</li>
+    <li>Install the service.</li>
+    <li>Run "Configure Service" step in the service.</li>
+    <li>The link https://<your-sub-domain>.in.bosbec.io/login will now link to this service.</li>
+</ol>
+
+<strong>Changing what service is opened</strong>
+
+<ol>
+    <li>Go to My Services</li>
+    <li>Right-click the service you want to be the start page.</li>
+    <li>Select Details.</li>
+    <li>Copy the Service ID at the top of the side nav.</li>
+    <li>Go to Workflows.</li>
+    <li>Right-click the "Innovaphone - MyApps Login" workflow and select metadata.</li>
+    <li>Paste the service ID in the value for key service_id.</li>
+    <li>Click SAVE.</li>
+</ol>
+
+Note that this key will only be present if you've run "Configure Service" beforehand.
