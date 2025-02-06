@@ -10,14 +10,18 @@ We want one set of jobs to be executed when **metadata.last-test** is later than
 The settings for that MetaDataRoute should be *Meta data source* should be set to **metadata.last-test** and *Compare value source* should be set to **metadata.last-ok**. And to make the comparison test that the first metadata (**metadata.last-test**) is later than the **metadata.last-ok** we will set the *Compare operator* to **>** meaning that the source should be bigger than the value we compare it to.    
 If we want something else to happen when this comparison doesn't match we connect another set of jobs to the **Route destination on no match** that is available when hovering over the job.  
 
-For more information about what operators are available and how to use them, please read the section on @{text:Comparing MetaData;link:metaDataComparison}@   
-For more information about metadata and how to use it during workflow execution, please refer to the section on @{text:Workflow Context;link:workflowContext}@  
 
-For more information about what operators are avaiable and how to use them, please read the section on https://help.bosbec.io/#/build/comparison-operators
-For more information about metadata and how to use it during workflow execution, please refer to the section on https://help.bosbec.io/#/build/working-with-variables
+When the job has two routes that are not exclusive, meaning that two or more routes can be true/matched at the same time.  
+Example: route1 compares a number that may be between 1-5 while route2 compare if a number is exactly 3. Both will be true and match.  
+What happens is that the workflow will behave in a way that execute first from route1 and then route2.  
+If this is something that you want to do, then you will probably want to split the workflow, using the checkbox to split on each matching route.  
+
+For more information about what operators are available and how to use them, please read the section on @{text:Comparing MetaData;link:metaDataComparison}@   
+For more information about metadata and how to use it during workflow execution, please refer to the section on @{text:Workflow Context;link:workflowContext}@   
 
 **Notes:   
-The jobs connected from the "Jobs"-connector will not be executed.**
+The jobs connected from the "Jobs"-connector will not be executed.   
+Multiple matching routes at the same time may cause unexpected behaviour**
 
 **How to:**  
 Create as many metadata routes as you need and set up the evaluation for each of them.  
