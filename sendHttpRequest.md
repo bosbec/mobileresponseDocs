@@ -1,51 +1,79 @@
-# Send http request
+# Send HTTP request
 
-The send http request job is an easy way to perform http requests to external systems to either create a web hook or fetch data for later use within your workflow.
+The Send HTTP request job is used to perform HTTP requests to external systems to either create a webhook or fetch data for later use within your workflow.
 
 ## Properties
 
 The properties for configuring the request are described below.
 
-* **Url** - The url to perform the http request against.
-* **Method** - The http method to use for the http request.
-* **Headers** - The headers to include in the request. When the header Content-Type is provided, the provided value will be used. When not provided the system determines the most appropriate.
-* **Body** - The request body to send with the request.
-* **Timeout** - The timeout for the request.
-* **Response resource name** - The name of the response resource, where the response is stored.
-* **Response type** - In the response type, it's possible to define the type of response that's expected. The response resource will automatically try to parse the response to the provided format.  
-Available options are:
-  * Auto - The response type till be determined by the Content-Type header from the response.
-  * Text - The response is plain text, suitable for html responses.
-  * Json - The response has a json payload. The response body will be parsed to a JsonResource.
-  * Xml - The response has a xml payload. The response body will be parsed to a XmlResource.
-* **Response validation** - Determines how the response should be validated as successful or failed.  
-Available options are:
-  * Valid response code - Regards all 2XX response codes as successful.
-  * Valid response code and response type - The response code must match 2XX and the Content-Type header must match the chosen _Response type_. If _Auto_ is chosen, any Content-Type is valid.
-  * No validation - All responses are always regarded as successful.
+* **Url** (required)
+  * The URL to perform the HTTP request against.
+* **Method** (required)
+  * The HTTP method to use for the request (GET, POST, PUT, DELETE, etc.).
+* **Headers** (optional)
+  * Headers to include in the request. When Content-Type is provided, that value is used; otherwise the system determines the most appropriate value automatically.
+* **Body** (optional)
+  * The request body to send with the request.
+* **Timeout** (optional)
+  * The timeout duration for the request.
+* **Response resource name** (required if capturing response)
+  * The name of the resource where the response will be stored for use in subsequent jobs.
+* **Response type** (optional; default: Auto — determined by Content-Type header)
+  * Defines the expected response format. The response body will be parsed accordingly.
+  * Options: Auto, Text (plain text/HTML), Json (JSON payload), Xml (XML payload)
+* **Response validation** (optional; default: Valid response code)
+  * Determines what constitutes a successful response.
+  * Options: Valid response code (2XX only), Valid response code and response type (2XX + matching Content-Type), No validation (all responses succeed)
 
-## Routing
+## Execution paths
 
-When creating connections to jobs that should be executed after this job, there are three different types of connections that occour at different times. When a response is successful or unsuccessful depends on the setting chosen for property _Response validation_.
+This job supports three different execution paths based on response validation settings (configured in the Response validation property):
 
-* **Jobs** - Will continue immidiately after the request has been sent wihout waiting for the response.
-* **Jobs to execute after successful response** - Will continue here after a successful response has been received.
-* **Jobs to execute after an unsuccessful response** - Will continue here when a response has returned.
+* **Jobs** 
+  * Continue immediately after the request is sent without waiting for a response. Use for fire-and-forget webhooks.
+* **Jobs to execute after successful response**
+  * Continue here after receiving a successful response (determined by the Response validation setting).
+* **Jobs to execute after unsuccessful response**
+  * Continue here when a response returns but does not meet validation criteria.
 
-## Response resource
+## Response resource output
 
-The response resource contains information from the received response that can be used later on in the workflow. The _Body_ will be a parsed resource from the _RawBody_ using the settings provided in the _Response Type_ property.
+When a response is captured to a resource, the following properties are available for subsequent jobs:
 
-### Response properties
+* **Url**
+  * The URL that was requested.
+* **Status code**
+  * The HTTP status code from the response.
+* **Status message**
+  * Descriptive text about the response status.
+* **Headers**
+  * All response headers received.
+* **Raw body**
+  * The response body in its original form.
+* **Body**
+  * The response body parsed according to the Response type setting (StringResource, JsonResource, or XmlResource).
+* **Body type**
+  * The resource type the body was parsed to.
+* **Response time**
+  * Duration in milliseconds until the response was received.
+* **Request time**
+  * Timestamp (UTC) when the request was sent.
 
-The properties from the response are:
+## Best practices and tips
+* Name your response resource something descriptive so that the workflow is easier to work with in the future. A more descriptive name makes the workflow more readable.
+* Building the request body can also be done in a JSON pipeline before running this job, saving the JSON to a JSON resource and referencing the resource using the {{resourceName}} syntax.
+* Are you looking to send a response to an incoming request? Take a look at Send API Response instead.
 
-* **Url** - The url that was requested.
-* **Status code** - The status code for the response.
-* **Status message** - Information about the response status.
-* **Headers** - Contains all response headers received from response.
-* **Raw body** - The received body, as we received it.
-* **Body** - The received body, parsed to a resource.
-* **Body type** - The type of resource the body was parsed to. _StringResource_, _JsonResource_ or _XmlResource_.
-* **Response time** - How long time it took before the response was received, in ms.
-* **Request time** - The time when the actual request was performed, in UTC.
+## Related jobs
+* Send API Response
+* Parse JSON to resource
+* Parse XML to resource
+* JSON Pipeline
+
+## References
+* [Quickstart: Your first API](https://help.bosbec.com/knowledge-base/quickstart-your-first-api/)
+  * Step-by-step guide to getting started with HTTP requests
+* [Building your first API](https://help.bosbec.com/knowledge-base/building-your-first-api/)
+  * Advanced patterns and best practices
+* [Send HTTP request](https://help.bosbec.com/knowledge-base/send-http-request/)
+  * Detailed job documentation
