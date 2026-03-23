@@ -606,11 +606,9 @@ Converts UTF-encoded text from hex notation to readable characters.
 
 ## Best practices and tips
 
-* **Set data** is the simplest way to copy or move a value between workflow context keys — use it before reaching for more complex operations.
-* Chain **Calculate data** expressions using bracket notation (`{{metadata.result}}+{{metadata.adjustment}}+1`) to keep arithmetic readable.
+* While it is often possible to do all data operations in one single job, it may be beneficial to break it up into multiple jobs for readability. For example, grouped by the data they modify. 
+* **Set data** is a good way to copy or move a value between workflow context keys — use it before reaching for more complex operations.
 * For date manipulation, prefer **Modify date** for relative changes (add/subtract) and **Set data** with statement syntax for static date assignments.
-* Use **Split string** with **Result as resource** when the number of parts is unknown, and **Destination key** when you need to reference specific indexed parts in later operations.
-* Regex operations (**Extract value regex**, **Insert regex**, **Remove regex**, **Replace regex**) share the same option flags. Use **Every match** to act on all occurrences and **First match** / **Last match** for targeted changes.
 * The **Concat**, **Concat group member data**, and **Concat unit resource data** operations use a single-brace template format (`{metadata.key}`) in their format string — this is different from the `{{metadata.key}}` statement syntax used in other source fields.
 
 ## References
