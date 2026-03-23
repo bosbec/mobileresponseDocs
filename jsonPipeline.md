@@ -1,96 +1,203 @@
-# Json pipeline #
+# JSON Pipeline
 
-The json pipeline job sets up a pipeline for managing json resources.
+The JSON Pipeline job runs an ordered set of JSON transformation steps on a workflow resource. Use it to load a JSON resource, modify it step by step, and save it back for later jobs.
 
-A pipeline job consists of a number of steps that are run in the provided order. In each step the resource and workflow can be referenced.
+## Properties
 
-## Referencing
+* **Steps** (required)
+  * Ordered list of JSON pipeline steps to execute (e.g. Load resource -> Transform -> Save as resource).
+* **Use syntax alt 1** (optional; default: true)
+  * Controls whether syntax alternative 1 is enabled for step templates (for example `{{this.key}}` and `{{metadata.key}}`).
+* **Execution condition** (optional)
+  * Script that controls whether the job runs (e.g. `{{metadata.should_run}} == true`).
+* **Jobs** (optional)
+  * Jobs to execute after this job completes.
 
-Throughout the pipeline a resource gets sent between each step. In each step-property this resource can be referenced using the following syntax: ```{{this.somekey}}```. It's also possible to fetch values from the workflow, so if you want to add some value from a metadata key you can du this with the following syntax: ```{{workflow.metadata.somekey}}```.
+## Referencing syntax
 
-## Conditions
+The active pipeline resource can be referenced in step values using:
 
-Between every step is a condition. A condition lets you set if the step should be run or not depending on the previous steps. More about conditions can be found here: [Conditions](resourcePipelineStepConditions.md)
+* `{{this.key}}`
+  * Reads values from the current JSON object being processed.
+
+Workflow context values can be referenced using:
+
+* `{{metadata.key}}`
+  * Reads values from workflow metadata.
+
+## Step conditions
+
+Each step can have a condition to control whether it runs. Conditions are evaluated between steps.
+
+* [Conditions](resourcePipelineStepConditions.md)
+  * How to configure pipeline step conditions.
 
 ## Steps
 
-The **json pipeline** has the following steps available.
+### Add JSON array
 
-### Load resource step
-Loads a resource from the workflow, so it can be altered with the other steps. The loaded resource needs to be a json resource.  
-Often a pipeline starts by loading some existing resource.
+Adds a JSON array at a key or path in the current JSON resource.
 
-#### Properties
-  * ResourceName    - The name of the resource to load
+* **Key** (optional)
+  * Key or path where the array should be added (e.g. `contacts`, `customer.addresses`).
+* **Add with value** (optional)
+  * Defines what value should be used when creating the array item.
+  * Options:
+  * **Empty value**
+  * **From source value**
+    * **Source value** (optional) - value expression to use (e.g. `{{metadata.phone}}`).
+  * **From JSON resource**
+    * **Resource name** (optional) - resource to load value from (e.g. `incoming_customer_json`).
 
-### Save resource step
-Saves the resource from the to the workflow so it can be used by other jobs.  
-Often a pipeline ends with saving the resource to the workflow.
+### Add key
 
-#### Properties
-  * ResourceName    - The resource name to save to. Will overwrite if the resource already exists.
+Adds a key to the JSON resource with the specified value.
 
-### Add key step
-Adds a key to the json resource with the given value.
+* **Key** (optional)
+  * The key to add (e.g. `status`, `customer.phone`).
+* **Value** (optional)
+  * The value to set for the key (e.g. `Active` or `{{metadata.customer_phone}}`).
 
-#### Properties:
-  * Key     - The key to add to the json
-  * Value   - The value to add to key
-  
-### Set key value step
-Sets the value to the given key in the json resource, if the key doesn't exist, the value won't be set.
+### Create from resource
 
-#### Properties:
-  * Key     - The key to set in the json
-  * Value   - The value to set to the key
+Creates JSON from another resource using a template and adds the result to the pipeline context.
 
-### Remove key step
-Removes a key from the json resource.
+* **Source resource** (optional)
+  * Resource to read input items from (e.g. `orders_json`).
+* **JSON item template** (optional)
+  * Template used to create JSON output items (e.g. `{ "id": "{{this.id}}", "name": "{{this.name}}" }`).
 
-#### Properties:
-  * Key     - The key to remove from the json
+### Filter by expression
 
-### Parse json step
-Tries to parse the given json and will if successful replace the existing resource.
+Filters items in a JSON array using a left-side/operator/right-side expression.
 
-#### Properties:
-  * JsonSource     - The key to remove from the json
+* **Left side** (optional)
+  * Left part of the comparison expression (e.g. `{{this.type}}`).
+* **Operator** (optional)
+  * Comparison operator (e.g. `==`, `!=`, `contains`).
+* **Right side** (optional)
+  * Right part of the comparison expression (e.g. `mobile` or `{{metadata.target_type}}`).
+* **Filter actions** (optional)
+  * Options: **Remove**, **Keep**
 
-### Transform json step
-Transforms the json resource according to the given transformation.
+### Load resource
 
-#### Properties:
-  * Transformation - The key to remove from the json
+Loads a JSON resource from workflow context into pipeline context.
 
-#### Examples
-Below are some transformation examples:
+* **Resource name** (optional)
+  * Name of the resource to load (e.g. `incoming_http_response`).
+
+### Parse JSON
+
+Parses JSON input and replaces the current pipeline resource if parsing succeeds.
+
+* **JSON source** (optional)
+  * JSON input text to parse (e.g. `{{metadata.raw_json}}` or `{ "id": 1 }`).
+
+### Push array item
+
+Pushes an item into an array in the current JSON resource.
+
+* **Source item** (optional)
+  * Value or expression for the item to push (e.g. `{ "phone": "{{metadata.phone}}" }`).
+* **Destination path** (optional)
+  * Path to the target array in the JSON resource (e.g. `contacts`, `customer.phones`).
+
+### Remove key
+
+Removes a key from the JSON resource.
+
+* **Key** (optional)
+  * The key to remove (e.g. `debugInfo`, `customer.tempField`).
+
+### Rename resource
+
+Renames a JSON resource in workflow context.
+
+* **Resource name** (optional)
+  * Existing resource name (e.g. `response_json`).
+* **New name** (optional)
+  * New resource name (e.g. `customer_profile_json`).
+
+### Save as resource
+
+Saves the current pipeline resource back to workflow context.
+
+* **Resource name** (optional)
+  * Resource name to save to (e.g. `updated_order_json`). Existing resource with the same name is overwritten.
+
+### Set JSON array item
+
+Sets or inserts an item at a position in a JSON array.
+
+* **Key** (optional)
+  * Key or path to the target array (e.g. `items`, `order.lines`).
+* **At position** (optional)
+  * Target index in the array (e.g. `0`, `1`, or `{{metadata.array_index}}`).
+* **Insert** (optional)
+  * If true, inserts at position; if false, overwrites existing item at position.
+* **Add with value** (optional)
+  * Defines what value should be written.
+  * Options:
+  * **Empty value**
+  * **From source value**
+    * **Source value** (optional) - value expression to use (e.g. `{{metadata.new_item}}`).
+  * **From JSON resource**
+    * **Resource name** (optional) - resource to load value from (e.g. `item_template_json`).
+
+### Set value
+
+Sets a value for an existing key in the JSON resource.
+
+* **Key** (optional)
+  * The key to set (e.g. `customer.email`, `order.status`).
+* **Value** (optional)
+  * The value to assign (e.g. `Delivered` or `{{metadata.email}}`).
+
+### Transform
+
+Transforms the JSON resource according to a transformation template.
+
+* **Transformation** (optional)
+  * JSON transformation template (e.g. `{ "id": "{{this.id}}", "name": "{{metadata.customer_name}}" }`).
+
+Example patterns:
+
+```json
+{
+  "first": "{{this.key1}}",
+  "second": "{{this.key2}}"
+}
 ```
-Transform some existing json to another with other keys:
-Current:                | Transformation:                | Result:
-{                       | {                              | {
-    "key1" : "value1",  |   "first" : "{{this.key1}}",   |   "first" : "value1",
-    "key2" : "value2"   |   "second" : "{{this.key2}}",  |   "second" : "value2"
-}                       | }                              | }
 
-Transform using values from meta data in the workflow:
-workflow.metadata.key = "SomeValue"
-
-Current:                | Transformation:                           | Result:
-{                       | {                                         | {
-    "key1" : "value1",  |   "first" : "{{this.key1}}",              |   "first" : "value1",
-    "key2" : "value2"   |   "second" : "{{workflow.metadata.key}}", |   "second" : "SomeValue"
-}                       | }                                         | }
-
-Transform using json in meta data in the workflow:
-workflow.metadata.json = "{ \"key\" : \"value\" }"
-
-Current:           | Transformation:                        | Result:
-{                  | {                                      | {
-    "key1" : "1",  |   "key1" : "{{this.key1}}",            |   "key1" : "value1",
-    "key2" : "2"   |   "key2" : {{workflow.metadata.json}}, |   "key2" : {
-}                  | }                                      |               "key" : "value"
-                   |                                        |            }
-                   |                                        | }
-
-It's also possible to add lookups to keys and combine multiple lookups.
+```json
+{
+  "first": "{{this.key1}}",
+  "second": "{{metadata.key}}"
+}
 ```
+
+## Execution paths
+
+* **Jobs**
+  * Jobs to execute after all steps are complete.
+
+## Best practices and tips
+
+* Start with **Load resource** or **Transform** and end with **Save as resource** for predictable pipelines.
+* Keep transformations small and explicit; multiple simple steps are usually easier to maintain than one large transformation.
+* Use `{{this.key}}` for current JSON values and `{{metadata.key}}` for workflow values.
+* Use **Parse JSON** when you receive raw JSON text from metadata or external responses.
+
+## Related jobs
+
+* Data Operations
+* Send HTTP request
+* Parse JSON to resource
+
+## References
+
+* [Working with Variables](https://help.bosbec.com/knowledge-base/working-with-variables/)
+  * Expression and lookup syntax used in pipeline templates.
+* [Accessing Values Inside JSON Arrays](https://help.bosbec.com/knowledge-base/accessing-values-inside-json-arrays/)
+  * How to read array values using index syntax (for example `{{my_json_resource.outer[0].name}}`) and filtered expressions (for example `{{customer.phonenumbers[?(@.type == 'mobile')].number}}`), including limitations when multiple items match.
