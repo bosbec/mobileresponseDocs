@@ -278,6 +278,7 @@ Updates unit data for all units in the current resource.
 
 * **Updates** (optional)
   * Key/value updates to apply.
+    * For key, use format "unit.metadata.key" or "unit.phone".
 
 ## Pipeline behavior
 
