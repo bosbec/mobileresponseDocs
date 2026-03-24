@@ -1,19 +1,61 @@
-# Extract Data #
+# Extract Data
 
-*This job is built to extract data from events or complex resources, for example when import is finished, when a dynamic group creation is finished. Another example is to move group members from the workflow groups to the WFC temporary group.*
+The Extract Data job pulls structured data out of events or workflow resources and moves it into workflow context in a form that later jobs can use. Use it when a trigger or process event contains groups, members, form answers, metadata, or units that should be promoted into workflow groups, temporary group, resources, or metadata.
 
-There are three different features available at this moment (and you can set them either by the exact name or the number):
-* GetGroupFromImportFinishedProcessEvent
-  * Gets the group(s) from the ImportFinished-event and adds the group to the workflow groups (NOTE: not to the temporary group)
-* MoveWorkflowGroupMembersToTemporaryGroup
-  * Reads the group-members from the workflow groups, removes those groups from the current execution and adds all members from the workflow groups to the WFC temporary group instead. (This is done so that you may apply WFC temporary group-filters)
-  * Unit resource will have a name like unit-resource-1 where the job will try not to overwrite, so if unit-resource-1 exists it will use unit-resource-2
-* GetGroupFromDynamicGroupCreationFinishedEvent
-  * Just like (1), this extraction finds out what group was just compiled and adds that group(s) to the workflow groups (NOTE: not to the temporary group)
-  
-**Notes:
-Must manually enter one of the “extractions”.
-For some of the extractions (1 & 3) it is required that the execution is triggered by a process-trigger.**
+## Properties
 
-**How to:**
-Enter one of the actions/extractions and the job will do that.
+The properties for configuring the job are described below.
+
+* **From** (required)
+  * Extraction mode that decides what should be extracted and where the result should be placed.
+
+## Referencing syntax
+
+This job is mode-driven rather than expression-driven. You select one extraction mode and the job performs the corresponding action on the current workflow context.
+
+## Extraction modes
+
+The available extraction modes determine what kind of data is moved into workflow context.
+
+* **GetGroupFromImportFinishedProcessEvent**
+  * Extracts groups from an import-finished process event and adds them to workflow groups.
+* **MoveWorkflowGroupMembersToTemporaryGroup**
+  * Reads members from workflow groups, removes those groups from the current execution, and moves the members into the workflow context temporary group.
+* **GetGroupFromDynamicGroupCreationFinishedEvent**
+  * Extracts groups from a dynamic-group-creation-finished event and adds them to workflow groups.
+* **UpdateIncomingUnitWithFormAnswers**
+  * Updates the incoming unit with data from form answers.
+* **UpdateMetaDataWithFormAnswers**
+  * Writes form-answer data into workflow context metadata.
+* **MoveTemporaryGroupToUnitResourceExtraction**
+  * Moves units from the temporary group into a unit resource.
+* **MoveAllUnitResourcesToTemporaryGroup**
+  * Collects units from unit resources and moves them into the temporary group.
+* **GetMetaDataFromImportFinishedProcessEvent**
+  * Extracts metadata from an import-finished process event into workflow context.
+* **MoveIncomingUnitToTemporaryGroup**
+  * Adds the incoming unit to the temporary group.
+
+## Execution behavior
+
+The job performs exactly one extraction mode per execution.
+
+* Some event-based extractions require the workflow to have been triggered by a compatible process trigger.
+* Group-oriented extractions can place groups in workflow groups rather than the temporary group, depending on the mode.
+* Temporary-group and resource-move modes are useful when later jobs expect data in a specific workflow-context location.
+
+## Best practices and tips
+
+* Choose the extraction mode based on where downstream jobs expect to find the data: workflow groups, temporary group, metadata, or a resource.
+* Keep process-trigger-dependent modes near the relevant trigger flow so the required event data is still available and easy to understand.
+
+## Related jobs
+
+* Clear Workflow Context
+* Filter Workflow Context
+* Move Workflow Group Members To Temporary Group
+
+## References
+
+* [Working With Variables](https://help.bosbec.com/knowledge-base/working-with-variables/)
+  * Useful background for understanding where extracted metadata and resources end up in workflow context.

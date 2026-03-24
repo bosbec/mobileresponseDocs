@@ -11,6 +11,9 @@ This file tracks all job documentation updates and changes.
 | clearWorkflowContext.md | 2026-03-24 |
 | synchronizedCounter.md | 2026-03-24 |
 | resetSynchronizedCounter.md | 2026-03-24 |
+| findUnitsById.md | 2026-03-24 |
+| extractData.md | 2026-03-24 |
+| createJwtSigning.md | 2026-03-24 |
 | forEachResourceStart.md | 2026-03-24 |
 | forEachResourceStop.md | 2026-03-24 |
 | parseJsonToResource.md | 2026-03-24 |
