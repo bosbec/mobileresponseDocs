@@ -1,22 +1,60 @@
-# Save to group #
+# Save To Group
 
-*This job can create groups and save group members to the given group.*
+The Save To Group job saves members from the workflow context into a group. It can target an existing group or create a new group, including a dynamic group based on tags.
 
+## Properties
 
-If you want to create a new group set the “CreateNewGroupAndIgnoreGroupId” to true. This will ignore what is connected in WF-builder.  
-Set NewDynamicGroupTagsSource to a WFC-resource that contains a comma-separated list of tags to include if you want to create a dynamic group with the given tags.    
+The properties for configuring the job are described below.
 
+* **Group** (optional)
+	* Existing group to save members into.
+* **Use workflow context groups** (optional; default: false)
+	* Use members from all workflow-context groups.
+* **Create new group and ignore group ID** (optional; default: false)
+	* Create a new group instead of using the connected group.
+* **New group name source** (optional)
+	* Name for the new group when a group is being created.
+* **New dynamic group tags source** (optional)
+	* Comma-separated tag list used when creating a dynamic group.
+* **Use workflow context temporary group** (optional; default: false)
+	* Use members from the workflow-context temporary group.
+* **Use incoming unit** (optional; default: false)
+	* Use the incoming unit as a group member source.
+* **Resource name** (optional)
+	* Destination resource where the resulting group ID is stored.
 
-If you do not want to create a new group, then connect a group in WF-builder.  
+## Referencing syntax
 
-If you want to save members from WF-groups set “Use workflow context groups” to true.  
-If you want to save members from WF-temporary group set “Use workflow context temporary group” to true.  
+When creating new groups dynamically, the name and tag values can come from workflow data.
 
+* Use workflow expressions such as `{{metadata.group_name}}` in **New group name source**.
+* Use a comma-separated source such as `tag-a,tag-b` for **New dynamic group tags source**.
 
-**Notes:   
-Can both create new groups/dynamic groups and save to an existing group.**
+## Behavior
 
-**How to:**  
-Chose if to create a new group or connect to an existing.  
-Select what members to save to group. 
+This job supports two main modes.
+
+* **Save to an existing group**
+	* Connect a group and choose which members from workflow context should be added.
+* **Create a new group**
+	* Enable **Create new group and ignore group ID** and provide a group name.
+
+If dynamic-group tags are provided while creating a new group, the created group behaves as a dynamic group rather than a purely static one.
+
+## Best practices and tips
+
+* Use only the member sources you actually need so the result is predictable.
+* When creating a dynamic group, keep the tag source stable and easy to audit.
+* Save the resulting group ID to a resource when later jobs need to reference the created group explicitly.
+
+## Related jobs
+
+* [groupOperations.md](groupOperations.md)
+* [unitOperations.md](unitOperations.md)
+* [findGroups.md](findGroups.md)
+
+## References
+
+* [Importing units](https://help.bosbec.com/knowledge-base/importing-units/)
+	* Useful background when group members come from newly created or loaded unit data.
 

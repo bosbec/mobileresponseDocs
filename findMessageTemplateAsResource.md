@@ -1,16 +1,52 @@
-# Find Message Template As Resource #
+# Find Message Template As Resource
 
-*This job finds message templates and store as resource in the workflow context.*
+The Find Message Template As Resource job finds message templates by name, ID, or metadata filter and stores the result as a workflow resource. Use it when later jobs should work with a message template loaded dynamically at runtime.
 
-The search phrase will search for a message template by id or name.  
-Resource name is the result, where the found message template(s) will be stored.  
+## Properties
 
-Use Met data filter to get message templates based on the metadata.  
-For example getting a message template with data "metadata.message_code" : "3" can be achieved this way.
+The properties for configuring the job are described below.
 
+* **Search phrase** (optional)
+	* Name or ID of the message template to find.
+* **Resource name** (required)
+	* Name of the workflow resource that stores the result.
+* **Page index** (optional)
+	* Result page to return when many templates match.
+* **Page size** (optional)
+	* Number of templates to return per page.
+* **Meta data filter** (optional)
+	* Key-value filter used to narrow down templates by metadata.
+* **Incoming message resource name** (optional)
+	* Alias for the event resource when needed by the job configuration.
 
-**Notes:**
+## Referencing syntax
 
+Metadata filters are key-value pairs.
 
-**How to:**
-Must at least set search phrase and/or meta data filter together with resource name.
+* Use metadata keys together with the values you want to match.
+* A simple search can combine **Search phrase** with a metadata filter when both name and metadata should be considered.
+
+## Behavior
+
+The job finds matching templates and stores them in the named workflow resource.
+
+* Search by **Search phrase** when the name or ID is known.
+* Use **Meta data filter** when the workflow should select templates by attributes such as language, type, or message code.
+* Use pagination when browsing or narrowing down larger template sets.
+
+## Best practices and tips
+
+* Give the result resource a descriptive name so later message jobs are easier to read.
+* Use metadata filters when template selection should be stable even if names change.
+* Keep pagination explicit if the workflow may return more than one matching template.
+
+## Related jobs
+
+* [createMessageTemplateAsResource.md](createMessageTemplateAsResource.md)
+* [messageTemplate.md](messageTemplate.md)
+* [sendMessageToGroups.md](sendMessageToGroups.md)
+
+## References
+
+* [Working With Variables](https://help.bosbec.com/knowledge-base/working-with-variables/)
+	* Useful when filter values or resource names depend on workflow expressions.

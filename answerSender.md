@@ -1,18 +1,48 @@
-# Answer sender #
+# Answer Sender
 
-*This job is used to answer the sender of the incoming message or “sender” of the form answer*
+The Answer Sender job replies to the originator of an incoming message or form answer. Use it when a workflow should answer the person who started the conversation without having to build the recipient selection manually.
 
+## Properties
 
-The goal of the job is to create an answer/reply to the sender of the incoming message or to the “sender” of the form answer.  
-Prioritizes like this: If there is an IncomingMessage then this will be the sender to answer. If there is no IncomingMessage, but there is a FormAnswer, then answer the “sender” of that FormAnswer.  
-Incoming message will be set if the execution was started with an IncomingMessageTrigger, and FormAnswer will be available if the FormAnsweredTrigger has started the execution.
+The properties for configuring the reply are described below.
 
+* **Message** (optional)
+	* Connected message template used for the reply.
+* **Message resource** (optional)
+	* Message resource to use instead of a directly connected message template.
+* **Override answer sender source** (optional; default: incomingunit)
+	* Source used to override which unit receives the reply.
 
+## Referencing syntax
 
-**Notes:  
-Will abort if required IncomingMessage or FormAnswer is not set.
-Will abort if the “sender”-unit doesn’t exist.
-Will use defaulting behavior for message..**
+You can override the reply target using a workflow expression.
 
-**How to:**
-Connect to the message template (message to reply with).
+* Use `incomingunit` to rely on the default reply target.
+* Use another resource or expression in **Override answer sender source** when the reply should go to a different unit selected earlier in the workflow.
+
+## Sender selection
+
+The job resolves the reply target in a defined order.
+
+* First, it tries the sender from `IncomingMessage`.
+* If no incoming message is available, it falls back to the sender of `FormAnswer`.
+* If neither source exists, the job aborts.
+
+The job also aborts if the sender unit cannot be resolved.
+
+## Best practices and tips
+
+* Use a connected message template when the reply content is static or centrally managed.
+* Use **Message resource** when the workflow selects or builds the message dynamically.
+* Override the sender source only when the workflow intentionally answers a different resolved unit than the default sender.
+
+## Related jobs
+
+* [answerFormQuestion.md](answerFormQuestion.md)
+* [sendMessageToGroups.md](sendMessageToGroups.md)
+* [messageTemplate.md](messageTemplate.md)
+
+## References
+
+* [Working With Variables](https://help.bosbec.com/knowledge-base/working-with-variables/)
+	* Helpful when the reply target or message resource comes from workflow expressions.

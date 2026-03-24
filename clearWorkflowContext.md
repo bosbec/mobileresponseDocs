@@ -1,20 +1,60 @@
-# Clear workflow context #
+# Clear Workflow Context
 
-*This job is used to clear parts of the WFC.*
+The Clear Workflow Context job removes selected data from the current workflow context. Use it to reset temporary state between workflow steps, clean up after a branch, or make sure downstream jobs do not accidentally reuse earlier metadata or resources.
 
-Clearing temporary group will remove all members that are read into the WFC as group members.  
-Clearing Groups will remove all groups from Workflow groups, this means that ExtractData would not find any GroupIds to read group members into the WFC. It also means that there are no Groups that SendMessageToGroups will default back to.  
-Clearing IncomingUnit will remove the WFC resource IncomingUnit, and jobs that require the IncomingUnit will fail, unless it is set/made available again.  
-Clearing IncomingGroupMember removes the IncomingGroupMember from WFC, with the similar consequences as removing IncomingUnit.  
-ClearMetaData is a RegEx expression that will test each key in the WFC metadata and remove if it matches. This means setting ClearMetaData to: .* will cause all metadata to be removed.
+## Properties
 
+The properties for configuring the cleanup are described below.
 
+* **Clear temporary group** (optional; default: false)
+	* Removes all members from the workflow context temporary group.
+* **Clear groups** (optional; default: false)
+	* Removes workflow groups from the workflow context.
+* **Clear incoming unit** (optional; default: false)
+	* Removes the `IncomingUnit` resource from the workflow context.
+* **Clear files** (optional; default: false)
+	* Removes files stored in the workflow context.
+* **Clear incoming group member** (optional; default: false)
+	* Removes the `IncomingGroupMember` resource from the workflow context.
+* **Clear meta data** (optional)
+	* Regular expression used to match metadata keys that should be removed.
+* **Clear resources** (optional)
+	* Regular expression used to match resource names that should be removed.
 
-**Notes:  
-If ClearMetaData is left empty, then the job will NOT clear any metadata.  
-ClearMetaData is a RegEx-expression.**
+## Referencing syntax
 
-**How to:**  
-Set what properties to clear.   
-Remember that ClearMetaData is RegEx-expression and written in text, the others are true/false selected from the list.
+The two pattern-based properties use regular expressions.
+
+* Leave **Clear meta data** empty to keep all metadata.
+* Use `.*` in **Clear meta data** to remove all metadata keys.
+* Leave **Clear resources** empty to keep all resources.
+* Use targeted patterns such as `^tmp_` when you want to clear only temporary keys or resources with a naming convention.
+* Use the format `^name$` when you want to match one exact metadata key or one exact resource name only. For example, `^customer_id$` matches only that metadata key, and `^request$` matches only a resource named `request`.
+
+## Cleanup behavior
+
+Each option affects a different part of the workflow context.
+
+* Clearing groups removes fallback groups that some downstream jobs rely on.
+* Clearing the incoming unit or incoming group member can cause later jobs to fail if they require those resources.
+* Regex-based clearing is applied by name, so the pattern should be reviewed carefully before using broad matches.
+
+## Best practices and tips
+
+* Clear only the parts of the workflow context you no longer need.
+* Prefer targeted regex patterns over `.*` unless a full reset is intentional.
+* When a workflow later depends on `IncomingUnit`, groups, or files, clear those values only after the dependent jobs have finished.
+
+## Related jobs
+
+* [filterWorkflowContext.md](filterWorkflowContext.md)
+* [splitWorkflowContext.md](splitWorkflowContext.md)
+* [workflowContext.md](workflowContext.md)
+
+## References
+
+* [Working With Variables](https://help.bosbec.com/knowledge-base/working-with-variables/)
+	* Background on metadata and resource naming within the workflow context.
+* [Working With Strings](https://help.bosbec.com/knowledge-base/working-with-strings/)
+	* Useful when writing regex patterns for metadata or resource cleanup.
 
