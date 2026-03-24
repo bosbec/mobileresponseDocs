@@ -25,9 +25,9 @@ This job does not process data by itself. Instead, it controls how the loop cont
 
 ## Related jobs
 
-* [forEachResourceStart.md](forEachResourceStart.md)
-* [parseCsvToResource.md](parseCsvToResource.md)
-* [unitPipeline.md](unitPipeline.md)
+* For Each Resource Start
+* Parse CSV to Resource
+* Unit Pipeline
 
 ## References
 

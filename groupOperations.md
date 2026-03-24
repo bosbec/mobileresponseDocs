@@ -44,9 +44,9 @@ The pipeline follows a consistent sequence.
 
 ## Related jobs
 
-* [saveToGroup.md](saveToGroup.md)
-* [group.md](group.md)
-* [unitOperations.md](unitOperations.md)
+* Save To Group
+* Groups
+* Unit Operations
 
 ## References
 

@@ -49,10 +49,10 @@ The distinct options are useful when duplicate phone numbers or email addresses 
 
 ## Related jobs
 
-* [unitPipeline.md](unitPipeline.md)
-* [unitOperations.md](unitOperations.md)
-* [setIncomingUnit.md](setIncomingUnit.md)
-* [getUsersFromIncomingMessage.md](getUsersFromIncomingMessage.md)
+* Unit Pipeline
+* Unit Operations
+* Set Incoming Unit
+* Get Users From Incoming Message
 
 ## References
 

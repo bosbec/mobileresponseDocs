@@ -26,8 +26,8 @@ This job affects the currently running workflow execution only.
 
 ## Related jobs
 
-* [placeHolder.md](placeHolder.md)
-* [executeWorkflow.md](executeWorkflow.md)
+* Place holder
+* Execute Workflow
 
 ## References
 

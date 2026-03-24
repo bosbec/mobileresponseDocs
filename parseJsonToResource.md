@@ -37,9 +37,9 @@ If parsing succeeds, the job creates a JsonResource in the workflow context.
 
 ## Related jobs
 
-* [parseCsvToResource.md](parseCsvToResource.md)
-* [parseXmlToResource.md](parseXmlToResource.md)
-* [jsonPipeline.md](jsonPipeline.md)
+* Parse CSV to Resource
+* Parse XML to Resource
+* JSON Pipeline
 
 ## References
 

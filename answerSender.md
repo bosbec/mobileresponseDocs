@@ -38,9 +38,9 @@ The job also aborts if the sender unit cannot be resolved.
 
 ## Related jobs
 
-* [answerFormQuestion.md](answerFormQuestion.md)
-* [sendMessageToGroups.md](sendMessageToGroups.md)
-* [messageTemplate.md](messageTemplate.md)
+* Answer Form Question
+* Send Message To Groups
+* Message templates
 
 ## References
 

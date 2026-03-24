@@ -40,9 +40,9 @@ When the loop reaches [forEachResourceStop.md](forEachResourceStop.md), executio
 
 ## Related jobs
 
-* [forEachResourceStop.md](forEachResourceStop.md)
-* [parseCsvToResource.md](parseCsvToResource.md)
-* [unitPipeline.md](unitPipeline.md)
+* For Each Resource Stop
+* Parse CSV to Resource
+* Unit Pipeline
 
 ## References
 

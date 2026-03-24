@@ -78,9 +78,9 @@ Typical outcomes include saving to the account, saving to a workflow resource, s
 
 ## Related jobs
 
-* [unitPipeline.md](unitPipeline.md)
-* [findOrCreateUnits.md](findOrCreateUnits.md)
-* [saveToGroup.md](saveToGroup.md)
+* Unit Pipeline
+* Find Or Create Units
+* Save To Group
 
 ## References
 
