@@ -41,8 +41,6 @@ Encodes or decodes a value using Base64.
   * Override the default encoding.
 * **Data type** (optional)
   * Options: **Text**, **Hex**
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Calculate data
 
@@ -54,8 +52,6 @@ Evaluates an arithmetic expression using workflow context values.
   * Where to store the result.
 * **Amount of decimals in result** (optional)
   * Number of decimal places in the result; defaults to 2.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Calculate date time diff
 
@@ -71,8 +67,6 @@ Calculates the difference between two timestamps.
   * Output format. Options: `totaldays`, `totalhours`, `totalminutes`, `totalseconds`, `totalmilliseconds`
 * **Default for missing values** (optional)
   * Whether to use a default value when one of the timestamps is missing.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Calculate GPS distance
 
@@ -88,8 +82,6 @@ Calculates the distance in kilometers between two GPS coordinates.
   * The second latitude value (e.g. `{{metadata.latitude_2}}`).
 * **Destination** (optional)
   * Where to store the result.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Concat
 
@@ -101,8 +93,6 @@ This step is generally no longer needed with the new syntax, since strings can b
   * Template string using `{metadata.key}` placeholders (e.g. `{metadata.firstname} {metadata.lastname}`).
 * **Destination** (optional)
   * Where to store the result.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Concat group member data
 
@@ -120,8 +110,6 @@ Concatenates a formatted string for each member of a group, separated by a separ
   * Use all groups in the workflow context.
 * **Override replacements** (optional)
   * Character substitutions applied to group member data before concatenation.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Concat unit resource data
 
@@ -139,8 +127,6 @@ Concatenates a formatted string from items in a workflow context unit resource.
   * Text or character placed between each row.
 * **Override replacements** (optional)
   * Character substitutions applied before concatenation.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Count group members
 
@@ -150,8 +136,6 @@ Counts the number of members in a group and stores the result.
   * The group ID or source of the group identifier.
 * **Destination** (optional)
   * Where to store the count.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Create short link
 
@@ -161,8 +145,6 @@ Creates a shortened URL from a source value.
   * Source containing the full URL to shorten (e.g. `{{metadata.url}}`).
 * **Destination** (optional)
   * Where to store the short link.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Encode decode
 
@@ -178,8 +160,6 @@ Encodes or decodes a value using a specified encoding type.
   * Encoding format to use (e.g. `utf-8`, `ascii`).
 * **Non default encoding name** (optional)
   * Override the encoding name.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Extract value regex
 
@@ -195,8 +175,6 @@ Extracts text from a source using a regex pattern.
   * Options: **First match**, **Last match**, **Every match**
 * **Result destination** (optional)
   * Where to store the result.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Filter CSV string
 
@@ -208,8 +186,6 @@ Filters a comma-separated string against a comparison value.
   * Source of the comparison value (e.g. `{{metadata.filter_value}}`).
 * **Result destination** (optional)
   * Where to store the filtered result.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Get calculated log data
 
@@ -225,8 +201,6 @@ Aggregates data log values using sum, max, min, or average.
   * End of the time range (e.g. `{{metadata.end_date}}`).
 * **Destination** (optional)
   * Where to store the result.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Get country info
 
@@ -236,8 +210,6 @@ Looks up country metadata from a name or ISO code.
   * Country name or ISO code to look up (e.g. `{{metadata.country}}`).
 * **Destination prefix** (optional)
   * Prefix for result keys (e.g. `country` produces `metadata.country_iso`, `metadata.country_name`, etc.).
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Get data log keys
 
@@ -251,8 +223,6 @@ Retrieves a list of data log keys and stores them in a resource.
   * Number of keys per page.
 * **Only for administrators** (optional)
   * Filter to administrator-scoped keys only.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Get date from week number
 
@@ -266,8 +236,6 @@ Converts a week number and year to a date.
   * Options: **Sunday**, **Monday**, **Tuesday**, **Wednesday**, **Thursday**, **Friday**, **Saturday**
 * **Destination** (optional)
   * Where to store the result.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Get day of week
 
@@ -277,8 +245,6 @@ Returns the day of week for a given date.
   * Source of the date; defaults to the execution date if empty (e.g. `{{metadata.date}}`).
 * **Destination** (optional)
   * Where to store the result.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Get last log data
 
@@ -288,8 +254,6 @@ Retrieves the most recent value stored for a data log key.
   * The log key to read from.
 * **Destination** (optional)
   * Where to store the result.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Get relative date
 
@@ -309,8 +273,6 @@ Calculates a relative calendar date (e.g. the first Monday of March).
   * Where to store the result.
 * **Destination format** (optional; default: `yyyy-MM-dd HH:mm:ssZ`)
   * Format for the output date.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Get week number
 
@@ -320,8 +282,6 @@ Returns the ISO week number for a given date.
   * Source of the date (e.g. `{{metadata.date}}`).
 * **Destination** (optional)
   * Where to store the result.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Hash
 
@@ -347,8 +307,6 @@ Hashes a value using a standard or HMAC algorithm.
     * **Bosbec hash type** (optional) — Options: **Parse from string**, **MD5**, **SHA1**, **SHA256**, **SHA384**, **SHA512**
     * **Non default encoding name** (optional) — override the default encoding (ASCII).
     * **Non default output format** (optional; default: `X2`) — use `x2` for lowercase hex output.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Insert regex
 
@@ -366,8 +324,6 @@ Inserts a value into text at a position matched by a regex pattern.
   * Returns the original source if no match is found.
 * **Options** (optional)
   * Options: **Before**, **After**, **First match**, **Last match**, **Every match**
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Log data
 
@@ -385,8 +341,6 @@ Writes a value to a data log.
   * Where to store the ID of the data log entry written.
 * **Item metadata** (optional)
   * Additional key-value metadata to attach to the log entry.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Modify date
 
@@ -412,8 +366,6 @@ Adds or subtracts time units from a timestamp.
   * The expected input format (e.g. `yyyy-MM-ddTHH:mm:ssZ`). Common formats are tried automatically if omitted.
 * **Destination format** (optional)
   * The desired output format (e.g. `yyyy-MM-ddTHH:mm:ssZ`).
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Pad
 
@@ -429,8 +381,6 @@ Pads a string to a specified total width with a given character.
   * Total character width of the padded string.
 * **Pad char** (optional)
   * The character to pad with.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Parse epoch time
 
@@ -442,8 +392,6 @@ Converts a Unix timestamp (seconds or milliseconds) to a date-time string.
   * Toggle if the input is in milliseconds rather than seconds.
 * **Destination** (optional)
   * Where to store the parsed date-time.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Parse phone
 
@@ -457,8 +405,6 @@ Validates and parses a phone number into its components.
   * Where to store the boolean validation result (`true`/`false`).
 * **Phone number destination** (optional)
   * Where to store the normalised phone number.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Remove regex
 
@@ -476,8 +422,6 @@ Removes text matched by a regex pattern.
   * Options: **First match**, **Last match**, **Every match**
 * **Result destination** (optional)
   * Where to store the result.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Remove resource
 
@@ -485,8 +429,6 @@ Removes a named resource from the workflow context.
 
 * **Resource name** (optional)
   * Name of the resource to remove.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Replace
 
@@ -500,8 +442,6 @@ Replaces a literal string within a value.
   * The value to replace the found string with.
 * **Destination** (optional)
   * Where to store the result.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Replace regex
 
@@ -519,8 +459,6 @@ Replaces text matched by a regex pattern.
   * Returns the original source if no match is found.
 * **Result destination** (optional)
   * Where to store the result.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Set data
 
@@ -530,8 +468,6 @@ Copies a value from a source to a destination in the workflow context.
   * Value or source of value (e.g. `{{metadata.phonenumber}}` or a literal value such as `+46700000001`).
 * **Destination** (optional)
   * Where to store the value (e.g. `metadata.phonenumber` or `incomingUnit.metadata.phonenumber`).
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Split string
 
@@ -545,8 +481,6 @@ Splits a string on a delimiter and stores the parts as indexed metadata keys or 
   * The delimiter to split on.
 * **Result as resource** (optional)
   * Name of a resource to store all parts in. Cannot be combined with **Destination key**.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Substring
 
@@ -566,8 +500,6 @@ Extracts a portion of a string by start index and maximum length.
   * The maximum number of characters to extract (static value).
 * **Substring by text element** (optional)
   * When enabled, emoji and other multi-char sequences count as a single character.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### Time based OTP code
 
@@ -579,8 +511,6 @@ Generates a time-based one-time password (TOTP).
   * The user identifier associated with the TOTP (e.g. `{{metadata.username}}`).
 * **Destination** (optional)
   * Where to store the generated code.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ### UTF
 
@@ -596,8 +526,6 @@ Converts UTF-encoded text from hex notation to readable characters.
     * **Override default notation** (optional) — override the default `\u` prefix.
   * **From UTF-8 hex** — converts from UTF-8 hex notation (e.g. `\x41`)
     * **Override default notation** (optional) — override the default `\x` prefix.
-* **Order** (optional)
-  * Execution order within the operations list.
 
 ## Execution paths
 

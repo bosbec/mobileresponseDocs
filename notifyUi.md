@@ -1,30 +1,42 @@
-# Notify UI #
+# Notify UI
 
-*This job is used to send information to the user in the admin pages as bosbec.io*
+The Notify UI job sends a toast notification to the Bosbec admin user interface. Use it when a workflow should surface status information, links, or short results directly to one administrator or to all administrators on the account.
 
+## Properties
 
-This job will send a notification to the "Admin UI" found at bosbec.io.  
-Depending on what is set in the "topic" property, you can either send information to just one administrator on your account or to all administrators.  
-Note that the user must bed logged in at bosbec.io at send time, for the message to appear as a toast/notification in the upper right corner.  
+This documentation is based on the currently used configuration pattern for the job.
 
-To send a message to everyone on your account **topic** should be set to:
-```{{currentuser.accountid}}.notification```  
-And if you just want to send something to one administrator (for example the one running the workflow) set to:
-<code>{{currentuser.administratorId}}.notification</code>  
+* **Topic** (required)
+	* Destination channel that determines who should see the notification.
+* **Custom data** (required)
+	* Payload for the notification. The `message` field contains the text shown in the toast.
 
-Provide the custom data **"message"** to specify what information to display to the user.  
-For example: 
-Link: <a style= "color: #72c1ff" target="_blank" href="https://www.google.com/">https://www.google.com/</a>
-Sent at: {{datetime(HH:mm:ss)}} 
+## Referencing syntax
 
-Will provide 
-Link: https://www.google.com/ Sent at: 15:22:11
+The topic decides the audience.
 
+* Use `{{currentuser.accountid}}.notification` to notify all administrators on the account.
+* Use `{{currentuser.administratorId}}.notification` to notify one administrator.
 
-**Notes:  
-* Will not work unless you provide a correct **topic** and custom data with **message**.  
-* Optional parameter for custom data is the **persistant** which should be set to **true** if you want the toast to stay until the user click the close button.  
-* If the **persistant** is left out, the toast will automatically close after a few seconds.  
+The custom data payload should include `message`. You can also include `persistant` set to `true` if the toast should remain visible until dismissed.
 
-**How to:**
-* Set topic and custom data message
+## Notification behavior
+
+The notification appears in the admin UI as a toast.
+
+* The target user must be logged in to the Bosbec admin UI when the notification is sent.
+* The message can contain dynamic workflow values, for example timestamps or links.
+* If `persistant` is omitted, the toast closes automatically after a short time.
+
+## Best practices and tips
+
+* Keep UI notifications short and action-oriented.
+* Use account-wide topics only for information relevant to multiple administrators.
+* Prefer persistent notifications only when the message requires deliberate acknowledgement.
+
+## Related jobs
+
+## References
+
+* [Working With Variables](https://help.bosbec.com/knowledge-base/working-with-variables/)
+	* Useful for building dynamic topic values and notification messages.

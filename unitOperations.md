@@ -1,34 +1,92 @@
-# Unit operations #
+# Unit Operations
 
-*This job can perform operations related to units. Eg. get units, move within workflow context...*
+The Unit Operations job lets you find units from one or more sources, optionally filter the result, optionally update the found units, and finally decide how those units should be stored or deleted.
 
+## Properties
 
-There are a number of different operations to choose between and the basic concept is:  
-1.  Find units from one or more sources; could be from account or from within the current execution of the workflow. Each additional find-operation will not modify what was found, but add to the set of found units.  
-2. Filter the units that were found in the first step(s); each filter will continue working with a subset of units that was the result from previous filter-step(s).  
-3. The store-operation can be used to either put the found+processed units in a destination such as the temporary group in the current execution or used to remove units eg. from the account.   
+The job is organized into stages rather than a single flat property list.
 
+* **Find operations** (required)
+	* Ordered list of find steps that add units to the working set.
+* **Filter operations** (optional)
+	* Ordered list of filters applied to the found units.
+* **Operate on units** (optional)
+	* Ordered list of operations to perform on the units, such as updating metadata.
+* **Store operation** (required)
+	* Final step that decides how the processed units are stored, persisted, or deleted.
 
+## Referencing syntax
 
-**Notes:**
+Expressions in filters and updates usually compare unit data with workflow data.
 
-Find-steps can be unsuccessful, and a setting to continue on error must be set if that is the desired behaviour.**
+* Read unit metadata with expressions such as `{{unit.metadata.customer_id}}`.
+* Read workflow context metadata with expressions such as `{{metadata.customer_id}}`.
+* When updating unit metadata, use unit destinations on the left side and workflow values or static values on the right side.
 
-**How to:**
+## Find operations
 
-Add one or more find-operations to get units to process, optionally you may filter the given units before you let the job store or delete the resulting units from a given destination. 
+Find steps append units to the working set instead of replacing earlier results.
 
+Common find patterns include:
 
-**Find Operations**
+* **Find from account**
+	* Search the account by phrase, including metadata-aware search such as `md:firstname=John`.
+* **Find by phone** or **Find by email**
+	* Search with a direct channel value.
+* **Find in group**
+	* Load units from a specific group.
+* **Find in resource**
+	* Load units from one or more workflow resources.
+* **Find in workflow context**
+	* Reuse units already present in the temporary group or workflow groups.
+* **Create from data**
+	* Create units directly from workflow values.
 
-FindFromAccount: Search for whole "words" such as **John Doe**, and the search will look for **John** OR **Doe**. To search for exact phrase **"John Doe"** use quotation marks around the whole phrase you expect to search for. To search for John as first name, prefix the search with **md:** for metadata and **firstname=** the meta data key; **"md:firstname=John"**. Words in quotation marks must all be present to be included in the found units. !Tip: Use a combination of find-operations and filter the result before store!
+Each step has an order and can be configured to continue on error if partial success is acceptable.
 
-**Metadata filter**
+## Filter operations
 
-* To compare data found on the unit, use the following format: unit.metadata.key
-* To compare data found on the workflow, use: metadata.key
+Filters narrow down the current working set.
 
-**Operate - Update meta data**
+* **Channel filter**
+	* Keep or remove units based on available channels.
+* **Metadata filter**
+	* Compare unit values against static values or workflow values.
 
-* To assign a metadata in the left column, use the following format: unit.metadata.key
-* To retrieve a value from the workflow context metadata in the right column (get a value), use: metadata.key
+Use filters after broad find steps when you want a more readable pipeline than building one very complex search expression.
+
+## Operate on units
+
+The most common operation is metadata updates.
+
+* **Update metadata**
+	* Apply key-value updates to all units currently in the working set.
+
+This is useful when a workflow should enrich units before saving them to the account, groups, or resources.
+
+## Store operation
+
+The final step decides what happens to the resulting units.
+
+Typical outcomes include saving to the account, saving to a workflow resource, saving to workflow groups or the temporary group, or deleting units from the account.
+
+## Best practices and tips
+
+* Use several small find and filter steps instead of one overloaded search when readability matters.
+* Turn on continue-on-error only when the workflow can safely proceed with partial results.
+* When deduplication or merging is the real goal, compare this job with [unitPipeline.md](unitPipeline.md) before choosing an approach.
+
+## Related jobs
+
+* [unitPipeline.md](unitPipeline.md)
+* [findOrCreateUnits.md](findOrCreateUnits.md)
+* [saveToGroup.md](saveToGroup.md)
+
+## References
+
+* [Unit Pipeline – Merging Units](https://help.bosbec.com/knowledge-base/unit-pipeline-merging-units/)
+	* Related guidance when the unit workflow involves deduplication or merging.
+* [Importing units](https://help.bosbec.com/knowledge-base/importing-units/)
+	* Background on common unit data patterns and bulk import behavior.
+* [Comparison Operators](https://help.bosbec.com/knowledge-base/comparison-operators/)
+	* Reference for the operators used in metadata-based unit filters.
