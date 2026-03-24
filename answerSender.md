@@ -35,6 +35,8 @@ The job also aborts if the sender unit cannot be resolved.
 * Use a connected message template when the reply content is static or centrally managed.
 * Use **Message resource** when the workflow selects or builds the message dynamically.
 * Override the sender source only when the workflow intentionally answers a different resolved unit than the default sender.
+* Keep the reply target deterministic. If the workflow can switch between the default sender and an overridden source, make that choice explicit earlier in the flow so replies are easy to audit.
+* Prefer answering with the minimum context needed for the conversation step instead of reusing a broad message template intended for larger group sends.
 
 ## Related jobs
 

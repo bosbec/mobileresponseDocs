@@ -186,8 +186,10 @@ Example patterns:
 
 * Start with **Load resource** or **Transform** and end with **Save as resource** for predictable pipelines.
 * Keep transformations small and explicit; multiple simple steps are usually easier to maintain than one large transformation.
+* Filter array data as early as possible so later transformation steps only handle the items that should continue through the workflow.
 * Use `{{this.key}}` for current JSON values and `{{metadata.key}}` for workflow values.
 * Use **Parse JSON** when you receive raw JSON text from metadata or external responses.
+* Save transformed output to a clearly named resource when later jobs, such as HTTP requests or iteration steps, depend on the result.
 
 ## Related jobs
 

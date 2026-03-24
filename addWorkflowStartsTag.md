@@ -30,6 +30,8 @@ This job updates the current workflow-start record rather than a unit, group, or
 * Keep tags short, descriptive, and consistent so they remain useful for searching.
 * Prefer stable business identifiers such as order IDs, customer IDs, or correlation IDs over free-form text.
 * Use prefixes such as `order:` or `integration:` when you want tags from different use cases to stay easy to distinguish.
+* Add tags at clear lifecycle points, such as when an integration starts, when a downstream call is made, or when a workflow is routed into a special branch.
+* Avoid using large or highly variable text as tags. Searchability improves when tags stay predictable across executions.
 
 ## Related jobs
 

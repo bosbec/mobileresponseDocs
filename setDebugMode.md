@@ -23,6 +23,8 @@ This job affects the currently running workflow execution only.
 * Remove it or disable **Debug mode** after troubleshooting so normal workflow runs do not stop unexpectedly.
 * There is now also an alternative breakpoint mechanism in the workflow builder: click the arrow between two jobs and select `Set breakpoint`.
 * Use the arrow-based breakpoint when you want a lighter-weight breakpoint without adding a dedicated job to the workflow.
+* Keep debug pauses close to the specific transformation, API call, or route decision you are investigating so the captured workflow state stays focused.
+* Avoid leaving active debug stops in workflows that handle time-sensitive integrations or larger iteration sets, since they can interrupt operational processing.
 
 ## Related jobs
 

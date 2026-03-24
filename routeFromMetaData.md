@@ -51,6 +51,7 @@ Several routes can match during the same execution.
 * When the logic can be expressed as a sequence of decisions, prefer chaining multiple [routeFromMetaData.md](routeFromMetaData.md) jobs instead of relying on several matches in a single job. This reduces the risk of race conditions or conflicting workflow-context changes further downstream.
 * Enable **Split workflow context on multiple matches** when several routes may match and the branches should not modify the same workflow context.
 * Prefer **Compare value source** over copying values into static fields when both sides of the comparison are dynamic.
+* Route on stable, well-named metadata keys so branching remains understandable and does not depend on temporary or ambiguous values.
 
 ## Related jobs
 

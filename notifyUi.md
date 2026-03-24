@@ -33,8 +33,14 @@ The notification appears in the admin UI as a toast.
 * Keep UI notifications short and action-oriented.
 * Use account-wide topics only for information relevant to multiple administrators.
 * Prefer persistent notifications only when the message requires deliberate acknowledgement.
+* Send UI notifications for operational visibility or manual follow-up, not as the only record of an important workflow outcome. Store key results in workflow data or logs when they matter later.
+* Include just enough context in the message for the administrator to understand the event, such as a correlation ID, order ID, or a short status summary.
 
 ## Related jobs
+
+* Add Workflow Starts Tag
+* Set Debug Mode
+* Execute Workflow
 
 ## References
 

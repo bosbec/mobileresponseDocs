@@ -22,6 +22,7 @@ This job does not process data by itself. Instead, it controls how the loop cont
 * Always pair this job with [forEachResourceStart.md](forEachResourceStart.md); the loop will not work correctly without a matching start job.
 * Use **Nested for each name** only when you actually need nested loops. Leave it empty for simpler workflows.
 * Keep the jobs inside the loop focused on the current item so the loop is easy to reason about and debug.
+* Keep nested loops rare and clearly named. The more loop levels a workflow has, the harder it becomes to understand execution order and failure behavior.
 
 ## Related jobs
 

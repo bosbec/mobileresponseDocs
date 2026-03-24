@@ -32,6 +32,7 @@ If parsing succeeds, the job creates a JsonResource in the workflow context.
 ## Best practices and tips
 
 * Give the destination resource a descriptive name so downstream expressions stay readable.
+* When the source can contain malformed or mixed content, validate or isolate the JSON-producing part before parsing so downstream steps do not depend on ambiguous input.
 * Parse once and reuse the resulting JsonResource instead of repeatedly handling the same payload as plain text.
 * When the JSON contains arrays, keep extraction expressions simple and move advanced array filtering into dedicated steps only when needed.
 

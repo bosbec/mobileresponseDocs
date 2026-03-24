@@ -61,6 +61,10 @@ When a response is captured to a resource, the following properties are availabl
 
 ## Best practices and tips
 * Name your response resource something descriptive so that the workflow is easier to work with in the future. A more descriptive name makes the workflow more readable.
+* Send the minimum data the receiving system needs. Smaller request bodies are easier to validate, reduce accidental data exposure, and make troubleshooting simpler.
+* Use **Response validation** deliberately. Prefer **Valid response code and response type** when downstream jobs depend on structured JSON or XML, so invalid payloads fail early instead of propagating unexpected data.
+* Route failed or unexpected responses to **Jobs to execute after unsuccessful response** when the workflow must branch on API failures, retries, or fallback handling rather than silently continuing.
+* When calling authenticated APIs, resolve secrets and tokens from controlled workflow sources instead of scattering credentials across multiple jobs or hardcoded values.
 * Building the request body can also be done in a JSON pipeline before running this job, saving the JSON to a JSON resource and referencing the resource using the {{resourceName}} syntax.
 * Are you looking to send a response to an incoming request? Take a look at Send API Response instead.
 

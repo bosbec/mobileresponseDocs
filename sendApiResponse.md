@@ -21,6 +21,8 @@ The properties for configuring the response are described below.
 * Return a clear status code and body that matches your API contract so integrations are easier to debug.
 * Set Response content type explicitly when returning JSON or plain text to avoid ambiguity for the caller.
 * Include only the headers you need in Response headers to keep responses predictable.
+* Keep the response body focused on the fields the caller actually needs. Smaller, explicit responses are easier to consume and reduce accidental data leakage.
+* Use error status codes and response bodies consistently across failure paths so external systems can react predictably when validation or downstream processing fails.
 
 ## Related jobs and triggers
 

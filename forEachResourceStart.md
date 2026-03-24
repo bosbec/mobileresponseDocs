@@ -37,6 +37,8 @@ When the loop reaches [forEachResourceStop.md](forEachResourceStop.md), executio
 * Choose a clear **Current item name** so expressions inside the loop remain readable.
 * Keep the loop body focused on work that belongs to one item at a time.
 * Use **Nested for each name** only when you need nested loops, and make sure the start and stop jobs use the same value.
+* Filter or reduce the resource before entering the loop when possible. Smaller iteration sets are easier to debug and reduce unnecessary downstream calls.
+* Keep external API calls or account writes inside the loop deliberate, especially for large resources. When needed, combine looping with batching or quota control elsewhere in the workflow.
 
 ## Related jobs
 

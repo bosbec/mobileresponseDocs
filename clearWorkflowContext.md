@@ -43,6 +43,8 @@ Each option affects a different part of the workflow context.
 
 * Clear only the parts of the workflow context you no longer need.
 * Prefer targeted regex patterns over `.*` unless a full reset is intentional.
+* Adopt temporary naming conventions such as `tmp_` or another clear prefix so cleanup patterns stay precise and safe.
+* Clean up after a branch or subprocess has finished, not before. Downstream jobs often depend on incoming units, groups, or response resources remaining available until the end of that path.
 * When a workflow later depends on `IncomingUnit`, groups, or files, clear those values only after the dependent jobs have finished.
 
 ## Related jobs

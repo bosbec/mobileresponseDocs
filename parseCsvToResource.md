@@ -48,6 +48,7 @@ If parsing succeeds, the job creates a CsvResource that downstream jobs can insp
 * Enable **Parse first row as headers** whenever the incoming CSV includes field names; it makes downstream expressions easier to understand.
 * Use a custom delimiter only when the source data actually requires it.
 * If the input may contain uneven rows, decide explicitly whether padding mismatched rows is safer than failing early.
+* Parse the CSV into a named resource once, then iterate or transform from that resource instead of reparsing the same text in several places.
 
 ## Related jobs
 

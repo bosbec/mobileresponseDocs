@@ -45,6 +45,8 @@ The job searches for the target workflow, starts it, and then continues based on
 * Prefer workflow IDs when the target workflow name may change over time.
 * Pass only the metadata the called workflow actually needs so the interface between workflows stays clear.
 * Use **Ignore current workflow metadata** together with **Execute with metadata** when you want the called workflow to behave like a clean subprocess.
+* Treat the called workflow like an explicit contract: define which metadata keys, triggers, and forwarded resources it should receive instead of relying on broad inherited context.
+* Exclude temporary or large resources with **Exclude resources regex** when the child workflow does not need them. This keeps executions lighter and reduces accidental coupling between workflows.
 * Be careful with **Allow recursive executions**. Add a clear stop condition elsewhere in the workflow design to avoid runaway loops.
 
 ## Related jobs

@@ -46,7 +46,9 @@ For app messages, the job also applies default app-message settings such as send
 ## Best practices and tips
 
 * Connect groups explicitly when the intended audience should be obvious from the workflow design.
+* Keep recipient selection deterministic. If the workflow can pull receivers from explicit groups, workflow-context groups, temporary groups, and workflow-context units, document which source is intended for that flow.
 * Use **Ignore send if no receivers** only when an empty recipient set is expected and should not be treated as an error.
+* Resolve the message from one primary source when possible, either a connected template or a message resource, so the send step is easy to reason about and troubleshoot.
 * Keep message selection clear: use either a connected message template or a message resource when possible, rather than mixing both patterns unnecessarily.
 
 ## Related jobs

@@ -290,9 +290,10 @@ Updates unit data for all units in the current resource.
 ## Best practices and tips
 
 * Start the pipeline by loading a resource or finding them from the account.
-* Perform the filters, followed by updates.
+* Perform broad find steps first, then filter early before updates or saves so fewer units flow through the expensive parts of the pipeline.
 * Save changes to resource to reference the units later in the process.
 * Save changes to account to persist the created or changed units.
+* Use paging, take, or targeted find criteria when the account can return large result sets. Smaller batches are easier to debug and reduce the risk of over-processing.
 
 ## References
 
