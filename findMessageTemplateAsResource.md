@@ -42,9 +42,9 @@ The job finds matching templates and stores them in the named workflow resource.
 
 ## Related jobs
 
-* [createMessageTemplateAsResource.md](createMessageTemplateAsResource.md)
-* [messageTemplate.md](messageTemplate.md)
-* [sendMessageToGroups.md](sendMessageToGroups.md)
+* Create Message Template As Resource
+* Message templates
+* Send Message To Groups
 
 ## References
 

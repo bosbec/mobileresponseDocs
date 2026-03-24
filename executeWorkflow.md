@@ -49,10 +49,10 @@ The job searches for the target workflow, starts it, and then continues based on
 
 ## Related jobs
 
-* [routeFromMetaData.md](routeFromMetaData.md)
-* [executeOrPostpone.md](executeOrPostpone.md)
-* [workflow.md](workflow.md)
-* [addWorkflowStartsTag.md](addWorkflowStartsTag.md)
+* Route From Meta Data
+* Execute Or Postpone
+* Workflow
+* Add Workflow Starts Tag
 
 ## References
 

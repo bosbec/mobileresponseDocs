@@ -49,9 +49,9 @@ If dynamic-group tags are provided while creating a new group, the created group
 
 ## Related jobs
 
-* [groupOperations.md](groupOperations.md)
-* [unitOperations.md](unitOperations.md)
-* [findGroups.md](findGroups.md)
+* Group Operations
+* Unit Operations
+* Find Groups
 
 ## References
 

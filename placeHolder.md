@@ -22,9 +22,9 @@ The job does not read or write workflow data.
 
 ## Related jobs
 
-* [setDebugMode.md](setDebugMode.md)
-* [sendHttpRequest.md](sendHttpRequest.md)
-* [routeFromMetaData.md](routeFromMetaData.md)
+* Set Debug Mode
+* Send HTTP Request
+* Route From Meta Data
 
 ## References
 

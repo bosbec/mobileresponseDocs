@@ -51,9 +51,9 @@ If parsing succeeds, the job creates a CsvResource that downstream jobs can insp
 
 ## Related jobs
 
-* [forEachResourceStart.md](forEachResourceStart.md)
-* [csvPipeline.md](csvPipeline.md)
-* [parseJsonToResource.md](parseJsonToResource.md)
+* For Each Resource Start
+* CSV Pipeline
+* Parse JSON to Resource
 
 ## References
 

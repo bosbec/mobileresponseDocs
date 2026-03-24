@@ -12,6 +12,7 @@ The properties for configuring the send are described below.
 	* Explicit groups to receive the message.
 * **Send only to active units** (optional; default: false)
 	* If enabled, only active units in the target groups are used as recipients.
+    * Legacy behaviour and is not commonly used.
 * **Use workflow context units** (optional; default: false)
 	* Include units already present in the workflow context.
 * **Override message text** (optional)
@@ -38,7 +39,7 @@ The job can gather recipients from several places.
 
 * Use explicitly connected groups when the audience is known in advance.
 * If no groups are connected, the job can default to workflow-context groups and the temporary group.
-* Enable **Use workflow context units** when units already loaded into workflow context should also be considered.
+* Enable **Use workflow context units** when units already loaded into workflow context, in the temporary group for example, should also be considered.
 
 For app messages, the job also applies default app-message settings such as sender and inbox values from merged settings when needed.
 
@@ -50,9 +51,9 @@ For app messages, the job also applies default app-message settings such as send
 
 ## Related jobs
 
-* [messageTemplate.md](messageTemplate.md)
-* [sendMessageToUnits.md](sendMessageToUnits.md)
-* [findMessageTemplateAsResource.md](findMessageTemplateAsResource.md)
+* Message templates
+* Send Message To Units
+* Find Message Template As Resource
 
 ## References
 

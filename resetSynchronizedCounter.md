@@ -43,9 +43,9 @@ This makes the job useful for resetting counters at the start of a new period, a
 
 ## Related jobs
 
-* [synchronizedCounter.md](synchronizedCounter.md)
-* [findCounters.md](findCounters.md)
-* [routeFromMetaData.md](routeFromMetaData.md)
+* Synchronized Counter
+* Find Counters
+* Route From Meta Data
 
 ## References
 

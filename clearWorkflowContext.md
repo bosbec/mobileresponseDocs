@@ -47,9 +47,9 @@ Each option affects a different part of the workflow context.
 
 ## Related jobs
 
-* [filterWorkflowContext.md](filterWorkflowContext.md)
-* [splitWorkflowContext.md](splitWorkflowContext.md)
-* [workflowContext.md](workflowContext.md)
+* Filter Workflow Context
+* Split Workflow Context
+* Workflow Context
 
 ## References
 

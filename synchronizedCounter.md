@@ -62,9 +62,9 @@ The job counts upward only.
 
 ## Related jobs
 
-* [resetSynchronizedCounter.md](resetSynchronizedCounter.md)
-* [findCounters.md](findCounters.md)
-* [routeFromMetaData.md](routeFromMetaData.md)
+* Reset Synchronized Counter
+* Find Counters
+* Route From Meta Data
 
 ## References
 

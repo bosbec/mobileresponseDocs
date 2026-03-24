@@ -33,9 +33,9 @@ This job updates the current workflow-start record rather than a unit, group, or
 
 ## Related jobs
 
-* [executeWorkflow.md](executeWorkflow.md)
-* [notifyUi.md](notifyUi.md)
-* [workflow.md](workflow.md)
+* Execute Workflow
+* Notify UI
+* Workflow
 
 ## References
 
