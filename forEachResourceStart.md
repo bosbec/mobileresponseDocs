@@ -40,6 +40,31 @@ When the loop reaches [forEachResourceStop.md](forEachResourceStop.md), executio
 * Filter or reduce the resource before entering the loop when possible. Smaller iteration sets are easier to debug and reduce unnecessary downstream calls.
 * Keep external API calls or account writes inside the loop deliberate, especially for large resources. When needed, combine looping with batching or quota control elsewhere in the workflow.
 
+## Common loop patterns
+
+### Validate each item before expensive work
+
+When each item may be incomplete, validate first and only continue on valid items.
+
+Example pattern:
+
+1. Extract a required value from the current item (for example phone, ID, or status).
+2. Route on missing or invalid values.
+3. Continue with API calls only on the valid branch.
+
+This keeps loop processing efficient and reduces avoidable external failures.
+
+### Nested loops
+
+When iterating within an iteration, set **Nested for each name** on both start and stop jobs for each level.
+
+Example naming:
+
+* Outer loop: `user_loop`
+* Inner loop: `item_loop`
+
+Clear naming helps avoid mismatched stop jobs and makes execution order easier to follow.
+
 ## Related jobs
 
 * For Each Resource Stop

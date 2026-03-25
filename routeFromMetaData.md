@@ -48,10 +48,44 @@ Several routes can match during the same execution.
 
 * Use **Route destination on no match** to make the fallback behavior explicit.
 * Avoid designing routes so that multiple branches match at the same time when possible.
-* When the logic can be expressed as a sequence of decisions, prefer chaining multiple [routeFromMetaData.md](routeFromMetaData.md) jobs instead of relying on several matches in a single job. This reduces the risk of race conditions or conflicting workflow-context changes further downstream.
+* When the logic can be expressed as a sequence of decisions, prefer chaining multiple `routeFromMetaData` jobs instead of relying on several matches in a single job. This reduces the risk of race conditions or conflicting workflow-context changes further downstream.
 * Enable **Split workflow context on multiple matches** when several routes may match and the branches should not modify the same workflow context.
 * Prefer **Compare value source** over copying values into static fields when both sides of the comparison are dynamic.
 * Route on stable, well-named metadata keys so branching remains understandable and does not depend on temporary or ambiguous values.
+
+## Common routing patterns
+
+### Regex whitelist validation
+
+Use `regex` comparisons to allow only known values before continuing.
+
+Example:
+
+* **Meta data source**: `{{request_resource.query.status}}`
+* **Compare operator**: `regex`
+* **Compare value**: `^(started|ringing|answered|completed|rejected)$`
+
+This pattern is useful for public callback endpoints where query values must be validated early.
+
+### Numeric threshold checks
+
+Use numeric comparisons when filtering on counters, durations, or scores.
+
+Examples:
+
+* Route only when `{{metadata.duration}} >= 30`.
+* Route only when `{{metadata.retries}} <= {{metadata.max_retries}}`.
+
+### Retry gate with fallback
+
+Use `Route destination on no match` as the terminal path when retry conditions are no longer met.
+
+Pattern:
+
+* Match route: retry allowed -> increment and retry path.
+* No-match route: max retries reached -> stop, tag, or send final error response.
+
+This makes retry behavior deterministic and prevents endless loops.
 
 ## Related jobs
 

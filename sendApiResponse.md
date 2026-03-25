@@ -24,6 +24,42 @@ The properties for configuring the response are described below.
 * Keep the response body focused on the fields the caller actually needs. Smaller, explicit responses are easier to consume and reduce accidental data leakage.
 * Use error status codes and response bodies consistently across failure paths so external systems can react predictably when validation or downstream processing fails.
 
+## Common response patterns
+
+These patterns are commonly used in API and callback workflows.
+
+### 200 OK with structured JSON
+
+Use `200` when the request succeeds and you return data.
+
+* Set **Response status code** to `200`.
+* Set **Response content type** to `application/json`.
+* Build the response body from workflow context, for example `{{api_response}}`.
+
+### 204 No Content for callbacks
+
+Use `204` when the caller only needs acknowledgement and no payload.
+
+* Set **Response status code** to `204`.
+* Leave **Response body** empty.
+* Keep the callback path lightweight so acknowledgements are fast.
+
+### 400 and 404 with minimal payload
+
+Use `400` for validation failures and `404` when a requested item is not found.
+
+* Return a predictable error structure, or an intentionally empty body if the external contract expects that.
+* Keep behavior consistent across all failure branches that represent the same error class.
+
+### HTML responses
+
+Some workflows return HTML from this job.
+
+* Set **Response content type** to `text/html`.
+* Use `200` for page delivery and `302` only when redirect semantics are intentional.
+* Sanitize or strictly validate any dynamic value inserted into HTML.
+* Avoid putting sensitive tokens in URLs rendered by HTML responses.
+
 ## Related jobs and triggers
 
 * Incoming HTTP Trigger

@@ -47,6 +47,28 @@ Each option affects a different part of the workflow context.
 * Clean up after a branch or subprocess has finished, not before. Downstream jobs often depend on incoming units, groups, or response resources remaining available until the end of that path.
 * When a workflow later depends on `IncomingUnit`, groups, or files, clear those values only after the dependent jobs have finished.
 
+## Common cleanup patterns
+
+### Remove only temporary resources
+
+If temporary resources follow a naming convention, clear them by prefix:
+
+* **Clear resources**: `^tmp_`
+
+### Clear specific resources after an iteration
+
+To remove only known intermediate resources, match exact names:
+
+* **Clear resources**: `^call_log_response$|^call_log_json$`
+
+### Targeted metadata cleanup
+
+To remove one metadata key only:
+
+* **Clear meta data**: `^retry_count$`
+
+Targeted cleanup keeps required context intact while preventing stale temporary values from leaking into later branches.
+
 ## Related jobs
 
 * Filter Workflow Context

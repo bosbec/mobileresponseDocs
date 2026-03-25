@@ -295,6 +295,30 @@ Updates unit data for all units in the current resource.
 * Save changes to account to persist the created or changed units.
 * Use paging, take, or targeted find criteria when the account can return large result sets. Smaller batches are easier to debug and reduce the risk of over-processing.
 
+## Common pipeline patterns
+
+### Search, validate, then persist
+
+A robust pattern for API-style workflows:
+
+1. **Find Units** or **Load Resource**.
+2. Validate result count or required metadata in `routeFromMetaData`.
+3. Apply **Update Unit Data** or other mutations.
+4. Save with **Save To Account**.
+5. Return response through `sendApiResponse`.
+
+### Incremental processing checkpoint
+
+When processing ordered records repeatedly, store a checkpoint in unit metadata and update it only after successful handling.
+
+Example pattern:
+
+* Compare incoming item ID/timestamp to stored checkpoint.
+* Process only newer items.
+* Save updated checkpoint in unit metadata.
+
+This reduces duplicate processing between workflow runs.
+
 ## References
 
 * [Unit Pipeline: Merging units](https://help.bosbec.com/knowledge-base/unit-pipeline-merging-units/)

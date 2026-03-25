@@ -191,6 +191,17 @@ Example patterns:
 * Use **Parse JSON** when you receive raw JSON text from metadata or external responses.
 * Save transformed output to a clearly named resource when later jobs, such as HTTP requests or iteration steps, depend on the result.
 
+## Common API composition pattern
+
+Use JSON Pipeline to build a stable response contract before `sendApiResponse`.
+
+Example flow:
+
+1. `Load resource` from a search result or upstream response.
+2. `Transform` into a strict response object (only required keys).
+3. `Save as resource` to a dedicated resource (for example `api_response`).
+4. Return `{{api_response}}` from `sendApiResponse` with `application/json`.
+
 ## Related jobs
 
 * Data Operations

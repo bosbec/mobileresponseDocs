@@ -38,6 +38,23 @@ The job signs the provided payload and writes the resulting token to the chosen 
 * Use destination names that make the token lifecycle obvious, especially when the JWT is short-lived and immediately consumed by a later HTTP request.
 * Use a clear destination name so later HTTP or API jobs can reference the signed token without ambiguity.
 
+## Common JWT flow
+
+A common pattern is:
+
+1. Prepare numeric time claims (`iat`, `exp`) with `dataOperations`.
+2. Build the claims object with `jsonPipeline`.
+3. Sign claims in this job.
+4. Use the signed token in `sendHttpRequest` authorization headers.
+
+This keeps token generation deterministic and easy to audit.
+
+## Security notes
+
+* Do not write private keys or signed tokens to logs.
+* Avoid passing signed tokens in query strings when header-based authentication is available.
+* Keep JWT lifetime short and regenerate when needed instead of reusing stale tokens across unrelated flows.
+
 ## Related jobs
 
 * Send HTTP Request

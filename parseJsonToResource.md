@@ -36,6 +36,27 @@ If parsing succeeds, the job creates a JsonResource in the workflow context.
 * Parse once and reuse the resulting JsonResource instead of repeatedly handling the same payload as plain text.
 * When the JSON contains arrays, keep extraction expressions simple and move advanced array filtering into dedicated steps only when needed.
 
+## Error handling pattern
+
+When JSON input may be invalid, design an explicit failure path.
+
+Suggested pattern:
+
+1. Extract or isolate the expected JSON input source before parsing.
+2. Run this job to parse into a dedicated destination resource.
+3. Route downstream processing based on whether required parsed keys are available.
+4. Return a clear API response (for example `400`) or fallback handling when parsing fails.
+
+This keeps malformed input from propagating into account updates or external API requests.
+
+## Related composition pattern
+
+Common API flow:
+
+* `incomingHttpTrigger` -> `parseJsonToResource` -> validation route (`routeFromMetaData`) -> processing jobs -> `sendApiResponse`
+
+Using this sequence keeps request parsing, validation, and response behavior explicit.
+
 ## Related jobs
 
 * Parse CSV to Resource
