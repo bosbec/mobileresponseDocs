@@ -39,6 +39,8 @@ The job finds matching templates and stores them in the named workflow resource.
 * Give the result resource a descriptive name so later message jobs are easier to read.
 * Use metadata filters when template selection should be stable even if names change.
 * Keep pagination explicit if the workflow may return more than one matching template.
+* Use metadata that reflects stable business dimensions such as language, message type, or channel rather than display names that are more likely to drift over time.
+* Narrow the search as much as possible before downstream send steps so the workflow resolves one intended template instead of passing along an ambiguous result set.
 
 ## Related jobs
 

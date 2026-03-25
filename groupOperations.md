@@ -41,6 +41,7 @@ The pipeline follows a consistent sequence.
 * Use filters before member operations when only a subset of groups should be changed.
 * Save to a resource when later jobs need the resulting groups without immediately persisting changes to the account.
 * Keep group-metadata updates focused on a small number of keys so the pipeline remains easy to review.
+* When later jobs only need a subset of groups, filter early and keep the working set small before adding or removing members.
 
 ## Related jobs
 

@@ -32,8 +32,28 @@ The job signs the provided payload and writes the resulting token to the chosen 
 ## Best practices and tips
 
 * Build and validate the payload before signing so the resulting token contains only the claims you intend to send.
+* Keep the payload focused on the minimum claims the target system actually requires. Smaller claim sets are easier to review and reduce unnecessary data sharing.
 * Store private keys securely and inject them from controlled workflow sources rather than hardcoding them broadly in multiple jobs.
+* Prefer keeping the private key in account-level secret storage or an equally controlled source, and reference it from the workflow only when the token is being built.
+* Use destination names that make the token lifecycle obvious, especially when the JWT is short-lived and immediately consumed by a later HTTP request.
 * Use a clear destination name so later HTTP or API jobs can reference the signed token without ambiguity.
+
+## Common JWT flow
+
+A common pattern is:
+
+1. Prepare numeric time claims (`iat`, `exp`) with `dataOperations`.
+2. Build the claims object with `jsonPipeline`.
+3. Sign claims in this job.
+4. Use the signed token in `sendHttpRequest` authorization headers.
+
+This keeps token generation deterministic and easy to audit.
+
+## Security notes
+
+* Do not write private keys or signed tokens to logs.
+* Avoid passing signed tokens in query strings when header-based authentication is available.
+* Keep JWT lifetime short and regenerate when needed instead of reusing stale tokens across unrelated flows.
 
 ## Related jobs
 

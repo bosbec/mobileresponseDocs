@@ -21,6 +21,44 @@ An easy way to remember this could be "brackets replace the string".
 * **Jobs** (optional)
   * Jobs to execute after this job completes.
 
+## Best practices and tips
+
+* Keep operation lists focused on one transformation goal at a time so intermediate values and destinations remain easy to follow.
+* Prefer extracting or filtering input values before running many transformations on them. Smaller, cleaner inputs reduce brittle expressions and unnecessary work.
+* Use clear destination names for intermediate values when later jobs depend on them, especially in longer workflows.
+* When the transformation target is structured JSON rather than individual values, compare this job with [jsonPipeline.md](jsonPipeline.md) before building a long sequence of string operations.
+
+## Common transformation patterns
+
+### Extract with regex before routing
+
+Use **Extract value regex** to normalize values before `routeFromMetaData`.
+
+Examples:
+
+* Extract first subdomain from host: pattern `^[^.]+`
+* Validate digits-only value: pattern `^\\d+$`
+* Extract UUID from a path: pattern `[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}`
+
+### Retry counter increment
+
+Use **Calculate data** to increment counters safely.
+
+* **Source**: `{{metadata.retries}}+1`
+* **Destination**: `metadata.retries`
+
+Then gate retries in `routeFromMetaData` with a max-retry comparison.
+
+### Prepare timestamp claims for JWT payloads
+
+Use date/time and arithmetic operations to prepare `iat`/`exp` values before `createJwtSigning`.
+
+Pattern:
+
+1. Calculate current epoch value into metadata.
+2. Add token lifetime offset (for example in seconds) for expiration.
+3. Build final JSON claims in `jsonPipeline` and sign in `createJwtSigning`.
+
 ## Operations
 
 Operations are executed in the sequence defined by the **Order** property within each operation. The **Order** property is available on every operation and is optional — operations without an explicit order value are executed in the order they are listed.

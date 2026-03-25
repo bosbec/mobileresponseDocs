@@ -30,6 +30,32 @@ This job updates the current workflow-start record rather than a unit, group, or
 * Keep tags short, descriptive, and consistent so they remain useful for searching.
 * Prefer stable business identifiers such as order IDs, customer IDs, or correlation IDs over free-form text.
 * Use prefixes such as `order:` or `integration:` when you want tags from different use cases to stay easy to distinguish.
+* Add tags at clear lifecycle points, such as when an integration starts, when a downstream call is made, or when a workflow is routed into a special branch.
+* Avoid using large or highly variable text as tags. Searchability improves when tags stay predictable across executions.
+
+## Common tagging patterns
+
+### Retry and failure observability
+
+Use tags to mark bounded-retry outcomes without exposing sensitive data.
+
+Examples:
+
+* `retry:attempt_1`
+* `retry:max_retries_reached`
+* `integration:rate_limited`
+
+Pair this with `dataOperations` retry counters and `routeFromMetaData` retry gates for reliable troubleshooting.
+
+### Callback/event status tags
+
+For callback flows, add a normalized status tag from validated metadata.
+
+Example source:
+
+* `status:{{metadata.event_status}}`
+
+This creates a searchable execution trail for event-driven workflows.
 
 ## Related jobs
 

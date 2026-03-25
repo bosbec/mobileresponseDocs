@@ -43,6 +43,7 @@ The distinct options are useful when duplicate phone numbers or email addresses 
 ## Best practices and tips
 
 * Enable creation only when the workflow is allowed to provision new units automatically.
+* Use the smallest reliable search source you have, such as one confirmed email address or phone number, instead of broad mixed identifiers that can create ambiguous matches.
 * Use the distinct options when duplicate channel data exists and downstream jobs expect a smaller result set.
 * Set `IncomingUnit` only when a single-unit outcome is the intended behavior for later jobs.
 * If the workflow needs more than a simple find-or-create pattern, consider using [unitPipeline.md](unitPipeline.md) instead. It is often the better fit for newer workflows that combine search, creation, filtering, updates, and saving in one sequence.

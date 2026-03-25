@@ -48,6 +48,7 @@ The job performs exactly one extraction mode per execution.
 
 * Choose the extraction mode based on where downstream jobs expect to find the data: workflow groups, temporary group, metadata, or a resource.
 * Keep process-trigger-dependent modes near the relevant trigger flow so the required event data is still available and easy to understand.
+* Extract only the structures the next jobs actually need. Moving everything into workflow context makes later routing and cleanup harder to reason about.
 
 ## Related jobs
 

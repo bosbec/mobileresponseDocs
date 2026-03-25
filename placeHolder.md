@@ -19,6 +19,8 @@ The job does not read or write workflow data.
 * Use a Place holder job when you want to make workflow branches readable without introducing temporary logic.
 * Keep the job name or description meaningful so it is obvious why the branch exists.
 * Use this job on success or failure paths when you want the destination of a route to stay visible during design and review.
+* Prefer a placeholder over ad hoc temporary logic when a branch exists for structure only. This keeps the workflow explicit without implying processing that does not happen yet.
+* Replace long-lived placeholders with real handling or a clearly named terminal branch once the integration behavior is decided.
 
 ## Related jobs
 

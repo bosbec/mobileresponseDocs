@@ -73,6 +73,7 @@ Typical outcomes include saving to the account, saving to a workflow resource, s
 ## Best practices and tips
 
 * Use several small find and filter steps instead of one overloaded search when readability matters.
+* Filter as early as possible after broad find steps so later updates and store operations only touch the units that actually matter.
 * Turn on continue-on-error only when the workflow can safely proceed with partial results.
 * When deduplication or merging is the real goal, compare this job with [unitPipeline.md](unitPipeline.md) before choosing an approach.
 

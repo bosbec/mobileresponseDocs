@@ -60,17 +60,61 @@ When a response is captured to a resource, the following properties are availabl
   * Timestamp (UTC) when the request was sent.
 
 ## Best practices and tips
+
 * Name your response resource something descriptive so that the workflow is easier to work with in the future. A more descriptive name makes the workflow more readable.
+* Send the minimum data the receiving system needs. Smaller request bodies are easier to validate, reduce accidental data exposure, and make troubleshooting simpler.
+* Use **Response validation** deliberately. Prefer **Valid response code and response type** when downstream jobs depend on structured JSON or XML, so invalid payloads fail early instead of propagating unexpected data.
+* Route failed or unexpected responses to **Jobs to execute after unsuccessful response** when the workflow must branch on API failures, retries, or fallback handling rather than silently continuing.
+* When calling authenticated APIs, resolve secrets and tokens from controlled workflow sources instead of scattering credentials across multiple jobs or hardcoded values.
 * Building the request body can also be done in a JSON pipeline before running this job, saving the JSON to a JSON resource and referencing the resource using the {{resourceName}} syntax.
 * Are you looking to send a response to an incoming request? Take a look at Send API Response instead.
 
+## Branching and retry patterns
+
+### Status-aware branching
+
+When a request can fail in different ways, route the unsuccessful path through a `routeFromMetaData` job and branch on `{{responseResource.statuscode}}`.
+
+Example strategy:
+
+* `401` -> refresh token path.
+* `429` -> delayed retry path.
+* Any other non-success -> fallback logging or error response path.
+
+This keeps failure handling explicit and avoids hidden behavior differences.
+
+### Bounded retries
+
+Avoid unbounded retry loops.
+
+* Track retry count in metadata (for example `metadata.retries`).
+* Increment in a `dataOperations` job.
+* Route on max retries before attempting another request.
+* Tag or log max-retry events for observability.
+
+### Timeout handling
+
+Use **Timeout** deliberately based on the target API behavior.
+
+* Short timeouts are useful for callbacks and latency-sensitive paths.
+* Longer timeouts may be needed for heavy external operations.
+* Treat timeout failures as first-class failure branches rather than generic errors.
+
+### Security notes
+
+* Prefer `Authorization` headers over query-string tokens.
+* Avoid logging full request headers when they contain credentials.
+* Keep token generation and signing in dedicated jobs and pass only the final token value into this job.
+
 ## Related jobs
+
 * Send API Response
 * Parse JSON to resource
 * Parse XML to resource
 * JSON Pipeline
 
 ## References
+
 * [Quickstart: Your first API](https://help.bosbec.com/knowledge-base/quickstart-your-first-api/)
   * Step-by-step guide to getting started with HTTP requests
 * [Building your first API](https://help.bosbec.com/knowledge-base/building-your-first-api/)

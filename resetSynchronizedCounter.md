@@ -39,6 +39,7 @@ This makes the job useful for resetting counters at the start of a new period, a
 
 * Use the same **Counter name** and **Counter key** conventions here as in [synchronizedCounter.md](synchronizedCounter.md) so the intended counter is reset reliably.
 * Reset counters deliberately at clear lifecycle boundaries such as daily quotas, campaign restarts, or successful completion of a guarded process.
+* Reset the counter only after the business event that should reopen capacity has actually happened. Early resets can undermine the protection that the counter was meant to provide.
 * Update **Counter limit** only when the reset should also change the future threshold, not just the current value.
 
 ## Related jobs

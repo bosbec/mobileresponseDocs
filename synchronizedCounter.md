@@ -58,6 +58,9 @@ The job counts upward only.
 
 * Keep **Counter name** stable and use **Counter key** for the runtime-specific uniqueness.
 * Always store **Output value** and **Output result** so later jobs can decide what to do.
+* Use this job when the workflow must protect a shared quota or rate limit across parallel executions, not just as a general-purpose counter.
+* Branch explicitly on **Output result** when limits are reached so the workflow can postpone, skip, or notify instead of continuing as if capacity is still available.
+* Keep the key tied to the business boundary you actually want to protect, such as a sender, customer, campaign, or API quota bucket.
 * Pair this job with [resetSynchronizedCounter.md](resetSynchronizedCounter.md) when the counter should be reset between periods or workflows.
 
 ## Related jobs
