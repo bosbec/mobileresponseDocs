@@ -1,0 +1,8 @@
+{
+  "metadataAttributes": {
+    "resource_type": "global_rules",
+    "category": "core_concepts",
+    "description": "Global rules for metadata casing, resource indexing, workflow lifecycle, and platform terminology.",
+    "priority": "high"
+  }
+}
